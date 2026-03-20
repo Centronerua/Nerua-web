@@ -1,5 +1,4 @@
 export default function Home() {
-  export default function Home() {
   return (
     <main style={{fontFamily: "Montserrat, sans-serif", background:"#F5F1EB", color:"#3A3A3A"}}>
 
