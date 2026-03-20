@@ -1,0 +1,11 @@
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #F5F1EB;
+  color: #3A3A3A;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
