@@ -247,3 +247,18 @@ const cardStyle = {
   borderRadius:"12px",
   boxShadow:"0 5px 15px rgba(0,0,0,0.05)"
 }
+function Testimonial({name, text}) {
+  return (
+    <div style={{
+      background:"white",
+      padding:"25px",
+      borderRadius:"12px",
+      boxShadow:"0 5px 15px rgba(0,0,0,0.05)"
+    }}>
+      <p style={{fontStyle:"italic", marginBottom:"15px"}}>
+        “{text}”
+      </p>
+      <strong>{name}</strong>
+    </div>
+  )
+}
