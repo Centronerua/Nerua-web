@@ -69,33 +69,65 @@ export default function Home() {
         />
       </section>
 
-      {/* COMO TRABAJAMOS */}
       <section style={section}>
-        <h2>Cómo trabajamos</h2>
+  <h2>Cómo trabajamos</h2>
 
-        <p style={text}>
-          En NERÚA entendemos el bienestar como un proceso que requiere escuchar, comprender y abordar cada situación 
-          de manera individual.
-        </p>
+  <p style={text}>
+    En NERÚA entendemos el bienestar como un proceso que requiere escuchar, comprender y abordar cada situación de manera individual.
+  </p>
 
-        <p style={text}>
-          Muchas veces los síntomas aparecen en lugares distintos, pero forman parte de procesos que necesitan ser comprendidos en conjunto.
-        </p>
+  <p style={text}>
+    Muchas veces los síntomas aparecen en lugares distintos —la mandíbula, el sistema digestivo, el oído o el propio cuerpo—, pero forman parte de procesos que necesitan ser comprendidos en conjunto.
+  </p>
 
-        <p style={text}>
-          Nuestro objetivo es acompañar a cada persona a comprender mejor lo que le sucede y encontrar nuevas formas de recuperar equilibrio y bienestar.
-        </p>
-      </section>
+  <p style={text}>
+    Por eso trabajamos desde una mirada integradora, teniendo en cuenta la historia de cada persona, su momento vital y la forma en que el cuerpo expresa lo que está ocurriendo.
+  </p>
 
-      {/* CONSULTAS */}
-      <section style={section}>
-        <h2>Tipos de consulta</h2>
+  <p style={text}>
+    Nuestro objetivo es acompañarte a comprender mejor lo que te sucede y ayudarte a recuperar equilibrio y bienestar de forma progresiva y sostenible.
+  </p>
+            
+<section style={section}>
+  <h2>Tipos de consulta</h2>
 
-        <Card title="Nutrición digestiva integrativa" text="Primera consulta: 49€ · Seguimiento: 55€" />
-        <Card title="Acompañamiento psicológico" text="Primera sesión: 49€ · Sesiones posteriores: 60€" />
-        <Card title="Regulación y bienestar" text="Primera sesión: 49€ · Sesiones posteriores: 60€" />
-      </section>
+  <div style={{marginBottom:"30px"}}>
+    <h3>Nutrición digestiva integrativa</h3>
+    <p style={text}>
+      Orientado a personas con inflamación abdominal, digestiones difíciles, SIBO u otras alteraciones digestivas.
+    </p>
+    <p style={{fontWeight:"500"}}>
+      Primera consulta: 49€ · Seguimiento: 55€
+    </p>
+  </div>
 
+  <div style={{marginBottom:"30px"}}>
+    <h3>Acompañamiento psicológico</h3>
+    <p style={text}>
+      Espacio para abordar ansiedad, bloqueo emocional o situaciones vitales complejas.
+    </p>
+    <p style={{fontWeight:"500"}}>
+      Primera sesión: 49€ · Sesiones posteriores: 60€
+    </p>
+  </div>
+
+  <div style={{marginBottom:"30px"}}>
+    <h3>Regulación y bienestar</h3>
+    <p style={text}>
+      Sesiones orientadas a síntomas como bruxismo, tinnitus, vértigos, migrañas o tensión persistente.
+    </p>
+    <p style={{fontWeight:"500"}}>
+      Primera sesión: 49€ · Sesiones posteriores: 60€
+    </p>
+  </div>
+
+  <p style={{marginTop:"20px", fontStyle:"italic"}}>
+    También puedes consultar nuestros bonos de sesiones.
+  </p>
+
+</section>
+
+</section>
      {/* QUIENES SOMOS */}
 <section style={section}>
 
