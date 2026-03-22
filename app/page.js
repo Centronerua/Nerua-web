@@ -151,6 +151,42 @@ export default function Home() {
 
 </section>
 
+{/* TESTIMONIOS */}
+<section style={section}>
+
+  <h2 style={{textAlign:"center", marginBottom:"40px"}}>
+    Testimonios
+  </h2>
+
+  <div style={{
+    display:"grid",
+    gridTemplateColumns:"repeat(auto-fit, minmax(280px, 1fr))",
+    gap:"30px"
+  }}>
+
+    <Testimonial 
+      name="Begoña"
+      text="Después de la primera sesión noté un cambio importante y esa misma noche dormí mucho mejor. Estoy profundamente agradecida."
+    />
+
+    <Testimonial 
+      name="Marta"
+      text="Cuando tu vida se vuelve difícil, encontrar a alguien que te ayude a comprender lo que ocurre no tiene precio."
+    />
+
+    <Testimonial 
+      name="Bárbara"
+      text="Después de años con malestar digestivo, pude comprender el origen y mejorar mi situación de forma real."
+    />
+
+    <Testimonial 
+      name="Wilma"
+      text="Identifiqué el origen del problema y mejoré progresivamente. El acompañamiento fue muy profesional y humano."
+    />
+
+  </div>
+
+</section>
       {/* CONTACTO */}
       <section style={section}>
         <h2>Contacto</h2>
