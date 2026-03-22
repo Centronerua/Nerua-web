@@ -96,20 +96,60 @@ export default function Home() {
         <Card title="Regulación y bienestar" text="Primera sesión: 49€ · Sesiones posteriores: 60€" />
       </section>
 
-      {/* QUIENES SOMOS */}
-      <section style={section}>
-        <h2>Quiénes somos</h2>
+     {/* QUIENES SOMOS */}
+<section style={section}>
 
-        <p style={text}>
-          <strong>José Manuel Gil Rueda</strong><br />
-          Psicólogo, CAFD y osteópata. Especializado en regulación del sistema nervioso y enfoques integrativos.
-        </p>
+  <h2 style={{textAlign:"center", marginBottom:"50px"}}>
+    Quiénes somos
+  </h2>
 
-        <p style={text}>
-          <strong>María José</strong><br />
-          Dietista especializada en nutrición digestiva integrativa y microbiota.
-        </p>
-      </section>
+  <div style={{
+    display:"grid",
+    gridTemplateColumns:"repeat(auto-fit, minmax(280px, 1fr))",
+    gap:"40px"
+  }}>
+
+    {/* JOSE */}
+    <div style={cardStyle}>
+      <h3 style={{marginBottom:"10px"}}>
+        José Manuel Gil Rueda
+      </h3>
+
+      <p style={{fontStyle:"italic", marginBottom:"15px", color:"#6B7D6D"}}>
+        Psicólogo · CAFD · Osteópata
+      </p>
+
+      <p style={text}>
+        Especializado en enfoques integrativos centrados en la regulación del sistema nervioso y el bienestar global.
+      </p>
+
+      <p style={text}>
+        Combina conocimiento técnico, experiencia clínica y una mirada cercana para comprender los procesos que hay detrás de los síntomas persistentes.
+      </p>
+    </div>
+
+    {/* MARIA JOSE */}
+    <div style={cardStyle}>
+      <h3 style={{marginBottom:"10px"}}>
+        María José Martínez Granados
+      </h3>
+
+      <p style={{fontStyle:"italic", marginBottom:"15px", color:"#6B7D6D"}}>
+        Nutrición digestiva integrativa
+      </p>
+
+      <p style={text}>
+        Especializada en salud digestiva, microbiota y abordaje integrativo de alteraciones digestivas.
+      </p>
+
+      <p style={text}>
+        Acompaña a las personas desde una visión global, combinando rigor, cercanía y personalización en cada proceso.
+      </p>
+    </div>
+
+  </div>
+
+</section>
 
       {/* CONTACTO */}
       <section style={section}>
@@ -164,4 +204,10 @@ const btnOutline = {
   border:"1px solid #6B7D6D",
   margin:"10px",
   cursor:"pointer"
+}
+const cardStyle = {
+  background:"white",
+  padding:"30px",
+  borderRadius:"12px",
+  boxShadow:"0 5px 15px rgba(0,0,0,0.05)"
 }
