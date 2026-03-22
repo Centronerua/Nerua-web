@@ -2,28 +2,47 @@ export default function Home() {
   return (
     <main style={{fontFamily: "Montserrat, sans-serif", background:"#F5F1EB", color:"#3A3A3A"}}>
 
-      {/* HERO */}
-      <section style={{textAlign:"center", padding:"100px 20px"}}>
-        <h1 style={{fontSize:"42px"}}>
-          Centro <span style={{color:"#C6A96B"}}>NERÚA</span>
-        </h1>
+     {/* HERO */}
+<section style={{
+  textAlign:"center",
+  padding:"120px 20px",
+  maxWidth:"800px",
+  margin:"auto"
+}}>
 
-        <h3>Espacio de bienestar integral</h3>
+  <h1 style={{
+    fontSize:"44px",
+    fontWeight:"500"
+  }}>
+    Centro <span style={{color:"#C6A96B"}}>NERÚA</span>
+  </h1>
 
-        <p style={{maxWidth:"750px", margin:"30px auto", lineHeight:"1.6"}}>
-          Hay síntomas y molestias que pueden parecer distintos, pero muchas veces comparten un mismo fondo: 
-          bruxismo, migrañas, tinnitus, vértigos, tensión persistente, malestar digestivo o situaciones emocionales 
-          que dejan huella en el cuerpo.
-          <br /><br />
-          En NERÚA los abordamos desde una mirada integradora, humana y profesional, teniendo en cuenta la historia 
-          de cada persona y la forma en que el cuerpo expresa lo que está ocurriendo.
-        </p>
+  <p style={{
+    fontSize:"18px",
+    marginTop:"10px",
+    color:"#6B7D6D"
+  }}>
+    Espacio de bienestar integral
+  </p>
 
-        <div style={{marginTop:"30px"}}>
-          <button style={btn}>Reservar sesión</button>
-          <button style={btnOutline}>Conocer cómo trabajamos</button>
-        </div>
-      </section>
+  <p style={{
+    marginTop:"30px",
+    lineHeight:"1.7",
+    fontSize:"16px"
+  }}>
+    Bruxismo, migrañas, tinnitus, vértigos, digestiones difíciles o estrés persistente.  
+    <br /><br />
+    A veces los síntomas parecen distintos, pero tienen un origen común.
+    <br /><br />
+    En NERÚA trabajamos desde una visión integradora para ayudarte a comprender qué está ocurriendo y recuperar equilibrio.
+  </p>
+
+  <div style={{marginTop:"40px"}}>
+    <button style={btn}>Reservar sesión</button>
+    <button style={btnOutline}>Cómo trabajamos</button>
+  </div>
+
+</section>
 
       {/* SERVICIOS */}
       <section style={section}>
