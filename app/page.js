@@ -177,7 +177,7 @@ export default function Home() {
         <p>📧 info@centronerua.com</p>
 
        <a 
-  href="https://wa.me/34637541937" 
+  href="https://wa.me/34637541937?text=Hola%20me%20gustaría%20información%20sobre%20NERÚA" 
   target="_blank"
   style={{textDecoration:"none"}}
 >
