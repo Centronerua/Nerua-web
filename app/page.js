@@ -176,17 +176,29 @@ export default function Home() {
         <p>📍 Camino de los Almendrales 35, Málaga</p>
         <p>📧 info@centronerua.com</p>
 
-       <a 
-  href="https://wa.me/34637541937?text=Hola%20me%20gustaría%20información%20sobre%20NERÚA" 
+          </section>
+
+      <a 
+  href="https://wa.me/34637541937?text=Hola%20me%20gustaría%20información%20sobre%20NERÚA"
   target="_blank"
-  style={{textDecoration:"none"}}
+  style={{
+    position: "fixed",
+    bottom: "20px",
+    right: "20px",
+    background: "#25D366",
+    color: "white",
+    borderRadius: "50px",
+    padding: "15px 20px",
+    fontSize: "16px",
+    textDecoration: "none",
+    boxShadow: "0 4px 12px rgba(0,0,0,0.2)",
+    zIndex: 1000
+  }}
 >
-  <button style={btnOutline}>
-    Escribir por WhatsApp
-  </button>
+  WhatsApp
 </a>
 
-      </section>
+
 
     </main>
   );
