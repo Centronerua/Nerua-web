@@ -151,42 +151,25 @@ export default function Home() {
 
 </section>
 
-{/* TESTIMONIOS */}
-<section style={section}>
+<Testimonial 
+  name="Begoña"
+  text="Llegué con bruxismo, mucha tensión en la mandíbula, dificultad para dormir y una sensación constante de estar en alerta. Después de las dos primeras sesiones noté una mejoría muy clara, especialmente en la tensión, y empecé a descansar mucho mejor."
+/>
 
-  <h2 style={{textAlign:"center", marginBottom:"40px"}}>
-    Testimonios
-  </h2>
+<Testimonial 
+  name="Marta"
+  text="Llevaba tiempo con ansiedad y sensación de desbordamiento sin entender qué me ocurría. El proceso me ayudó a comprender lo que estaba pasando y a empezar a regularme de una forma diferente."
+/>
 
-  <div style={{
-    display:"grid",
-    gridTemplateColumns:"repeat(auto-fit, minmax(280px, 1fr))",
-    gap:"30px"
-  }}>
+<Testimonial 
+  name="Bárbara"
+  text="Después de años con inflamación abdominal, digestiones pesadas y varios tratamientos sin resultado, me detectaron SIBO de metano y candidiasis. Tras el proceso de trabajo, repetí las pruebas y los resultados ya no mostraban esas alteraciones, además de notar una mejoría clara en los síntomas."
+/>
 
-    <Testimonial 
-      name="Begoña"
-      text="Después de la primera sesión noté un cambio importante y esa misma noche dormí mucho mejor. Estoy profundamente agradecida."
-    />
-
-    <Testimonial 
-      name="Marta"
-      text="Cuando tu vida se vuelve difícil, encontrar a alguien que te ayude a comprender lo que ocurre no tiene precio."
-    />
-
-    <Testimonial 
-      name="Bárbara"
-      text="Después de años con malestar digestivo, pude comprender el origen y mejorar mi situación de forma real."
-    />
-
-    <Testimonial 
-      name="Wilma"
-      text="Identifiqué el origen del problema y mejoré progresivamente. El acompañamiento fue muy profesional y humano."
-    />
-
-  </div>
-
-</section>
+<Testimonial 
+  name="Wilma"
+  text="Durante mucho tiempo conviví con digestiones difíciles, hinchazón y malestar constante. A través del proceso pude entender qué estaba ocurriendo y mejorar progresivamente, sintiéndome mucho más estable."
+/>
       {/* CONTACTO */}
       <section style={section}>
         <h2>Contacto</h2>
