@@ -176,7 +176,16 @@ export default function Home() {
         <p>📍 Camino de los Almendrales 35, Málaga</p>
         <p>📧 info@centronerua.com</p>
 
-        <button style={btn}>Reservar sesión</button>
+       <a 
+  href="https://wa.me/34637541937" 
+  target="_blank"
+  style={{textDecoration:"none"}}
+>
+  <button style={btnOutline}>
+    Escribir por WhatsApp
+  </button>
+</a>
+
       </section>
 
     </main>
