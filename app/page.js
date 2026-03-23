@@ -2,7 +2,7 @@ export default function Home() {
   return (
     <main style={{fontFamily:"Montserrat, sans-serif", background:"#F5F1EB", color:"#3A3A3A"}}>
 
-      {/* HEADER PREMIUM */}
+      {/* HEADER */}
       <header style={{
         position:"sticky",
         top:0,
@@ -51,11 +51,16 @@ export default function Home() {
         </p>
       </section>
 
-      {/* IMAGEN CALMA */}
+      {/* IMAGEN CONSULTA */}
       <section style={{padding:"20px", maxWidth:"900px", margin:"auto"}}>
         <img 
-          src="https://images.unsplash.com/photo-1606813907291-d86efa9b94db?q=80&w=1200"
-          style={{width:"100%", borderRadius:"16px", maxHeight:"280px", objectFit:"cover"}}
+          src="https://images.unsplash.com/photo-1580281657521-2e3f8d9c0c9a?q=80&w=1200"
+          style={{
+            width:"100%",
+            borderRadius:"16px",
+            maxHeight:"280px",
+            objectFit:"cover"
+          }}
         />
       </section>
 
@@ -103,11 +108,16 @@ export default function Home() {
         </p>
       </section>
 
-      {/* IMAGEN CONSULTA */}
+      {/* IMAGEN AMBIENTE */}
       <section style={{padding:"20px", maxWidth:"900px", margin:"auto"}}>
         <img 
-          src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=80&w=1200"
-          style={{width:"100%", borderRadius:"16px", maxHeight:"280px", objectFit:"cover"}}
+          src="https://images.unsplash.com/photo-1600334129128-685c5582fd35?q=80&w=1200"
+          style={{
+            width:"100%",
+            borderRadius:"16px",
+            maxHeight:"280px",
+            objectFit:"cover"
+          }}
         />
       </section>
 
@@ -121,12 +131,12 @@ export default function Home() {
 
         <p style={text}>
           <strong><em>José Manuel Gil Rueda</em></strong><br />
-          Especializado en regulación del sistema nervioso.
+          Psicólogo, CAFD y osteópata. Especializado en regulación del sistema nervioso y abordaje global.
         </p>
 
         <p style={text}>
           <strong><em>María José Martínez Granados</em></strong><br />
-          Nutrición digestiva integrativa.
+          Especializada en nutrición digestiva integrativa y microbiota.
         </p>
       </section>
 
@@ -137,8 +147,8 @@ export default function Home() {
         <p>📍 Málaga</p>
         <p>📧 info@centronerua.com</p>
 
-        <a href="https://wa.me/34637541937">
-          <button style={btn}>WhatsApp</button>
+        <a href="https://wa.me/34637541937" target="_blank" style={{textDecoration:"none"}}>
+          <button style={btn}>Hablar por WhatsApp</button>
         </a>
       </section>
 
@@ -159,6 +169,21 @@ function Card({title, text}) {
 /* ESTILOS */
 const section = {maxWidth:"900px", margin:"auto", padding:"80px 20px"}
 const text = {marginBottom:"20px", lineHeight:"1.6"}
-const card = {background:"white", padding:"25px", marginBottom:"20px", borderRadius:"12px", boxShadow:"0 8px 20px rgba(0,0,0,0.05)"}
-const btn = {background:"#6B7D6D", color:"white", padding:"10px 20px", borderRadius:"20px", border:"none"}
-const link = {textDecoration:"none", color:"#6B7D6D"}
+const card = {
+  background:"white",
+  padding:"25px",
+  marginBottom:"20px",
+  borderRadius:"12px",
+  boxShadow:"0 8px 20px rgba(0,0,0,0.05)"
+}
+const btn = {
+  background:"#6B7D6D",
+  color:"white",
+  padding:"10px 20px",
+  borderRadius:"20px",
+  border:"none"
+}
+const link = {
+  textDecoration:"none",
+  color:"#6B7D6D"
+}
