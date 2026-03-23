@@ -102,20 +102,31 @@ export default function Home() {
           El objetivo es generar un cambio profundo y sostenido, no solo aliviar síntomas de forma puntual.
         </p>
       </section>
+{/* IMAGEN 1 */}
+<section style={{padding:"20px", maxWidth:"900px", margin:"auto"}}>
+  <img 
+    src="https://images.unsplash.com/photo-1611078489935-0cb964de46d6?q=80&w=1200"
+    style={{
+      width:"100%",
+      borderRadius:"16px",
+      maxHeight:"260px",
+      objectFit:"cover"
+    }}
+  />
+</section>
 
-      {/* IMAGEN CONSULTA AMBIENTE */}
-      <section style={{padding:"20px", maxWidth:"900px", margin:"auto"}}>
-        <img 
-          src="https://images.unsplash.com/photo-1598257006458-087169a1f08d?q=80&w=1200"
-          style={{
-            width:"100%",
-            borderRadius:"16px",
-            maxHeight:"260px",
-            objectFit:"cover"
-          }}
-        />
-      </section>
-
+{/* IMAGEN 2 */}
+<section style={{padding:"20px", maxWidth:"900px", margin:"auto"}}>
+  <img 
+    src="https://images.unsplash.com/photo-1600566752355-35792bedcfea?q=80&w=1200"
+    style={{
+      width:"100%",
+      borderRadius:"16px",
+      maxHeight:"260px",
+      objectFit:"cover"
+    }}
+  />
+</section>
       {/* EQUIPO */}
       <section id="equipo" style={section}>
         <h2>Quiénes somos</h2>
