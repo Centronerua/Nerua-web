@@ -46,7 +46,7 @@ export default function Home() {
         </p>
       </section>
 
-     <section style={{padding:"20px", maxWidth:"900px", margin:"auto"}}>
+<section style={{padding:"40px 20px", maxWidth:"900px", margin:"auto"}}>
   <img 
     src="https://images.unsplash.com/photo-1588776814546-ec7e3d9b4d0d?q=80&w=1200"
     style={{
@@ -57,6 +57,7 @@ export default function Home() {
     }}
   />
 </section>
+
 
       {/* QUE HACEMOS */}
       <section id="quehacemos" style={section}>
@@ -101,14 +102,16 @@ export default function Home() {
           El objetivo es generar un cambio profundo y sostenido, no solo aliviar síntomas de forma puntual.
         </p>
       </section>
-<section style={{padding:"20px", maxWidth:"900px", margin:"auto"}}>
+        
+<section style={{padding:"40px 20px", maxWidth:"900px", margin:"auto"}}>
   <img 
-    src="/mnt/data/b9e578ef-d4a6-47e1-937b-3abce278fa28.png"
+    src="/vela.jpg"
     style={{
       width:"100%",
       borderRadius:"16px",
       maxHeight:"220px",
-      objectFit:"cover"
+      objectFit:"cover",
+      display:"block"
     }}
   />
 </section>
