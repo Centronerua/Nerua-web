@@ -13,17 +13,38 @@ export default function Home() {
         </p>
 
         <p style={{marginTop:"30px", lineHeight:"1.7"}}>
-          Bruxismo, migrañas, tinnitus, vértigos, digestiones difíciles o estrés persistente.
+          Bruxismo, migrañas, tinnitus, vértigos, digestiones difíciles o una sensación constante de estar en alerta.
           <br /><br />
-          A veces los síntomas parecen distintos, pero tienen un mismo origen.
+          Puede que lleves tiempo intentando entender qué te pasa y que cada síntoma parezca distinto.
           <br /><br />
-          En NERÚA abordamos estos procesos desde una visión integradora, teniendo en cuenta el sistema nervioso, el cuerpo y la historia de cada persona.
+          Pero muchas veces no lo son.
+          <br /><br />
+          En NERÚA trabajamos desde una visión integradora del cuerpo y el sistema nervioso para ayudarte a comprender qué está ocurriendo y recuperar tu equilibrio.
         </p>
 
         <div style={{marginTop:"40px"}}>
           <button style={btn}>Reservar sesión</button>
           <button style={btnOutline}>Nuestro enfoque</button>
         </div>
+      </section>
+
+      {/* BLOQUE DIFERENCIAL */}
+      <section style={section}>
+        <p style={{fontSize:"20px", lineHeight:"1.7"}}>
+          Esto no va solo de síntomas.
+        </p>
+
+        <p style={text}>
+          Cuando el cuerpo lleva tiempo adaptándose, puede empezar a expresar el malestar de diferentes formas: tensión, dolor, digestivo, ansiedad o sensaciones difíciles de explicar.
+        </p>
+
+        <p style={text}>
+          No tratamos cada parte por separado.
+        </p>
+
+        <p style={text}>
+          Trabajamos entendiendo el conjunto.
+        </p>
       </section>
 
       {/* SERVICIOS */}
@@ -33,9 +54,9 @@ export default function Home() {
         </h2>
 
         <ServiceCard title="Estrés o malestar emocional" text="Ansiedad, bloqueo o sensación de desbordamiento que afectan al día a día." />
-        <ServiceCard title="Tensión corporal y bruxismo" text="Sobrecarga en mandíbula, cuello o cuerpo relacionada con el sistema nervioso." />
-        <ServiceCard title="Tinnitus y vértigos" text="Alteraciones del equilibrio o percepción de ruido persistente." />
-        <ServiceCard title="Malestar digestivo" text="Inflamación abdominal, SIBO, digestiones difíciles o alteraciones persistentes." />
+        <ServiceCard title="Tensión corporal y bruxismo" text="Tensión acumulada en mandíbula, cuello o cuerpo asociada al sistema nervioso." />
+        <ServiceCard title="Tinnitus y vértigos" text="Alteraciones del equilibrio o percepción constante de ruido." />
+        <ServiceCard title="Malestar digestivo" text="Inflamación abdominal, SIBO o digestiones difíciles que no terminan de resolverse." />
       </section>
 
       {/* EN QUE CONSISTE */}
@@ -66,36 +87,17 @@ export default function Home() {
         <Consulta title="Nutrición digestiva integrativa" text="Abordaje de SIBO, inflamación abdominal y alteraciones digestivas desde una visión global." precio="Primera consulta: 49€ · Seguimiento: 55€" />
         <Consulta title="Acompañamiento psicológico" text="Trabajo sobre ansiedad, regulación emocional y procesos vitales complejos." precio="Primera sesión: 49€ · Sesiones posteriores: 60€" />
         <Consulta title="Regulación y bienestar" text="Intervención en bruxismo, vértigos, tinnitus o tensión persistente." precio="Primera sesión: 49€ · Sesiones posteriores: 60€" />
-
       </section>
 
-     {/* TESTIMONIOS */}
-<section style={section}>
-  <h2 style={{textAlign:"center", marginBottom:"40px"}}>
-    Testimonios
-  </h2>
+      {/* TESTIMONIOS */}
+      <section style={section}>
+        <h2 style={{textAlign:"center"}}>Testimonios</h2>
 
-  <Testimonial 
-    name="Begoña"
-    text="Llegué con bruxismo muy marcado, tensión constante en la mandíbula y dificultad para dormir. Después de las primeras sesiones la mejoría fue muy evidente y empecé a descansar mucho mejor."
-  />
-
-  <Testimonial 
-    name="Marta"
-    text="Me sentía desbordada, con ansiedad y sin entender lo que me estaba pasando. El proceso me ayudó a comprenderlo y a empezar a regularme de una forma mucho más estable."
-  />
-
-  <Testimonial 
-    name="Bárbara"
-    text="Después de años con problemas digestivos, me diagnosticaron SIBO de metano y candidiasis. Tras el tratamiento, las pruebas dejaron de mostrar esas alteraciones y los síntomas mejoraron claramente."
-  />
-
-  <Testimonial 
-    name="Wilma"
-    text="Durante mucho tiempo conviví con inflamación abdominal y malestar constante. En consulta pude entender el origen del problema y mejorar progresivamente."
-  />
-
-</section>
+        <Testimonial name="Begoña" text="Llegué con bruxismo muy marcado, tensión constante en la mandíbula y dificultad para dormir. Después de las primeras sesiones la mejoría fue muy evidente y empecé a descansar mejor." />
+        <Testimonial name="Marta" text="Me sentía desbordada, con ansiedad y sin entender lo que me estaba pasando. El proceso me ayudó a comprenderlo y a empezar a regularme de forma mucho más estable." />
+        <Testimonial name="Bárbara" text="Después de años con problemas digestivos, me diagnosticaron SIBO de metano y candidiasis. Tras el tratamiento, las pruebas dejaron de mostrar esas alteraciones y los síntomas mejoraron claramente." />
+        <Testimonial name="Wilma" text="Durante años conviví con inflamación abdominal y malestar constante. En consulta pude entender el origen del problema y empezar a mejorar de forma progresiva." />
+      </section>
 
       {/* QUIENES SOMOS */}
       <section style={section}>
@@ -112,7 +114,7 @@ export default function Home() {
 
         <p style={text}>
           <strong><em>María José Martínez Granados</em></strong><br />
-          Especializada en nutrición digestiva integrativa y microbiota, con un enfoque cercano y personalizado.
+          Especializada en nutrición digestiva integrativa y microbiota, con un enfoque cercano, riguroso y personalizado.
         </p>
       </section>
 
@@ -143,7 +145,7 @@ export default function Home() {
         </a>
       </section>
 
-      {/* BOTÓN */}
+      {/* BOTÓN FLOTANTE */}
       <a 
         href="https://wa.me/34637541937"
         target="_blank"
