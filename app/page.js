@@ -46,18 +46,19 @@ export default function Home() {
         </p>
       </section>
 
-<section style={{padding:"40px 20px", maxWidth:"900px", margin:"auto"}}>
-  <img 
-    src="https://images.pexels.com/photos/3846023/pexels-photo-3846023.jpeg"
-    style={{
-      width:"100%",
-      borderRadius:"16px",
-      maxHeight:"220px",
-      objectFit:"cover",
-      display:"block"
-    }}
-  />
-</section>
+ {/* IMAGEN CAMILLA */}
+      <section style={{padding:"40px 20px", maxWidth:"900px", margin:"auto"}}>
+        <img 
+          src="https://images.pexels.com/photos/3846023/pexels-photo-3846023.jpeg"
+          style={{
+            width:"100%",
+            borderRadius:"16px",
+            maxHeight:"220px",
+            objectFit:"cover",
+            display:"block"
+          }}
+        />
+      </section>
 
       {/* QUE HACEMOS */}
       <section id="quehacemos" style={section}>
@@ -103,18 +104,19 @@ export default function Home() {
         </p>
       </section>
 
-<section style={{padding:"40px 20px", maxWidth:"900px", margin:"auto"}}>
-  <img 
-    src="https://images.pexels.com/photos/1028723/pexels-photo-1028723.jpeg"
-    style={{
-      width:"100%",
-      borderRadius:"16px",
-      maxHeight:"220px",
-      objectFit:"cover",
-      display:"block"
-    }}
-  />
-</section>
+{/* IMAGEN VELA */}
+      <section style={{padding:"40px 20px", maxWidth:"900px", margin:"auto"}}>
+        <img 
+          src="https://images.pexels.com/photos/1028723/pexels-photo-1028723.jpeg"
+          style={{
+            width:"100%",
+            borderRadius:"16px",
+            maxHeight:"220px",
+            objectFit:"cover",
+            display:"block"
+          }}
+        />
+      </section>
       {/* EQUIPO */}
       <section id="equipo" style={section}>
         <h2>Quiénes somos</h2>
