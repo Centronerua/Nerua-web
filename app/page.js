@@ -53,7 +53,8 @@ export default function Home() {
       width:"100%",
       borderRadius:"16px",
       maxHeight:"220px",
-      objectFit:"cover"
+      objectFit:"cover",
+      display:"block"
     }}
   />
 </section>
@@ -105,7 +106,7 @@ export default function Home() {
         
 <section style={{padding:"40px 20px", maxWidth:"900px", margin:"auto"}}>
   <img 
-    src="/vela.jpg"
+    src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?q=80&w=1200"
     style={{
       width:"100%",
       borderRadius:"16px",
@@ -145,8 +146,31 @@ export default function Home() {
           <button style={btn}>Hablar por WhatsApp</button>
         </a>
       </section>
-
-    </main>
+<a
+  href="https://wa.me/34637541937"
+  target="_blank"
+  style={{
+    position: "fixed",
+    bottom: "20px",
+    right: "20px",
+    background: "#25D366",
+    color: "white",
+    borderRadius: "30px",
+    padding: "12px 18px",
+    fontSize: "14px",
+    fontWeight: "500",
+    textDecoration: "none",
+    boxShadow: "0 6px 16px rgba(0,0,0,0.15)",
+    zIndex: 1000,
+    display: "flex",
+    alignItems: "center",
+    gap: "8px"
+  }}
+>
+  WhatsApp
+</a>
+   
+        </main>
   );
 }
 
