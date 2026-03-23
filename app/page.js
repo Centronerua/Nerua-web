@@ -46,18 +46,17 @@ export default function Home() {
         </p>
       </section>
 
-      {/* IMAGEN CONSULTA REAL */}
-      <section style={{padding:"20px", maxWidth:"900px", margin:"auto"}}>
-        <img 
-          src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&w=1200"
-          style={{
-            width:"100%",
-            borderRadius:"16px",
-            maxHeight:"260px",
-            objectFit:"cover"
-          }}
-        />
-      </section>
+     <section style={{padding:"20px", maxWidth:"900px", margin:"auto"}}>
+  <img 
+    src="https://images.unsplash.com/photo-1588776814546-ec7e3d9b4d0d?q=80&w=1200"
+    style={{
+      width:"100%",
+      borderRadius:"16px",
+      maxHeight:"220px",
+      objectFit:"cover"
+    }}
+  />
+</section>
 
       {/* QUE HACEMOS */}
       <section id="quehacemos" style={section}>
@@ -102,27 +101,13 @@ export default function Home() {
           El objetivo es generar un cambio profundo y sostenido, no solo aliviar síntomas de forma puntual.
         </p>
       </section>
-{/* IMAGEN 1 */}
 <section style={{padding:"20px", maxWidth:"900px", margin:"auto"}}>
   <img 
-    src="https://images.unsplash.com/photo-1611078489935-0cb964de46d6?q=80&w=1200"
+    src="/mnt/data/b9e578ef-d4a6-47e1-937b-3abce278fa28.png"
     style={{
       width:"100%",
       borderRadius:"16px",
-      maxHeight:"260px",
-      objectFit:"cover"
-    }}
-  />
-</section>
-
-{/* IMAGEN 2 */}
-<section style={{padding:"20px", maxWidth:"900px", margin:"auto"}}>
-  <img 
-    src="https://images.unsplash.com/photo-1600566752355-35792bedcfea?q=80&w=1200"
-    style={{
-      width:"100%",
-      borderRadius:"16px",
-      maxHeight:"260px",
+      maxHeight:"220px",
       objectFit:"cover"
     }}
   />
