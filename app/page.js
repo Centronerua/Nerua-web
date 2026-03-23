@@ -48,7 +48,7 @@ export default function Home() {
 
 <section style={{padding:"40px 20px", maxWidth:"900px", margin:"auto"}}>
   <img 
-    src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?q=80&w=1200"
+    src="https://images.pexels.com/photos/3846023/pexels-photo-3846023.jpeg"
     style={{
       width:"100%",
       borderRadius:"16px",
@@ -102,9 +102,10 @@ export default function Home() {
           El objetivo es generar un cambio profundo y sostenido, no solo aliviar síntomas de forma puntual.
         </p>
       </section>
+
 <section style={{padding:"40px 20px", maxWidth:"900px", margin:"auto"}}>
   <img 
-    src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?q=80&w=1200"
+    src="https://images.pexels.com/photos/1028723/pexels-photo-1028723.jpeg"
     style={{
       width:"100%",
       borderRadius:"16px",
