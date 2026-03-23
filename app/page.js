@@ -47,9 +47,9 @@ export default function Home() {
       </section>
 
  {/* IMAGEN CAMILLA */}
- <section style={{padding:"40px 20px", maxWidth:"900px", margin:"auto"}}>
+<section style={{padding:"40px 20px", maxWidth:"900px", margin:"auto"}}>
   <img 
-    src="https://images.pexels.com/photos/3846023/pexels-photo-3846023.jpeg"
+    src="https://images.pexels.com/photos/6627436/pexels-photo-6627436.jpeg"
     style={{
       width:"100%",
       borderRadius:"16px",
@@ -59,7 +59,6 @@ export default function Home() {
     }}
   />
 </section>
-
       {/* QUE HACEMOS */}
       <section id="quehacemos" style={section}>
         <h2>Qué hacemos</h2>
