@@ -69,26 +69,33 @@ export default function Home() {
 
       </section>
 
-      {/* TESTIMONIOS */}
-      <section style={section}>
-        <h2 style={{textAlign:"center"}}>Testimonios</h2>
+     {/* TESTIMONIOS */}
+<section style={section}>
+  <h2 style={{textAlign:"center", marginBottom:"40px"}}>
+    Testimonios
+  </h2>
 
-        <Testimonial 
-          name="Begoña"
-          text="Llegué con bruxismo muy marcado, tensión constante y dificultad para dormir. Después de pocas sesiones la mejoría fue muy evidente y empecé a descansar mejor."
-        />
+  <Testimonial 
+    name="Begoña"
+    text="Llegué con bruxismo muy marcado, tensión constante en la mandíbula y dificultad para dormir. Después de las primeras sesiones la mejoría fue muy evidente y empecé a descansar mucho mejor."
+  />
 
-        <Testimonial 
-          name="Bárbara"
-          text="Tras años con problemas digestivos, me diagnosticaron SIBO de metano y candidiasis. Después del tratamiento, las pruebas dejaron de mostrar esas alteraciones y los síntomas mejoraron de forma clara."
-        />
+  <Testimonial 
+    name="Marta"
+    text="Me sentía desbordada, con ansiedad y sin entender lo que me estaba pasando. El proceso me ayudó a comprenderlo y a empezar a regularme de una forma mucho más estable."
+  />
 
-        <Testimonial 
-          name="Wilma"
-          text="Durante años conviví con inflamación abdominal y malestar constante. En consulta pude entender el origen del problema y empezar a mejorar de forma progresiva."
-        />
+  <Testimonial 
+    name="Bárbara"
+    text="Después de años con problemas digestivos, me diagnosticaron SIBO de metano y candidiasis. Tras el tratamiento, las pruebas dejaron de mostrar esas alteraciones y los síntomas mejoraron claramente."
+  />
 
-      </section>
+  <Testimonial 
+    name="Wilma"
+    text="Durante mucho tiempo conviví con inflamación abdominal y malestar constante. En consulta pude entender el origen del problema y mejorar progresivamente."
+  />
+
+</section>
 
       {/* QUIENES SOMOS */}
       <section style={section}>
