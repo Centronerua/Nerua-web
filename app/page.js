@@ -14,23 +14,18 @@ export default function Home() {
         <nav style={{
           display:"flex",
           justifyContent:"space-between",
-          alignItems:"center",
           maxWidth:"1100px",
           margin:"auto"
         }}>
+          <strong>NERÚA</strong>
 
-          <div style={{fontSize:"18px", letterSpacing:"2px"}}>
-            <strong>NERÚA</strong>
-          </div>
-
-          <div style={{display:"flex", gap:"30px", fontSize:"14px"}}>
+          <div style={{display:"flex", gap:"30px"}}>
             <a href="#quehacemos" style={link}>Qué hacemos</a>
             <a href="#servicios" style={link}>Servicios</a>
             <a href="#proceso" style={link}>Proceso</a>
             <a href="#equipo" style={link}>Equipo</a>
             <a href="#contacto" style={link}>Contacto</a>
           </div>
-
         </nav>
       </header>
 
@@ -45,20 +40,20 @@ export default function Home() {
         <p style={{marginTop:"30px", lineHeight:"1.7"}}>
           Bruxismo, migrañas, tinnitus, vértigos, digestiones difíciles o una sensación constante de estar en alerta.
           <br /><br />
-          Puede que lleves tiempo intentando entender qué te pasa.
+          Puede que lleves tiempo intentando entender qué te pasa y que cada síntoma parezca distinto.
           <br /><br />
-          En NERÚA trabajamos desde una visión integradora del cuerpo y el sistema nervioso para ayudarte a recuperar tu equilibrio.
+          En NERÚA trabajamos desde una visión integradora del cuerpo y el sistema nervioso para ayudarte a comprender qué está ocurriendo y recuperar tu equilibrio.
         </p>
       </section>
 
-      {/* IMAGEN CONSULTA */}
+      {/* IMAGEN CONSULTA REAL */}
       <section style={{padding:"20px", maxWidth:"900px", margin:"auto"}}>
         <img 
-          src="https://images.unsplash.com/photo-1580281657521-2e3f8d9c0c9a?q=80&w=1200"
+          src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&w=1200"
           style={{
             width:"100%",
             borderRadius:"16px",
-            maxHeight:"280px",
+            maxHeight:"260px",
             objectFit:"cover"
           }}
         />
@@ -73,11 +68,11 @@ export default function Home() {
         </p>
 
         <p style={text}>
-          Muchos síntomas no aparecen de forma aislada, sino que forman parte de procesos más amplios que el cuerpo ha ido desarrollando con el tiempo.
+          Muchos síntomas no aparecen de forma aislada, sino que forman parte de procesos más amplios que el organismo ha ido desarrollando con el tiempo.
         </p>
 
         <p style={text}>
-          Nuestro trabajo consiste en entender qué está sosteniendo ese proceso y acompañarte en un cambio real.
+          Nuestro trabajo consiste en entender qué está sosteniendo ese proceso y acompañar a la persona en un cambio real y progresivo.
         </p>
       </section>
 
@@ -85,10 +80,10 @@ export default function Home() {
       <section id="servicios" style={section}>
         <h2>Servicios</h2>
 
-        <Card title="Estrés y malestar emocional" text="Ansiedad, bloqueo o sensación de desbordamiento." />
-        <Card title="Tensión corporal y bruxismo" text="Sobrecarga física relacionada con el sistema nervioso." />
-        <Card title="Tinnitus y vértigos" text="Alteraciones del equilibrio o ruido persistente." />
-        <Card title="Malestar digestivo" text="SIBO, inflamación abdominal o digestiones difíciles." />
+        <Card title="Estrés y malestar emocional" text="Ansiedad, bloqueo o sensación de desbordamiento que afectan al día a día." />
+        <Card title="Tensión corporal y bruxismo" text="Sobrecarga en mandíbula, cuello o cuerpo asociada al sistema nervioso." />
+        <Card title="Tinnitus y vértigos" text="Alteraciones del equilibrio o percepción de ruido persistente." />
+        <Card title="Malestar digestivo" text="Inflamación abdominal, SIBO o digestiones difíciles que no terminan de resolverse." />
       </section>
 
       {/* PROCESO */}
@@ -96,26 +91,26 @@ export default function Home() {
         <h2>Cómo trabajamos</h2>
 
         <p style={text}>
-          Analizamos cada caso de forma individual para entender cómo está funcionando el sistema nervioso.
+          Analizamos cada caso de forma individual para entender cómo está funcionando el sistema nervioso y qué factores están influyendo en el mantenimiento del problema.
         </p>
 
         <p style={text}>
-          Combinamos trabajo corporal, regulación del sistema nervioso y acompañamiento emocional.
+          A partir de ahí, combinamos trabajo corporal, regulación del sistema nervioso y acompañamiento emocional o digestivo según cada persona.
         </p>
 
         <p style={text}>
-          El objetivo es un cambio profundo y sostenido, no solo aliviar síntomas.
+          El objetivo es generar un cambio profundo y sostenido, no solo aliviar síntomas de forma puntual.
         </p>
       </section>
 
-      {/* IMAGEN AMBIENTE */}
+      {/* IMAGEN CONSULTA AMBIENTE */}
       <section style={{padding:"20px", maxWidth:"900px", margin:"auto"}}>
         <img 
-          src="https://images.unsplash.com/photo-1600334129128-685c5582fd35?q=80&w=1200"
+          src="https://images.unsplash.com/photo-1598257006458-087169a1f08d?q=80&w=1200"
           style={{
             width:"100%",
             borderRadius:"16px",
-            maxHeight:"280px",
+            maxHeight:"260px",
             objectFit:"cover"
           }}
         />
@@ -125,18 +120,18 @@ export default function Home() {
       <section id="equipo" style={section}>
         <h2>Quiénes somos</h2>
 
-        <p style={text}>
-          En NERÚA trabajamos desde una visión integradora donde cuerpo y sistema nervioso están conectados.
+        <p style={{maxWidth:"700px", lineHeight:"1.7"}}>
+          NERÚA nace de la necesidad de abordar la salud desde una mirada más amplia, donde sistema nervioso, cuerpo y experiencia están conectados.
         </p>
 
         <p style={text}>
           <strong><em>José Manuel Gil Rueda</em></strong><br />
-          Psicólogo, CAFD y osteópata. Especializado en regulación del sistema nervioso y abordaje global.
+          Psicólogo, CAFD y osteópata. Especializado en regulación del sistema nervioso y en el abordaje de síntomas persistentes desde un enfoque global.
         </p>
 
         <p style={text}>
           <strong><em>María José Martínez Granados</em></strong><br />
-          Especializada en nutrición digestiva integrativa y microbiota.
+          Especializada en nutrición digestiva integrativa y microbiota, trabajando desde una visión funcional, cercana y personalizada.
         </p>
       </section>
 
