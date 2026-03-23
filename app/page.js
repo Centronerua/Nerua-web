@@ -2,299 +2,192 @@ export default function Home() {
   return (
     <main style={{fontFamily: "Montserrat, sans-serif", background:"#F5F1EB", color:"#3A3A3A"}}>
 
-     {/* HERO */}
-<section style={{
-  textAlign:"center",
-  padding:"120px 20px",
-  maxWidth:"800px",
-  margin:"auto"
-}}>
+      {/* HERO */}
+      <section style={{
+        textAlign:"center",
+        padding:"140px 20px",
+        maxWidth:"900px",
+        margin:"auto",
+        backgroundImage:"url('https://images.unsplash.com/photo-1556228720-195a672e8a03?q=80&w=1200')",
+        backgroundSize:"cover",
+        backgroundPosition:"center",
+        borderRadius:"20px"
+      }}>
 
-  <h1 style={{
-    fontSize:"44px",
-    fontWeight:"500"
-  }}>
-    Centro <span style={{color:"#C6A96B"}}>NERÚA</span>
-  </h1>
+        <div style={{background:"rgba(245,241,235,0.9)", padding:"40px", borderRadius:"20px"}}>
 
-  <p style={{
-    fontSize:"18px",
-    marginTop:"10px",
-    color:"#6B7D6D"
-  }}>
-    Espacio de bienestar integral
-  </p>
+          <h1 style={{fontSize:"44px", fontWeight:"500"}}>
+            Centro <span style={{color:"#C6A96B"}}>NERÚA</span>
+          </h1>
 
-  <p style={{
-    marginTop:"30px",
-    lineHeight:"1.7",
-    fontSize:"16px"
-  }}>
-    Bruxismo, migrañas, tinnitus, vértigos, digestiones difíciles o estrés persistente.  
-    <br /><br />
-    A veces los síntomas parecen distintos, pero tienen un origen común.
-    <br /><br />
-    En NERÚA trabajamos desde una visión integradora para ayudarte a comprender qué está ocurriendo y recuperar equilibrio.
-  </p>
+          <p style={{color:"#6B7D6D", marginTop:"10px"}}>
+            Espacio de bienestar integral
+          </p>
 
-  <div style={{marginTop:"40px"}}>
-    <button style={btn}>Reservar sesión</button>
-    <button style={btnOutline}>Cómo trabajamos</button>
-  </div>
+          <p style={{marginTop:"30px", lineHeight:"1.7"}}>
+            Bruxismo, migrañas, tinnitus, vértigos, digestiones difíciles o estrés persistente.
+            <br /><br />
+            A veces los síntomas parecen distintos, pero tienen un mismo origen.
+            <br /><br />
+            En NERÚA trabajamos desde una visión integradora para ayudarte a comprender qué está ocurriendo y recuperar tu equilibrio.
+          </p>
 
-</section>
+          <div style={{marginTop:"40px"}}>
+            <button style={btn}>Reservar sesión</button>
+            <button style={btnOutline}>Nuestro enfoque</button>
+          </div>
+
+        </div>
+      </section>
 
       {/* SERVICIOS */}
       <section style={section}>
-        <h2>¿En qué podemos ayudarte?</h2>
+        <h2 style={{textAlign:"center", marginBottom:"40px"}}>
+          ¿En qué podemos ayudarte?
+        </h2>
 
-        <Card 
-          title="Malestar digestivo"
-          text="Inflamación abdominal, digestiones difíciles o alteraciones digestivas persistentes que afectan al bienestar diario."
-        />
-
-        <Card 
-          title="Tensión corporal y bruxismo"
-          text="Tensión acumulada en mandíbula, cuello o cuerpo asociada al estrés o a situaciones mantenidas en el tiempo."
-        />
-
-        <Card 
-          title="Tinnitus y vértigos"
-          text="Molestias relacionadas con el equilibrio o la percepción constante de ruido en el oído."
-        />
-
-        <Card 
-          title="Estrés o malestar emocional"
-          text="Momentos vitales que generan inquietud, bloqueo o sensación de desbordamiento."
-        />
+        <ServiceCard title="Estrés o malestar emocional" text="Situaciones que generan ansiedad, bloqueo o sensación de desbordamiento." />
+        <ServiceCard title="Tensión corporal y bruxismo" text="Tensión acumulada en mandíbula, cuello o cuerpo asociada al estrés." />
+        <ServiceCard title="Tinnitus y vértigos" text="Molestias relacionadas con el equilibrio o la percepción de ruido." />
+        <ServiceCard title="Malestar digestivo" text="Inflamación abdominal, digestiones difíciles o alteraciones persistentes." />
       </section>
 
+      {/* COMO TRABAJAMOS */}
       <section style={section}>
-  <h2>Cómo trabajamos</h2>
+        <h2>Cómo trabajamos</h2>
 
-  <p style={text}>
-    En NERÚA entendemos el bienestar como un proceso que requiere escuchar, comprender y abordar cada situación de manera individual.
-  </p>
+        <p style={text}>
+          En NERÚA entendemos el bienestar como un proceso que requiere escuchar, comprender y abordar cada situación de forma individual.
+        </p>
 
-  <p style={text}>
-    Muchas veces los síntomas aparecen en lugares distintos —la mandíbula, el sistema digestivo, el oído o el propio cuerpo—, pero forman parte de procesos que necesitan ser comprendidos en conjunto.
-  </p>
+        <p style={text}>
+          Muchas veces los síntomas aparecen en lugares distintos, pero forman parte de procesos que necesitan ser comprendidos en conjunto.
+        </p>
 
-  <p style={text}>
-    Por eso trabajamos desde una mirada integradora, teniendo en cuenta la historia de cada persona, su momento vital y la forma en que el cuerpo expresa lo que está ocurriendo.
-  </p>
+        <p style={text}>
+          Trabajamos desde una visión integradora, teniendo en cuenta la historia de cada persona, para ayudarte a recuperar equilibrio de forma progresiva y sostenible.
+        </p>
+      </section>
 
-  <p style={text}>
-    Nuestro objetivo es acompañarte a comprender mejor lo que te sucede y ayudarte a recuperar equilibrio y bienestar de forma progresiva y sostenible.
-  </p>
-            
-<section style={section}>
-  <h2>Tipos de consulta</h2>
+      {/* TIPOS DE CONSULTA */}
+      <section style={section}>
+        <h2>Tipos de consulta</h2>
 
-  <div style={{marginBottom:"30px"}}>
-    <h3>Nutrición digestiva integrativa</h3>
-    <p style={text}>
-      Orientado a personas con inflamación abdominal, digestiones difíciles, SIBO u otras alteraciones digestivas.
-    </p>
-    <p style={{fontWeight:"500"}}>
-      Primera consulta: 49€ · Seguimiento: 55€
-    </p>
-  </div>
+        <Consulta title="Nutrición digestiva integrativa" text="Inflamación abdominal, SIBO o digestiones difíciles." precio="Primera consulta: 49€ · Seguimiento: 55€" />
+        <Consulta title="Acompañamiento psicológico" text="Ansiedad, bloqueo o malestar emocional." precio="Primera sesión: 49€ · Sesiones posteriores: 60€" />
+        <Consulta title="Regulación y bienestar" text="Bruxismo, vértigos, tinnitus o tensión persistente." precio="Primera sesión: 49€ · Sesiones posteriores: 60€" />
 
-  <div style={{marginBottom:"30px"}}>
-    <h3>Acompañamiento psicológico</h3>
-    <p style={text}>
-      Espacio para abordar ansiedad, bloqueo emocional o situaciones vitales complejas.
-    </p>
-    <p style={{fontWeight:"500"}}>
-      Primera sesión: 49€ · Sesiones posteriores: 60€
-    </p>
-  </div>
+        <p style={{marginTop:"20px", fontStyle:"italic"}}>
+          También puedes consultar nuestros bonos de sesiones.
+        </p>
+      </section>
 
-  <div style={{marginBottom:"30px"}}>
-    <h3>Regulación y bienestar</h3>
-    <p style={text}>
-      Sesiones orientadas a síntomas como bruxismo, tinnitus, vértigos, migrañas o tensión persistente.
-    </p>
-    <p style={{fontWeight:"500"}}>
-      Primera sesión: 49€ · Sesiones posteriores: 60€
-    </p>
-  </div>
+      {/* TESTIMONIOS */}
+      <section style={section}>
+        <h2 style={{textAlign:"center"}}>Testimonios</h2>
 
-  <p style={{marginTop:"20px", fontStyle:"italic"}}>
-    También puedes consultar nuestros bonos de sesiones.
-  </p>
+        <Testimonial name="Begoña" text="Después de las primeras sesiones mejoró mucho el bruxismo y empecé a descansar mejor." />
+        <Testimonial name="Bárbara" text="Tras tratar SIBO de metano y candidiasis, las pruebas ya no mostraban alteraciones." />
+        <Testimonial name="Marta" text="Me ayudó a comprender lo que me pasaba y a regularme." />
+      </section>
 
-</section>
+      {/* QUIENES SOMOS */}
+      <section style={section}>
+        <h2>Quiénes somos</h2>
 
-</section>
-     {/* QUIENES SOMOS */}
-<section style={section}>
+        <p style={{maxWidth:"700px"}}>
+          En NERÚA trabajamos desde una visión integradora del bienestar, donde cuerpo y sistema nervioso están conectados.
+        </p>
 
-  <h2 style={{textAlign:"center", marginBottom:"50px"}}>
-    Quiénes somos
-  </h2>
+        <p style={text}>
+          <strong><em>José Manuel Gil Rueda</em></strong><br />
+          Psicólogo, CAFD y osteópata. Especializado en regulación del sistema nervioso.
+        </p>
 
-  <div style={{
-    display:"grid",
-    gridTemplateColumns:"repeat(auto-fit, minmax(280px, 1fr))",
-    gap:"40px"
-  }}>
+        <p style={text}>
+          <strong><em>María José Martínez Granados</em></strong><br />
+          Especializada en nutrición digestiva integrativa y microbiota.
+        </p>
+      </section>
 
-    {/* JOSE */}
-    <div style={cardStyle}>
-      <h3 style={{marginBottom:"10px"}}>
-        José Manuel Gil Rueda
-      </h3>
+      {/* RESERVA */}
+      <section style={{textAlign:"center", padding:"100px 20px"}}>
+        <h2>Empieza tu proceso</h2>
 
-      <p style={{fontStyle:"italic", marginBottom:"15px", color:"#6B7D6D"}}>
-        Psicólogo · CAFD · Osteópata
-      </p>
+        <p style={{maxWidth:"600px", margin:"auto"}}>
+          Puedes elegir el tipo de consulta o escribirnos para orientarte.
+        </p>
 
-      <p style={text}>
-        Especializado en enfoques integrativos centrados en la regulación del sistema nervioso y el bienestar global.
-      </p>
+        <div style={{marginTop:"30px"}}>
+          <button style={btn}>Nutrición digestiva</button>
+          <button style={btn}>Psicología</button>
+          <button style={btn}>Regulación</button>
+        </div>
+      </section>
 
-      <p style={text}>
-        Combina conocimiento técnico, experiencia clínica y una mirada cercana para comprender los procesos que hay detrás de los síntomas persistentes.
-      </p>
-    </div>
+      {/* CURSOS */}
+      <section style={section}>
+        <h2>Cursos y recursos</h2>
+        <p style={text}>
+          Próximamente contenidos sobre salud digestiva, estrés y bienestar.
+        </p>
+      </section>
 
-    {/* MARIA JOSE */}
-    <div style={cardStyle}>
-      <h3 style={{marginBottom:"10px"}}>
-        María José Martínez Granados
-      </h3>
-
-      <p style={{fontStyle:"italic", marginBottom:"15px", color:"#6B7D6D"}}>
-        Nutrición digestiva integrativa
-      </p>
-
-      <p style={text}>
-        Especializada en salud digestiva, microbiota y abordaje integrativo de alteraciones digestivas.
-      </p>
-
-      <p style={text}>
-        Acompaña a las personas desde una visión global, combinando rigor, cercanía y personalización en cada proceso.
-      </p>
-    </div>
-
-  </div>
-
-</section>
-
-<Testimonial 
-  name="Begoña"
-  text="Llegué con bruxismo, mucha tensión en la mandíbula, dificultad para dormir y una sensación constante de estar en alerta. Después de las dos primeras sesiones noté una mejoría muy clara, especialmente en la tensión, y empecé a descansar mucho mejor."
-/>
-
-<Testimonial 
-  name="Marta"
-  text="Llevaba tiempo con ansiedad y sensación de desbordamiento sin entender qué me ocurría. El proceso me ayudó a comprender lo que estaba pasando y a empezar a regularme de una forma diferente."
-/>
-
-<Testimonial 
-  name="Bárbara"
-  text="Después de años con inflamación abdominal, digestiones pesadas y varios tratamientos sin resultado, me detectaron SIBO de metano y candidiasis. Tras el proceso de trabajo, repetí las pruebas y los resultados ya no mostraban esas alteraciones, además de notar una mejoría clara en los síntomas."
-/>
-
-<Testimonial 
-  name="Wilma"
-  text="Durante mucho tiempo conviví con digestiones difíciles, hinchazón y malestar constante. A través del proceso pude entender qué estaba ocurriendo y mejorar progresivamente, sintiéndome mucho más estable."
-/>
       {/* CONTACTO */}
       <section style={section}>
         <h2>Contacto</h2>
-        <p>📍 Camino de los Almendrales 35, Málaga</p>
+        <p>📍 AFA Málaga · Camino de los Almendrales 35</p>
         <p>📧 info@centronerua.com</p>
 
-          </section>
+        <a href="https://wa.me/34637541937" target="_blank" style={{textDecoration:"none"}}>
+          <button style={btn}>Hablar por WhatsApp</button>
+        </a>
+      </section>
 
+      {/* FOOTER */}
+      <footer style={{textAlign:"center", padding:"40px", color:"#777"}}>
+        <p>Centro NERÚA · Málaga</p>
+        <p>© Centro NERÚA</p>
+      </footer>
+
+      {/* BOTÓN FLOTANTE */}
       <a 
-  href="https://wa.me/34637541937?text=Hola%20me%20gustaría%20información%20sobre%20NERÚA"
-  target="_blank"
-  style={{
-    position: "fixed",
-    bottom: "20px",
-    right: "20px",
-    background: "#25D366",
-    color: "white",
-    borderRadius: "50px",
-    padding: "15px 20px",
-    fontSize: "16px",
-    textDecoration: "none",
-    boxShadow: "0 4px 12px rgba(0,0,0,0.2)",
-    zIndex: 1000
-  }}
->
-  WhatsApp
-</a>
-
-
+        href="https://wa.me/34637541937"
+        target="_blank"
+        style={{
+          position: "fixed",
+          bottom: "20px",
+          right: "20px",
+          background: "#25D366",
+          color: "white",
+          borderRadius: "50px",
+          padding: "15px 20px",
+          textDecoration: "none"
+        }}
+      >
+        Escríbenos
+      </a>
 
     </main>
   );
 }
 
-/* COMPONENTE */
-function Card({title, text}) {
-  return (
-    <div style={{marginBottom:"25px"}}>
-      <h3>{title}</h3>
-      <p>{text}</p>
-    </div>
-  )
+/* COMPONENTES */
+function ServiceCard({title, text}) {
+  return <div style={card}><h3>{title}</h3><p>{text}</p></div>
+}
+
+function Consulta({title, text, precio}) {
+  return <div style={card}><h3>{title}</h3><p>{text}</p><p style={{fontWeight:"500"}}>{precio}</p></div>
+}
+
+function Testimonial({name, text}) {
+  return <div style={card}><p style={{fontStyle:"italic"}}>"{text}"</p><strong>{name}</strong></div>
 }
 
 /* ESTILOS */
-const section = {
-  maxWidth:"900px",
-  margin:"auto",
-  padding:"60px 20px"
-}
-
-const text = {
-  lineHeight:"1.6",
-  marginBottom:"20px"
-}
-
-const btn = {
-  background:"#6B7D6D",
-  color:"white",
-  padding:"12px 24px",
-  borderRadius:"30px",
-  border:"none",
-  margin:"10px",
-  cursor:"pointer"
-}
-
-const btnOutline = {
-  background:"transparent",
-  color:"#6B7D6D",
-  padding:"12px 24px",
-  borderRadius:"30px",
-  border:"1px solid #6B7D6D",
-  margin:"10px",
-  cursor:"pointer"
-}
-const cardStyle = {
-  background:"white",
-  padding:"30px",
-  borderRadius:"12px",
-  boxShadow:"0 5px 15px rgba(0,0,0,0.05)"
-}
-function Testimonial({name, text}) {
-  return (
-    <div style={{
-      background:"white",
-      padding:"25px",
-      borderRadius:"12px",
-      boxShadow:"0 5px 15px rgba(0,0,0,0.05)"
-    }}>
-      <p style={{fontStyle:"italic", marginBottom:"15px"}}>
-        “{text}”
-      </p>
-      <strong>{name}</strong>
-    </div>
-  )
-}
+const section = {maxWidth:"900px", margin:"auto", padding:"80px 20px"}
+const text = {lineHeight:"1.6", marginBottom:"20px"}
+const card = {background:"white", padding:"25px", marginBottom:"25px", borderRadius:"12px", boxShadow:"0 5px 15px rgba(0,0,0,0.05)"}
+const btn = {background:"#6B7D6D", color:"white", padding:"12px 24px", borderRadius:"30px", border:"none", margin:"10px"}
+const btnOutline = {background:"transparent", color:"#6B7D6D", padding:"12px 24px", borderRadius:"30px", border:"1px solid #6B7D6D", margin:"10px"}
