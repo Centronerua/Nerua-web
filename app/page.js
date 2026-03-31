@@ -1,4 +1,4 @@
-// app/page.tsx
+// app/page.js
 export default function Home() {
   return (
     <main style={{ fontFamily: "Montserrat, sans-serif", background: "#F5F1EB", color: "#3A3A3A" }}>
@@ -56,22 +56,23 @@ export default function Home() {
         </div>
       </section>
 
-<section style={{ padding: "0 20px 40px", maxWidth: "950px", margin: "auto" }}>
-  <img
-    src="/images/Hero-sillon.webp"
-    alt="Centro Nerúa - espacio terapéutico"
-    style={{
-      width: "100%",
-      borderRadius: "18px",
-      maxHeight: "320px",
-      objectFit: "cover",
-      display: "block",
-      boxShadow: "0 12px 30px rgba(0,0,0,0.08)"
-    }}
-  />
-</section>
+      {/* HERO IMAGE */}
+      <section style={{ padding: "0 20px 40px", maxWidth: "950px", margin: "auto" }}>
+        <img
+          src="/images/Hero-sillon.webp"
+          alt="Centro Nerúa - espacio terapéutico"
+          style={{
+            width: "100%",
+            borderRadius: "18px",
+            maxHeight: "320px",
+            objectFit: "cover",
+            display: "block",
+            boxShadow: "0 12px 30px rgba(0,0,0,0.08)",
+          }}
+        />
+      </section>
 
-         {/* QUÉ HACEMOS */}
+      {/* QUÉ HACEMOS */}
       <section id="quehacemos" style={section}>
         <h2>Qué hacemos</h2>
 
@@ -88,7 +89,7 @@ export default function Home() {
         </p>
       </section>
 
-      {/* QUÉ TRATAMOS vs CÓMO TRABAJAMOS (BLOQUE CLAVE) */}
+      {/* QUÉ TRATAMOS vs CÓMO TRABAJAMOS */}
       <section id="tratamos" style={section}>
         <h2>Qué tratamos y cómo lo trabajamos</h2>
 
@@ -123,9 +124,9 @@ export default function Home() {
             </ul>
           </div>
         </div>
-
       </section>
 
+      {/* IMAGEN CALMA */}
       <section style={{ padding: "0 20px 70px", maxWidth: "950px", margin: "auto" }}>
         <img
           src="/images/espacio-consulta.webp"
@@ -136,12 +137,12 @@ export default function Home() {
             maxHeight: "260px",
             objectFit: "cover",
             display: "block",
-            boxShadow: "0 12px 30px rgba(0,0,0,0.06)"
+            boxShadow: "0 12px 30px rgba(0,0,0,0.06)",
           }}
         />
       </section>
 
-      {/* TERAPIAS / SERVICIOS EXPLICADOS (lo que faltaba) */}
+      {/* TERAPIAS / SERVICIOS */}
       <section id="servicios" style={section}>
         <h2>Terapias y áreas de acompañamiento</h2>
 
@@ -184,7 +185,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* CÓMO TRABAJAMOS (resumen claro, sin repetir demasiado) */}
+      {/* CÓMO TRABAJAMOS */}
       <section id="metodo" style={section}>
         <h2>Cómo trabajamos</h2>
 
@@ -208,7 +209,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* PROCESO (tu bloque ya estaba bien, lo dejo pero más compacto) */}
+      {/* PROCESO */}
       <section id="proceso" style={section}>
         <h2>Proceso</h2>
 
@@ -219,20 +220,21 @@ export default function Home() {
         </div>
       </section>
 
-<section style={{ padding: "0 20px 60px", maxWidth: "950px", margin: "auto" }}>
-  <img
-    src="/images/detalle-mesa-planta.webp"
-    alt="Centro Nerúa - espacio cuidado"
-    style={{
-      width: "100%",
-      borderRadius: "18px",
-      maxHeight: "260px",
-      objectFit: "cover",
-      display: "block",
-      boxShadow: "0 12px 30px rgba(0,0,0,0.06)"
-    }}
-  />
-</section>
+      {/* IMAGEN DETALLE */}
+      <section style={{ padding: "0 20px 60px", maxWidth: "950px", margin: "auto" }}>
+        <img
+          src="/images/detalle-mesa-planta.webp"
+          alt="Centro Nerúa - espacio cuidado"
+          style={{
+            width: "100%",
+            borderRadius: "18px",
+            maxHeight: "260px",
+            objectFit: "cover",
+            display: "block",
+            boxShadow: "0 12px 30px rgba(0,0,0,0.06)",
+          }}
+        />
+      </section>
 
       {/* EQUIPO */}
       <section id="equipo" style={section}>
@@ -266,7 +268,7 @@ export default function Home() {
         <p style={{ marginBottom: 6 }}>📍 Málaga</p>
         <p style={{ marginTop: 0 }}>📧 info@centronerua.com</p>
 
-        <a href="https://wa.me/34637541937" target="_blank" style={{ textDecoration: "none" }}>
+        <a href="https://wa.me/34637541937" target="_blank" rel="noreferrer" style={{ textDecoration: "none" }}>
           <button style={btn}>Hablar por WhatsApp</button>
         </a>
       </section>
@@ -275,6 +277,7 @@ export default function Home() {
       <a
         href="https://wa.me/34637541937"
         target="_blank"
+        rel="noreferrer"
         style={{
           position: "fixed",
           bottom: "20px",
@@ -300,7 +303,7 @@ export default function Home() {
 }
 
 /* COMPONENTES */
-function Card({ title, text }: { title: string; text: string }) {
+function Card({ title, text }) {
   return (
     <div style={card}>
       <h3 style={{ marginTop: 0 }}>{title}</h3>
@@ -309,7 +312,7 @@ function Card({ title, text }: { title: string; text: string }) {
   );
 }
 
-function MiniCard({ title, text }: { title: string; text: string }) {
+function MiniCard({ title, text }) {
   return (
     <div style={{ ...card, padding: 20 }}>
       <h3 style={{ marginTop: 0, fontSize: 18 }}>{title}</h3>
@@ -318,7 +321,7 @@ function MiniCard({ title, text }: { title: string; text: string }) {
   );
 }
 
-function Step({ title, text }: { title: string; text: string }) {
+function Step({ title, text }) {
   return (
     <div style={card}>
       <h3 style={{ marginTop: 0 }}>{title}</h3>
@@ -331,7 +334,7 @@ function Step({ title, text }: { title: string; text: string }) {
 const section = { maxWidth: "900px", margin: "auto", padding: "80px 20px" };
 const text = { marginBottom: "20px", lineHeight: "1.7", maxWidth: 820 };
 
-const card: React.CSSProperties = {
+const card = {
   background: "white",
   padding: "25px",
   borderRadius: "14px",
@@ -339,7 +342,7 @@ const card: React.CSSProperties = {
   border: "1px solid rgba(58,58,58,0.06)",
 };
 
-const btn: React.CSSProperties = {
+const btn = {
   background: "#6B7D6D",
   color: "white",
   padding: "10px 20px",
@@ -348,7 +351,7 @@ const btn: React.CSSProperties = {
   cursor: "pointer",
 };
 
-const btnGhost: React.CSSProperties = {
+const btnGhost = {
   background: "transparent",
   color: "#6B7D6D",
   padding: "10px 20px",
@@ -357,13 +360,13 @@ const btnGhost: React.CSSProperties = {
   cursor: "pointer",
 };
 
-const link: React.CSSProperties = {
+const link = {
   textDecoration: "none",
   color: "#6B7D6D",
   fontSize: 14,
 };
 
-const list: React.CSSProperties = {
+const list = {
   margin: 0,
   paddingLeft: 18,
   lineHeight: 1.8,
