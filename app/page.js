@@ -1,5 +1,8 @@
+import LeadForm from "./components/LeadForm";
+
 // app/page.js
 export default function Home() {
+  
   const whatsappLink = "https://wa.me/34637541937";
 
   return (
@@ -284,7 +287,9 @@ export default function Home() {
       {/* CONTACTO */}
       <section id="contacto" style={section}>
         <h2>Contacto</h2>
-
+     <div style={{ ...card, marginTop: 18 }}>
+  <LeadForm />
+</div>
         <div style={{ ...card, marginTop: 18 }}>
           <p style={{ margin: 0, lineHeight: 1.8 }}>
             <strong>Centro NERÚA</strong><br />
