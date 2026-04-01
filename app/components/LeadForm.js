@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 
-export default function leadForm() {
+export default function LeadForm() {
   const [loading, setLoading] = useState(false);
   const [ok, setOk] = useState(false);
   const [error, setError] = useState("");
