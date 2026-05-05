@@ -1,9 +1,13 @@
 import LeadForm from "./components/LeadForm";
-// deploy fix
+
+export const metadata = {
+  title: "Centro NERÚA | Bienestar integral y acompañamiento psicológico en Málaga",
+  description:
+    "Centro NERÚA en Málaga. Bienestar integral, acompañamiento psicológico, nutrición digestiva, bruxismo, tinnitus, vértigos y tensión persistente desde una mirada humana e integradora.",
+};
 
 // app/page.js
 export default function Home() {
-  
   const whatsappLink = "https://wa.me/34637541937";
 
   return (
@@ -43,12 +47,9 @@ export default function Home() {
         <p style={{ color: "#6B7D6D", marginTop: 0 }}>Espacio de bienestar integral en Málaga</p>
 
         <p style={{ marginTop: "24px", lineHeight: "1.7", maxWidth: 820, marginInline: "auto" }}>
-          Bruxismo, migrañas, tinnitus, vértigos, digestiones difíciles o una sensación constante de estar en alerta.
+          Hay síntomas y molestias que pueden parecer distintos, pero muchas veces comparten un mismo fondo: bruxismo, migrañas, tinnitus, vértigos, tensión persistente, malestar digestivo o situaciones emocionales que dejan huella en el cuerpo.
           <br /><br />
-          Puede que lleves tiempo intentando entender qué te pasa y que cada síntoma parezca distinto.
-          <br /><br />
-          En NERÚA trabajamos desde una visión integradora del cuerpo y el sistema nervioso para ayudarte a comprender qué está ocurriendo
-          y recuperar tu equilibrio.
+          En NERÚA, en Málaga, los abordamos desde una mirada integradora, humana y profesional, teniendo en cuenta la historia de cada persona y la forma en que el cuerpo y el sistema nervioso expresan lo que está ocurriendo.
         </p>
 
         <div style={{ marginTop: 24, display: "flex", gap: 12, justifyContent: "center", flexWrap: "wrap" }}>
@@ -65,7 +66,7 @@ export default function Home() {
       <section style={{ padding: "0 20px 40px", maxWidth: "950px", margin: "auto" }}>
         <img
           src="/images/Hero-sillon.webp"
-          alt="Centro Nerúa - espacio terapéutico"
+          alt="Centro NERÚA - espacio terapéutico en Málaga"
           style={{
             width: "100%",
             borderRadius: "18px",
@@ -82,7 +83,7 @@ export default function Home() {
         <h2>Qué hacemos</h2>
 
         <p style={text}>
-          En NERÚA abordamos los problemas de salud desde una perspectiva integradora, teniendo en cuenta el sistema nervioso, el cuerpo y la historia de cada persona.
+          En NERÚA abordamos los problemas de salud desde una perspectiva integradora, teniendo en cuenta el sistema nervioso, el cuerpo, la historia personal y el momento vital de cada persona.
         </p>
 
         <p style={text}>
@@ -90,7 +91,7 @@ export default function Home() {
         </p>
 
         <p style={text}>
-          Nuestro trabajo consiste en entender qué está sosteniendo ese proceso y acompañarte en un cambio real y progresivo, con un plan claro y personalizado.
+          Nuestro trabajo consiste en entender qué está sosteniendo ese proceso y acompañarte en un cambio real y progresivo, con una mirada humana, profesional y personalizada.
         </p>
       </section>
 
@@ -105,7 +106,7 @@ export default function Home() {
         <div style={{ display: "grid", gap: 18, marginTop: 18, gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))" }}>
           <PriceCard
             title="Nutrición digestiva integrativa"
-            desc="Orientado a personas con malestar digestivo, inflamación abdominal, digestiones difíciles o alteraciones intestinales persistentes."
+            desc="Orientado a personas con malestar digestivo, inflamación abdominal, digestiones difíciles, SIBO u otras alteraciones intestinales persistentes."
             first="49 €"
             follow="55 €"
             followLabel="Sesiones de seguimiento"
@@ -113,7 +114,7 @@ export default function Home() {
 
           <PriceCard
             title="Acompañamiento psicológico"
-            desc="Espacio para abordar situaciones personales que generan estrés, bloqueo o malestar emocional."
+            desc="Espacio para abordar situaciones personales que generan estrés, bloqueo o malestar emocional, teniendo en cuenta la relación entre la experiencia emocional, el cuerpo y el sistema nervioso."
             first="49 €"
             follow="60 €"
             followLabel="Sesiones posteriores"
@@ -142,7 +143,7 @@ export default function Home() {
       <section style={{ padding: "0 20px 70px", maxWidth: "950px", margin: "auto" }}>
         <img
           src="/images/espacio-consulta.webp"
-          alt="Centro Nerúa - espacio de calma"
+          alt="Centro NERÚA - espacio de calma en Málaga"
           style={{
             width: "100%",
             borderRadius: "18px",
@@ -164,7 +165,7 @@ export default function Home() {
         <div style={{ ...card, display: "flex", justifyContent: "space-between", gap: 18, flexWrap: "wrap", alignItems: "center" }}>
           <div style={{ maxWidth: 620 }}>
             <p style={{ margin: 0, lineHeight: 1.7 }}>
-              Escríbenos y te explicamos las opciones disponibles (bonos y seguimiento) según el tipo de consulta.
+              Escríbenos y te explicamos las opciones disponibles según el tipo de consulta y el proceso que quieras iniciar.
             </p>
           </div>
           <a href={whatsappLink} target="_blank" rel="noreferrer" style={{ textDecoration: "none" }}>
@@ -177,7 +178,7 @@ export default function Home() {
       <section style={{ padding: "0 20px 60px", maxWidth: "950px", margin: "auto" }}>
         <img
           src="/images/detalle-mesa-planta.webp"
-          alt="Centro Nerúa - espacio cuidado"
+          alt="Centro NERÚA - espacio cuidado"
           style={{
             width: "100%",
             borderRadius: "18px",
@@ -205,7 +206,7 @@ export default function Home() {
           </div>
 
           <div style={card}>
-            <h3 style={{ marginTop: 0 }}>María José Martínez Granados</h3>
+            <h3 style={{ marginTop: 0 }}>María José Martínez</h3>
             <p style={{ margin: "8px 0 0", lineHeight: 1.7 }}>
               Técnico Superior en Dietética y actualmente en formación en el Grado de Nutrición Humana.
               <br /><br />
@@ -222,23 +223,24 @@ export default function Home() {
 
         <div style={{ display: "grid", gap: 18, marginTop: 18, gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))" }}>
           <Testimonial
-  name="Begoña"
-  text="Era la primera vez que acudía a un centro con un enfoque integrador del sistema nervioso, y lo hice después de haber probado con otros profesionales sin encontrar una mejora estable. Tenía tensión muscular, insomnio y una sensación constante de desequilibrio. Tras la primera sesión noté un cambio enorme y esa misma noche dormí mucho mejor. Desde entonces sigo acudiendo cuando lo necesito. Estoy profundamente agradecida a Centro NERÚA."
-/>
+            name="Begoña"
+            text="Era la primera vez que acudía a un centro con un enfoque integrador del sistema nervioso, y lo hice después de haber probado con otros profesionales sin encontrar una mejora estable. Tenía tensión muscular, insomnio y una sensación constante de desequilibrio. Tras la primera sesión noté un cambio enorme y esa misma noche dormí mucho mejor. Desde entonces sigo acudiendo cuando lo necesito. Estoy profundamente agradecida a Centro NERÚA."
+          />
 
-<Testimonial
-  name="Marta"
-  text="Gran profesional y mejor persona. Cuando tu vida se vuelve muy difícil, encontrar a alguien que te ayude a comprender lo que ocurre y a caminar con más calma no tiene precio. En mi caso, que es complejo, el acompañamiento ha sido muy importante. Además, tras cuatro sesiones trabajando el bruxismo y la tensión acumulada, he ido mejorando cada vez más y ahora estoy muchísimo mejor."
-/>
-    <Testimonial
-  name="Bárbara"
-  text="Tras años de malestar digestivo y varios tratamientos sin resultado, pude comprender mejor lo que estaba ocurriendo en mi caso. Con el acompañamiento en nutrición digestiva integrativa conseguí mejorar mi digestión y resolver un SIBO de metano junto con un problema de candidiasis. El proceso fue claro y me sentí muy acompañada en todo momento."
-/>
+          <Testimonial
+            name="Marta"
+            text="Gran profesional y mejor persona. Cuando tu vida se vuelve muy difícil, encontrar a alguien que te ayude a comprender lo que ocurre y a caminar con más calma no tiene precio. En mi caso, que es complejo, el acompañamiento ha sido muy importante. Además, tras varias sesiones trabajando el bruxismo y la tensión acumulada, he ido mejorando cada vez más y ahora estoy muchísimo mejor."
+          />
 
-<Testimonial
-  name="Wilma"
-  text="Después de mucho tiempo con inflamación abdominal y digestiones difíciles, el trabajo en nutrición digestiva integrativa me ayudó a identificar qué estaba influyendo en mi caso y a mejorar de forma progresiva. El proceso fue muy claro y el acompañamiento muy cercano."
-/>
+          <Testimonial
+            name="Bárbara"
+            text="Tras años de malestar digestivo y varios tratamientos sin resultado, pude comprender mejor lo que estaba ocurriendo en mi caso. Con el acompañamiento en nutrición digestiva integrativa conseguí mejorar mi digestión y resolver un SIBO de metano junto con un problema de candidiasis. El proceso fue claro y me sentí muy acompañada en todo momento."
+          />
+
+          <Testimonial
+            name="Wilma"
+            text="Después de mucho tiempo con inflamación abdominal y digestiones difíciles, el trabajo en nutrición digestiva integrativa me ayudó a identificar qué estaba influyendo en mi caso y a mejorar de forma progresiva. El proceso fue muy claro y el acompañamiento muy cercano."
+          />
         </div>
       </section>
 
@@ -288,13 +290,15 @@ export default function Home() {
       {/* CONTACTO */}
       <section id="contacto" style={section}>
         <h2>Contacto</h2>
-     <div style={{ ...card, marginTop: 18 }}>
-  <LeadForm />
-</div>
+
+        <div style={{ ...card, marginTop: 18 }}>
+          <LeadForm />
+        </div>
+
         <div style={{ ...card, marginTop: 18 }}>
           <p style={{ margin: 0, lineHeight: 1.8 }}>
             <strong>Centro NERÚA</strong><br />
-            Camino de los Almendrales 35<br />
+            Camino de los Almendales 35<br />
             <span style={{ color: "#6B7D6D" }}>(dentro de AFA Málaga)</span><br />
             29013 Málaga
           </p>
@@ -314,7 +318,7 @@ export default function Home() {
             </a>
 
             <a
-              href="https://www.google.com/maps/search/?api=1&query=Camino%20de%20los%20Almendrales%2035%2029013%20M%C3%A1laga%20AFA%20M%C3%A1laga"
+              href="https://www.google.com/maps/search/?api=1&query=Camino%20de%20los%20Almendales%2035%2029013%20M%C3%A1laga%20AFA%20M%C3%A1laga"
               target="_blank"
               rel="noreferrer"
               style={{ textDecoration: "none" }}
