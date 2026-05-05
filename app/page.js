@@ -8,7 +8,7 @@ export const metadata = {
 
 // app/page.js
 export default function Home() {
-  const whatsappLink = "https://wa.me/34637541937";
+const whatsappLink = "https://wa.me/34637541937?text=Hola%2C%20he%20visto%20la%20web%20de%20Centro%20NERÚA%20y%20me%20gustaría%20recibir%20información%20sobre%20mi%20caso";
 
   return (
     <main style={{ fontFamily: "Montserrat, sans-serif", background: "#F5F1EB", color: "#3A3A3A" }}>
@@ -252,6 +252,9 @@ export default function Home() {
           Si sientes que algo de lo que has leído conecta contigo, puedes reservar una sesión.
           En la reserva podrás elegir el tipo de consulta que mejor se adapte a tu situación.
         </p>
+        <p style={{ ...text, fontWeight: 500 }}>
+Si no tienes claro qué tipo de consulta es para ti, puedes escribirnos y te orientamos sin compromiso.
+</p>
 
         <div style={{ display: "grid", gap: 18, marginTop: 18, gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))" }}>
           <div style={card}>
@@ -264,7 +267,7 @@ export default function Home() {
 
             <div style={{ marginTop: 14, display: "flex", gap: 12, flexWrap: "wrap" }}>
               <a href={whatsappLink} target="_blank" rel="noreferrer" style={{ textDecoration: "none" }}>
-                <button style={btn}>Reservar por WhatsApp</button>
+                <button style={btn}>Quiero resolver mi caso</button>
               </a>
               <a href="#consultas" style={{ textDecoration: "none" }}>
                 <button style={btnGhost}>Ver precios</button>
