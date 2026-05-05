@@ -252,10 +252,7 @@ const whatsappLink = "https://wa.me/34637541937?text=Hola%2C%20he%20visto%20la%2
           Si sientes que algo de lo que has leído conecta contigo, puedes reservar una sesión.
           En la reserva podrás elegir el tipo de consulta que mejor se adapte a tu situación.
         </p>
-        <p style={{ ...text, fontWeight: 500 }}>
-Si no tienes claro qué tipo de consulta es para ti, puedes escribirnos y te orientamos sin compromiso.
-</p>
-
+       
         <div style={{ display: "grid", gap: 18, marginTop: 18, gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))" }}>
           <div style={card}>
             <h3 style={{ marginTop: 0 }}>Opciones de reserva</h3>
