@@ -49,7 +49,7 @@ export default function Home() {
         <p style={{ marginTop: "24px", lineHeight: "1.7", maxWidth: 820, marginInline: "auto" }}>
           Hay síntomas y molestias que pueden parecer distintos, pero muchas veces comparten un mismo fondo: bruxismo, migrañas, tinnitus, vértigos, tensión persistente, malestar digestivo o situaciones emocionales que dejan huella en el cuerpo.
           <br /><br />
-          En NERÚA, en Málaga, los abordamos desde una mirada integradora, humana y profesional, teniendo en cuenta la historia de cada persona y la forma en que el cuerpo y el sistema nervioso expresan lo que está ocurriendo.
+          En NERÚA, los abordamos desde una mirada integradora, humana y profesional, teniendo en cuenta la historia de cada persona y la forma en que el cuerpo y el sistema nervioso expresan lo que está ocurriendo.
         </p>
 
         <div style={{ marginTop: 24, display: "flex", gap: 12, justifyContent: "center", flexWrap: "wrap" }}>
