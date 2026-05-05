@@ -205,7 +205,7 @@ export default function Home() {
           </div>
 
           <div style={card}>
-            <h3 style={{ marginTop: 0 }}>María José</h3>
+            <h3 style={{ marginTop: 0 }}>María José Martínez Granados</h3>
             <p style={{ margin: "8px 0 0", lineHeight: 1.7 }}>
               Técnico Superior en Dietética y actualmente en formación en el Grado de Nutrición Humana.
               <br /><br />
