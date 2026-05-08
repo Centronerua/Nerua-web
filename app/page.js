@@ -27,10 +27,8 @@ const whatsappLink = "https://wa.me/34637541937?text=Hola%2C%20he%20visto%20la%2
     </div>
 
     <main style={{ fontFamily: "Montserrat, sans-serif", background: "#F5F1EB", color: "#3A3A3A" }}>
-      {/* TODO tu contenido actual */}
-    </main>
-  </>
-);
+   
+ 
       {/* HEADER */}
       <header
         style={{
@@ -373,8 +371,9 @@ const whatsappLink = "https://wa.me/34637541937?text=Hola%2C%20he%20visto%20la%2
       >
         WhatsApp
       </a>
-    </main>
-  );
+   </main>
+</>
+);
 }
 
 /* COMPONENTES */
