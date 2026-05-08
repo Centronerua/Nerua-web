@@ -105,6 +105,7 @@ const whatsappLink = "https://wa.me/34637541937?text=Hola%2C%20he%20visto%20la%2
 
           <PriceCard
             title="Regulación y bienestar"
+            href="/regulacion-bienestar-malaga"
             desc="Sesiones orientadas a síntomas como tinnitus, vértigos, bruxismo, tensión persistente, migrañas o estrés acumulado."
             first="49 €"
             follow="60 €"
