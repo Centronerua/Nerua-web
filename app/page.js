@@ -78,11 +78,11 @@ const whatsappLink = "https://wa.me/34637541937?text=Hola%2C%20he%20visto%20la%2
 
       {/* TIPOS DE CONSULTA + PRECIOS */}
       <section id="consultas" style={section}>
-        <h2>Tipos de consulta</h2>
+        <h2>¿Por dónde empezamos?</h2>
 
-        <p style={text}>
-          En la reserva podrás elegir el tipo de consulta que mejor se adapte a tu situación.
-        </p>
+      <p style={text}>
+  Elige tu punto de partida. Si dudas, te orientamos.
+</p>
 
         <div style={{ display: "grid", gap: 18, marginTop: 18, gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))" }}>
     
@@ -361,7 +361,7 @@ function PriceCard({ title, desc, first, follow, followLabel, href }) {
 
       <div style={{ borderTop: "1px solid rgba(58,58,58,0.08)", paddingTop: 14, display: "grid", gap: 10 }}>
         <div>
-          <div style={{ color: "#6B7D6D", fontWeight: 600 }}>Primera consulta</div>
+          <div style={{ color: "#6B7D6D", fontWeight: 600 }}>Primera sesión</div>
           <div style={{ fontSize: 22, fontWeight: 800 }}>{first}</div>
         </div>
 
