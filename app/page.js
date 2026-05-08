@@ -95,6 +95,7 @@ const whatsappLink = "https://wa.me/34637541937?text=Hola%2C%20he%20visto%20la%2
 
           <PriceCard
             title="Acompañamiento psicológico"
+            href="/acompanamiento-psicologico-malaga"
             desc="Espacio para abordar situaciones personales que generan estrés, bloqueo o malestar emocional, teniendo en cuenta la relación entre la experiencia emocional, el cuerpo y el sistema nervioso."
             first="49 €"
             follow="60 €"
@@ -341,10 +342,18 @@ const whatsappLink = "https://wa.me/34637541937?text=Hola%2C%20he%20visto%20la%2
 }
 
 /* COMPONENTES */
-function PriceCard({ title, desc, first, follow, followLabel }) {
+function PriceCard({ title, desc, first, follow, followLabel, href }) {
   return (
     <div style={card}>
-      <h3 style={{ marginTop: 0 }}>{title}</h3>
+      <h3 style={{ marginTop: 0 }}>
+  {href ? (
+    <a href={href} style={{ color: "#3A3A3A", textDecoration: "none" }}>
+      {title}
+    </a>
+  ) : (
+    title
+  )}
+</h3>
       <p style={{ margin: "8px 0 14px", lineHeight: 1.7 }}>{desc}</p>
 
       <div style={{ borderTop: "1px solid rgba(58,58,58,0.08)", paddingTop: 14, display: "grid", gap: 10 }}>
