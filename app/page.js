@@ -1,4 +1,5 @@
 import LeadForm from "./components/LeadForm";
+import SiteHeader from "./components/SiteHeader";
 
 export const metadata = {
   title: "Centro NERÚA | Bienestar integral y acompañamiento psicológico en Málaga",
@@ -15,49 +16,8 @@ const whatsappLink = "https://wa.me/34637541937?text=Hola%2C%20he%20visto%20la%2
   <>
 
     <main style={{ fontFamily: "Montserrat, sans-serif", background: "#F5F1EB", color: "#3A3A3A" }}>
-   
- 
-      {/* HEADER */}
-      <header
-        style={{
-          position: "sticky",
-          top: 0,
-          background: "rgba(245,241,235,0.9)",
-          backdropFilter: "blur(6px)",
-          padding: "18px 20px",
-          zIndex: 10,
-          borderBottom: "1px solid rgba(58,58,58,0.06)",
-        }}
-      >
-        <nav style={{ display: "flex", justifyContent: "space-between", maxWidth: "1100px", margin: "auto", gap: 16 }}>
-          <strong>NERÚA</strong>
-        <span
-  style={{
-    marginLeft: 12,
-    padding: "6px 10px",
-    borderRadius: 999,
-    background: "rgba(198,169,107,0.18)",
-    border: "1px solid rgba(198,169,107,0.35)",
-    color: "#6B7D6D",
-    fontSize: 12,
-    fontWeight: 700,
-    letterSpacing: "0.2px",
-    whiteSpace: "nowrap",
-  }}
->
-  Presencial + Online
-</span>
-
-          <div style={{ display: "flex", gap: "18px", flexWrap: "wrap", justifyContent: "flex-end" }}>
-            <a href="#quehacemos" style={link}>Qué hacemos</a>
-            <a href="#consultas" style={link}>Consultas</a>
-            <a href="#equipo" style={link}>Equipo</a>
-            <a href="#testimonios" style={link}>Testimonios</a>
-            <a href="#reserva" style={link}>Reserva</a>
-            <a href="#contacto" style={link}>Contacto</a>
-          </div>
-        </nav>
-      </header>
+    
+      <SiteHeader badgeText="Presencial + Online" />
 
       {/* HERO */}
       <section style={{ textAlign: "center", padding: "95px 20px 50px", maxWidth: "900px", margin: "auto" }}>
