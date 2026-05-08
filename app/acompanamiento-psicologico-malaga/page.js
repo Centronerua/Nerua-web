@@ -48,7 +48,7 @@ export default function Page() {
 
        <p style={{ color: "#6B7D6D", fontWeight: 600, marginTop: 0, lineHeight: 1.7, maxWidth: 820 }}>
   Un espacio cercano y profesional para reducir estrés y ansiedad, salir del bloqueo y recuperar calma.
-  Trabajamos desde una mirada integradora (cuerpo, emoción y sistema nervioso) y, cuando encaja, usamos herramientas
+  Trabajamos desde una mirada integradora (cuerpo, emoción y sistema nervioso) y, usamos herramientas
   inspiradas en neurología funcional explicadas de forma sencilla. Presencial en Málaga y también online.
 </p>
         <div style={{ marginTop: 22, display: "flex", gap: 12, flexWrap: "wrap" }}>
