@@ -1,7 +1,7 @@
 import SiteHeader from "../components/SiteHeader";
 
 export const metadata = {
-  title: "Acompañamiento psicológico y sistema nervioso en Málaga | Centro NERÚA",
+ title: "Acompañamiento psicológico en Málaga (presencial y online) | Centro NERÚA",
   description:
     "Acompañamiento psicológico en Málaga con enfoque integrador y regulación del sistema nervioso (neurología funcional). Estrés, ansiedad, bloqueo emocional y síntomas asociados. Presencial y online.",
 };
@@ -42,9 +42,9 @@ export default function Page() {
       <SiteHeader badgeText="Presencial + Online" />
 
       <section style={{ ...section, paddingTop: "90px" }}>
-        <h1 style={{ fontSize: "42px", marginTop: 0, marginBottom: 10 }}>
-          Acompañamiento psicológico y <span style={{ color: "#C6A96B" }}>sistema nervioso</span> en Málaga
-        </h1>
+       <h1 style={{ fontSize: "42px", marginTop: 0, marginBottom: 10 }}>
+  Acompañamiento psicológico en <span style={{ color: "#C6A96B" }}>Málaga</span>
+</h1>
 
         <p style={{ color: "#6B7D6D", fontWeight: 600, marginTop: 0, lineHeight: 1.7, maxWidth: 820 }}>
           Un espacio cercano y profesional para regular estrés, ansiedad y bloqueos, teniendo en cuenta cuerpo, emoción y
