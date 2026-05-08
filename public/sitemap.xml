@@ -6,4 +6,17 @@
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
+<url>
+  <loc>https://centronerua.com/nutricion-integrativa-malaga</loc>
+  <lastmod>2026-05-08</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.9</priority>
+</url>
+
+<url>
+  <loc>https://centronerua.com/regulacion-bienestar-malaga</loc>
+  <lastmod>2026-05-08</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.9</priority>
+</url>
 </urlset>
