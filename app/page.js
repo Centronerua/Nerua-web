@@ -85,22 +85,23 @@ const whatsappLink = "https://wa.me/34637541937?text=Hola%2C%20he%20visto%20la%2
         </p>
 
         <div style={{ display: "grid", gap: 18, marginTop: 18, gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))" }}>
+    
+
           <PriceCard
+            title="Acompañamiento psicológico"
+            href="/acompanamiento-psicologico-malaga"
+            desc="Terapia breve y regulación del sistema nervioso para estrés, ansiedad, bloqueo emocional y síntomas físicos asociados."
+            first="49 €"
+            follow="60 €"
+            followLabel="Sesiones posteriores"
+          />
+                    <PriceCard
             title="Nutrición digestiva integrativa"
             href="/nutricion-integrativa-malaga"
             desc="Orientado a personas con malestar digestivo, inflamación abdominal, digestiones difíciles, SIBO u otras alteraciones intestinales persistentes."
             first="49 €"
             follow="55 €"
             followLabel="Sesiones de seguimiento"
-          />
-
-          <PriceCard
-            title="Acompañamiento psicológico"
-            href="/acompanamiento-psicologico-malaga"
-            desc="Espacio para abordar situaciones personales que generan estrés, bloqueo o malestar emocional, teniendo en cuenta la relación entre la experiencia emocional, el cuerpo y el sistema nervioso."
-            first="49 €"
-            follow="60 €"
-            followLabel="Sesiones posteriores"
           />
 
           <PriceCard
