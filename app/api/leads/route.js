@@ -45,6 +45,28 @@ export async function POST(req) {
     });
 
     if (error) return Response.json({ error: "No se pudo guardar" }, { status: 500 });
+    // Enviar a Make (gratis). Si Make falla, no rompemos el formulario (ya está guardado en Supabase)
+if (process.env.MAKE_WEBHOOK_URL) {
+  try {
+    await fetch(process.env.MAKE_WEBHOOK_URL, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        name,
+        email,
+        phone: phone || null,
+        postal_code,
+        message,
+        consent,
+        source: "web",
+        status: "new",
+        created_at: new Date().toISOString(),
+      }),
+    });
+  } catch (e) {
+    console.error("Make webhook failed", e);
+  }
+}
 
     return Response.json({ ok: true }, { status: 200 });
   } catch {
