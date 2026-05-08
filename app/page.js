@@ -13,18 +13,6 @@ const whatsappLink = "https://wa.me/34637541937?text=Hola%2C%20he%20visto%20la%2
 
  return (
   <>
-    <div
-      style={{
-        marginTop: "12px",
-        padding: "10px 12px",
-        border: "1px solid #ddd",
-        borderRadius: "10px",
-        display: "inline-block",
-        fontWeight: "bold",
-      }}
-    >
-      ✅ Sesiones presenciales en Málaga y también ONLINE
-    </div>
 
     <main style={{ fontFamily: "Montserrat, sans-serif", background: "#F5F1EB", color: "#3A3A3A" }}>
    
@@ -43,6 +31,22 @@ const whatsappLink = "https://wa.me/34637541937?text=Hola%2C%20he%20visto%20la%2
       >
         <nav style={{ display: "flex", justifyContent: "space-between", maxWidth: "1100px", margin: "auto", gap: 16 }}>
           <strong>NERÚA</strong>
+        <span
+  style={{
+    marginLeft: 12,
+    padding: "6px 10px",
+    borderRadius: 999,
+    background: "rgba(198,169,107,0.18)",
+    border: "1px solid rgba(198,169,107,0.35)",
+    color: "#6B7D6D",
+    fontSize: 12,
+    fontWeight: 700,
+    letterSpacing: "0.2px",
+    whiteSpace: "nowrap",
+  }}
+>
+  Presencial + Online
+</span>
 
           <div style={{ display: "flex", gap: "18px", flexWrap: "wrap", justifyContent: "flex-end" }}>
             <a href="#quehacemos" style={link}>Qué hacemos</a>
