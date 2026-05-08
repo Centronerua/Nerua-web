@@ -87,6 +87,7 @@ const whatsappLink = "https://wa.me/34637541937?text=Hola%2C%20he%20visto%20la%2
         <div style={{ display: "grid", gap: 18, marginTop: 18, gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))" }}>
           <PriceCard
             title="Nutrición digestiva integrativa"
+            href="/nutricion-integrativa-malaga"
             desc="Orientado a personas con malestar digestivo, inflamación abdominal, digestiones difíciles, SIBO u otras alteraciones intestinales persistentes."
             first="49 €"
             follow="55 €"
