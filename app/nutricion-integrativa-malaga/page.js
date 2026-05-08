@@ -3,7 +3,7 @@ import SiteHeader from "../components/SiteHeader";
 export const metadata = {
   title: "Nutrición integrativa en Málaga (presencial y online) | Centro NERÚA",
   description:
-    "Nutrición integrativa en Málaga con enfoque digestivo, microbiota, SIBO e histamina/histaminosis. Acompañamiento personalizado. Presencial y online.",
+    "Nutrición integrativa en Málaga con enfoque digestivo, microbiota, SIBO e histaminosis. Acompañamiento personalizado. Presencial y online.",
 };
 
 export default function Page() {
