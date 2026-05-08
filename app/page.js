@@ -7,11 +7,30 @@ export const metadata = {
 };
 
 // app/page.js
+
 export default function Home() {
 const whatsappLink = "https://wa.me/34637541937?text=Hola%2C%20he%20visto%20la%20web%20de%20Centro%20NERÚA%20y%20me%20gustaría%20recibir%20información%20sobre%20mi%20caso";
 
-  return (
+ return (
+  <>
+    <div
+      style={{
+        marginTop: "12px",
+        padding: "10px 12px",
+        border: "1px solid #ddd",
+        borderRadius: "10px",
+        display: "inline-block",
+        fontWeight: "bold",
+      }}
+    >
+      ✅ Sesiones presenciales en Málaga y también ONLINE
+    </div>
+
     <main style={{ fontFamily: "Montserrat, sans-serif", background: "#F5F1EB", color: "#3A3A3A" }}>
+      {/* TODO tu contenido actual */}
+    </main>
+  </>
+);
       {/* HEADER */}
       <header
         style={{
