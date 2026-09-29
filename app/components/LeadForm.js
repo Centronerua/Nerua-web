@@ -1,7 +1,19 @@
 "use client";
-import { useState } from "react";
+import { useRef, useState } from "react";
+
+// Opciones de "¿Qué te preocupa?". No hay columna propia en Supabase: la opción elegida
+// se añade al principio del mensaje, así llega igual a Supabase y a Make sin cambiar nada.
+const CONCERNS = [
+  "Bruxismo / tensión mandibular",
+  "Digestivo",
+  "Ansiedad / estrés",
+  "Migrañas / tensión",
+  "Tinnitus / vértigos",
+  "Otro",
+];
 
 export default function LeadForm() {
+  const formRef = useRef(null);
   const [loading, setLoading] = useState(false);
   const [ok, setOk] = useState(false);
   const [error, setError] = useState("");
@@ -9,114 +21,121 @@ export default function LeadForm() {
   async function onSubmit(e) {
     e.preventDefault();
     setError("");
-    setLoading(true);
 
-    const form = new FormData(e.currentTarget);
+    const form = new FormData(formRef.current);
+    const concern = (form.get("concern") || "").trim();
+    const text = (form.get("message") || "").trim();
+
+    // Misma regla que el servidor (mínimo 10), aplicada al texto escrito por la persona.
+    if (text.length < 10) {
+      setError("Cuéntanos un poco más en el mensaje (mínimo 10 caracteres).");
+      return;
+    }
+
     const payload = {
       name: form.get("name"),
       email: form.get("email"),
       phone: form.get("phone"),
       postal_code: form.get("postal_code"),
-      message: form.get("message"),
+      message: concern ? `Motivo: ${concern}\n\n${text}` : text,
       consent: form.get("consent") === "on",
     };
 
-    const res = await fetch("/api/leads", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(payload),
-    });
+    setLoading(true);
+    try {
+      const res = await fetch("/api/leads", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+      });
 
-    const data = await res.json().catch(() => ({}));
-    setLoading(false);
+      const data = await res.json().catch(() => ({}));
 
-    if (!res.ok) {
-      setError(data?.error || "No se pudo enviar");
-      return;
+      if (!res.ok) {
+        setError(data?.error || "No se pudo enviar");
+        return;
+      }
+
+      formRef.current?.reset();
+      setOk(true);
+    } catch {
+      setError("No se pudo enviar. Revisa tu conexión e inténtalo de nuevo, o escríbenos por WhatsApp.");
+    } finally {
+      setLoading(false);
     }
-
-    setOk(true);
-    e.currentTarget.reset();
   }
 
   if (ok) {
     return (
-      <div style={{ padding: 14, border: "1px solid #ddd", borderRadius: 12 }}>
-        ✅ Enviado. Te contactamos en breve.
+      <div className="lead-success" role="status">
+        <p className="lead-success-title">Gracias por escribirnos.</p>
+        <p className="lead-success-text">
+          Hemos recibido tu consulta y te responderemos lo antes posible.
+        </p>
       </div>
     );
   }
 
   return (
-    <form onSubmit={onSubmit} style={{ display: "grid", gap: 12 }}>
+    <form ref={formRef} onSubmit={onSubmit} className="lead-form">
       {error ? (
-        <div style={{ padding: 12, border: "1px solid #f2c2c2", borderRadius: 12 }}>
+        <div className="lead-error" role="alert">
           {error}
         </div>
       ) : null}
 
-      <label>
+      <label className="lead-field">
         Nombre *
-        <input
-          name="name"
-          required
-          style={{ width: "100%", padding: 12, borderRadius: 10, border: "1px solid #ddd" }}
-        />
+        <input name="name" required autoComplete="name" className="lead-input" />
       </label>
 
-      <label>
+      <label className="lead-field">
         Email *
-        <input
-          name="email"
-          type="email"
-          required
-          style={{ width: "100%", padding: 12, borderRadius: 10, border: "1px solid #ddd" }}
-        />
+        <input name="email" type="email" required autoComplete="email" inputMode="email" className="lead-input" />
       </label>
 
-      <label>
+      <label className="lead-field">
         Teléfono (opcional)
-        <input
-          name="phone"
-          style={{ width: "100%", padding: 12, borderRadius: 10, border: "1px solid #ddd" }}
-        />
+        <input name="phone" type="tel" autoComplete="tel" inputMode="tel" className="lead-input" />
       </label>
 
-      <label>
+      <label className="lead-field">
         Código Postal *
         <input
           name="postal_code"
           required
           inputMode="numeric"
+          autoComplete="postal-code"
           pattern="[0-9]{5}"
           maxLength={5}
           placeholder="Ej: 29013"
-          style={{ width: "100%", padding: 12, borderRadius: 10, border: "1px solid #ddd" }}
+          className="lead-input"
         />
       </label>
 
-      <label>
+      <label className="lead-field">
+        ¿Qué te preocupa?
+        <select name="concern" defaultValue="" className="lead-input lead-select">
+          <option value="">Selecciona una opción</option>
+          {CONCERNS.map((c) => (
+            <option key={c} value={c}>{c}</option>
+          ))}
+        </select>
+      </label>
+
+      <label className="lead-field">
         Mensaje *
-        <textarea
-          name="message"
-          required
-          rows={4}
-          style={{ width: "100%", padding: 12, borderRadius: 10, border: "1px solid #ddd" }}
-        />
+        <textarea name="message" required rows={4} className="lead-input lead-textarea" />
       </label>
 
-      <label style={{ display: "flex", gap: 8, alignItems: "flex-start", fontSize: 14 }}>
-        <input name="consent" type="checkbox" required style={{ marginTop: 4 }} />
+      <label className="lead-consent">
+        <input name="consent" type="checkbox" required />
         Acepto la política de privacidad *
       </label>
 
-      <button
-        disabled={loading}
-        style={{ padding: 12, borderRadius: 12, border: "1px solid #111", cursor: "pointer" }}
-      >
+      <button type="submit" disabled={loading} className="btn lead-submit">
         {loading ? "Enviando..." : "Enviar"}
       </button>
     </form>
   );
 }
-
