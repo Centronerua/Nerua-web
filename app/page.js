@@ -147,9 +147,9 @@ export default function Home() {
         <div className="team-grid">
           <TeamMember
             name="José Manuel Gil Rueda"
-            area="Regulación del sistema nervioso · Enfoque neurofuncional"
+            area="Psicólogo · Regulación del sistema nervioso · Enfoque neurofuncional"
             approach="Trabaja la relación entre síntomas físicos, tensión, estrés y estado emocional desde la regulación del sistema nervioso y un enfoque neurofuncional."
-            credentials={["CAFD", "Osteópata", "Formación en enfoques relacionados con el trauma"]}
+            credentials={["CAFD", "Formación en enfoques relacionados con el trauma y regulación del sistema nervioso"]}
             href="/regulacion-bienestar-malaga"
             photoLabel="Fotografía de José Manuel"
           />
@@ -327,7 +327,18 @@ function TeamMember({ name, area, approach, credentials, href, photoLabel, offse
       <div className="member-photo" role="img" aria-label={photoLabel}>
         <span>{photoLabel}</span>
       </div>
-      <p className="member-area">{area}</p>
+      {/* Cada parte va sin cortes internos; si la línea se parte, el "·" queda al final */}
+      <p className="member-area">
+        {area.split(" · ").map((part, i, arr) => (
+          <span key={part}>
+            <span className="member-area-part">
+              {part}
+              {i < arr.length - 1 ? " ·" : ""}
+            </span>
+            {i < arr.length - 1 ? " " : ""}
+          </span>
+        ))}
+      </p>
       <h3 className="member-name">{name}</h3>
       <p className="member-approach">{approach}</p>
       <ul className="member-credentials">

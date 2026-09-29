@@ -11,6 +11,8 @@
 7. Usar preferentemente «enfoque neurofuncional». No presentar «neurología funcional» como especialidad médica.
 8. No mencionar Rincón de la Victoria ni cambiar la ubicación actual (Málaga) hasta que se autorice expresamente.
 9. Priorizar una estética boutique, editorial, sofisticada, serena y profesional, evitando la imagen de centro de bienestar genérico (nada de «encuentra tu equilibrio», «tu espacio de bienestar», «cuida cuerpo y mente»).
+10. La presentación pública de José Manuel Gil Rueda prioriza psicología, trauma, regulación del sistema nervioso y enfoque neurofuncional. No mostrar «Osteópata» ni «Reflexólogo» ni asociar su perfil a masaje o terapia manual. No mencionar colegiación ni nº de colegiado hasta que se autorice.
+11. No inventar ni completar titulaciones o formaciones del equipo: usar solo las confirmadas expresamente.
 
 ## Forma de trabajar
 
