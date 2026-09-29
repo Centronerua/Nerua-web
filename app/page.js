@@ -1,6 +1,6 @@
 import LeadForm from "./components/LeadForm";
 import SiteHeader from "./components/SiteHeader";
-import { CtaButtons, DudasButton, StickyWhatsApp, whatsappHref } from "./components/Cta";
+import { CtaButtons, DudasButton, StickyWhatsApp, whatsappHref, DUDAS_MSG } from "./components/Cta";
 
 export const metadata = {
   title: "Centro NERÚA | Bienestar integral y acompañamiento psicológico en Málaga",
@@ -66,20 +66,38 @@ export default function Home() {
         />
       </section>
 
-      {/* QUÉ HACEMOS */}
-      <section id="quehacemos" style={section}>
-        <h2>Qué hacemos</h2>
+      {/* EN QUÉ PODEMOS ACOMPAÑARTE */}
+      <section id="quehacemos" className="areas">
+        <p className="section-eyebrow">ÁREAS DE TRABAJO</p>
+        <h2 className="areas-title">En qué podemos acompañarte</h2>
+        <p className="areas-intro">Tres áreas de trabajo que se integran de forma personalizada según cada caso.</p>
 
-        <p style={text}>
-          En NERÚA abordamos los problemas de salud desde una perspectiva integradora, teniendo en cuenta el sistema nervioso, el cuerpo, la historia personal y el momento vital de cada persona.
-        </p>
+        <div className="areas-grid">
+          <AreaCard
+            href="/regulacion-bienestar-malaga"
+            title="Regulación y bienestar"
+            tagline="Sistema nervioso · Enfoque neurofuncional"
+            items={["Bruxismo y tensión mandibular", "Migrañas y cefaleas tensionales", "Tinnitus y vértigos", "Tensión muscular persistente"]}
+          />
+          <AreaCard
+            href="/acompanamiento-psicologico-malaga"
+            title="Acompañamiento psicológico"
+            tagline="Terapia breve · Estrés y estado emocional"
+            items={["Estrés y ansiedad", "Bloqueo emocional", "Dificultad para descansar", "Experiencias que dejan huella"]}
+          />
+          <AreaCard
+            href="/nutricion-integrativa-malaga"
+            title="Nutrición digestiva integrativa"
+            tagline="Digestión · Microbiota"
+            items={["Hinchazón y digestiones difíciles", "SIBO y microbiota", "Sospecha de histaminosis", "Plan por fases y seguimiento"]}
+          />
+        </div>
 
-        <p style={text}>
-          Muchos síntomas no aparecen de forma aislada, sino que forman parte de procesos más amplios que el organismo ha ido desarrollando con el tiempo.
-        </p>
-
-        <p style={text}>
-          Nuestro trabajo consiste en entender qué está sosteniendo ese proceso y acompañarte en un cambio real y progresivo, con una mirada humana, profesional y personalizada.
+        <p className="areas-outro">
+          ¿No sabes por dónde empezar? En la primera sesión dedicamos tiempo a comprender tu caso y orientarte sobre el enfoque más adecuado.{" "}
+          <a href={whatsappHref(DUDAS_MSG)} target="_blank" rel="noreferrer" className="text-link" data-cta="dudas-areas">
+            Tengo dudas → WhatsApp
+          </a>
         </p>
       </section>
 
@@ -316,6 +334,21 @@ export default function Home() {
 }
 
 /* COMPONENTES */
+function AreaCard({ href, title, tagline, items }) {
+  return (
+    <a href={href} className="area-card">
+      <h3 className="area-card-title">{title}</h3>
+      <p className="area-card-tagline">{tagline}</p>
+      <ul className="area-card-list">
+        {items.map((it) => (
+          <li key={it}>{it}</li>
+        ))}
+      </ul>
+      <span className="area-card-link">Ver consulta →</span>
+    </a>
+  );
+}
+
 function PriceCard({ title, desc, first, follow, followLabel, href }) {
   return (
     <div style={card}>
