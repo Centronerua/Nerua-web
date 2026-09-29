@@ -145,6 +145,8 @@ section[id] { scroll-margin-top: 80px; }
 }
 .hero-boutique-sep { color: #C6A96B; }
 
+.nowrap { white-space: nowrap; }
+
 /* ---------- Header ---------- */
 .site-header {
   position: sticky;
@@ -342,6 +344,16 @@ section[id] { scroll-margin-top: 80px; }
   }
   .wa-bar-btn .wa-icon { color: #25D366; flex-shrink: 0; }
   .mobile-cta-spacer { display: block; height: 64px; }
+}
+
+/* Móvil: líneas pequeñas sin filetes laterales para que quepan; H1 de servicios a tamaño legible */
+@media (max-width: 480px) {
+  .hero-eyebrow, .service-eyebrow { gap: 0; font-size: 11px; letter-spacing: 0.1em; }
+  .hero-eyebrow::before, .hero-eyebrow::after,
+  .service-eyebrow::before, .service-eyebrow::after { display: none; }
+}
+@media (max-width: 959px) {
+  .service-h1 { font-size: 32px !important; line-height: 1.15; }
 }
 
 @media (max-width: 359px) {

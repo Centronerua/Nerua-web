@@ -9,10 +9,11 @@
 5. No utilizar la palabra «clínica» hasta que se autorice expresamente.
 6. No hacer promesas de curación ni afirmaciones médicas absolutas (evitar «curar», «resolver», «tratamos el origen»). El trabajo de NERÚA complementa, no sustituye, la atención médica u odontológica.
 7. Usar preferentemente «enfoque neurofuncional». No presentar «neurología funcional» como especialidad médica.
-8. No mencionar Rincón de la Victoria ni cambiar la ubicación actual (Málaga) hasta que se autorice expresamente.
+8. Ubicación: la ubicación física y el posicionamiento local principal de NERÚA es **Rincón de la Victoria** (hero «CENTRO NERÚA · RINCÓN DE LA VICTORIA», header «Rincón de la Victoria · Online», H1 y títulos SEO). Málaga se mantiene solo como referencia provincial y secundaria («Rincón de la Victoria, Málaga», meta descriptions, atención online a personas de Málaga y otras localidades); nunca debe parecer que hay una sede física en Málaga capital. No usar «La Cala del Moral». No inventar direcciones: la dirección postal exacta, «Cómo llegar» y los datos estructurados `LocalBusiness` se añadirán cuando la dirección esté confirmada. No indicar que el nuevo centro ya está abierto sin autorización. Las URLs actuales terminadas en `-malaga` se mantienen hasta que se autorice su migración.
 9. Priorizar una estética boutique, editorial, sofisticada, serena y profesional, evitando la imagen de centro de bienestar genérico (nada de «encuentra tu equilibrio», «tu espacio de bienestar», «cuida cuerpo y mente»).
 10. La presentación pública de José Manuel Gil Rueda prioriza psicología, trauma, regulación del sistema nervioso y enfoque neurofuncional. No mostrar «Osteópata» ni «Reflexólogo» ni asociar su perfil a masaje o terapia manual. No mencionar colegiación ni nº de colegiado hasta que se autorice.
 11. No inventar ni completar titulaciones o formaciones del equipo: usar solo las confirmadas expresamente.
+12. Áreas de NERÚA: al describirlas, usar «Psicología · Regulación del sistema nervioso · Nutrición digestiva integrativa». No usar «regulación» sola para describir el servicio; en la página de Regulación y bienestar debe quedar claro «Sistema nervioso · Enfoque neurofuncional».
 
 ## Forma de trabajar
 

@@ -15,7 +15,7 @@ const SECTIONS = [
   { href: "/#contacto", label: "Contacto" },
 ];
 
-export default function SiteHeader({ badgeText = "Presencial + Online" }) {
+export default function SiteHeader({ badgeText = "Rincón de la Victoria · Online" }) {
   const [menuOpen, setMenuOpen] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
   const headerRef = useRef(null);

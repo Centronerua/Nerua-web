@@ -5,9 +5,9 @@ const RESERVA_MSG = "Hola, me gustaría pedir cita para una primera sesión de a
 const DUDAS_MSG = "Hola, me gustaría información sobre acompañamiento psicológico y sistema nervioso en Centro NERÚA.";
 
 export const metadata = {
- title: "Acompañamiento psicológico en Málaga (presencial y online) | Centro NERÚA",
+ title: "Acompañamiento psicológico en Rincón de la Victoria (presencial y online) | Centro NERÚA",
   description:
-    "Acompañamiento psicológico en Málaga con enfoque integrador y regulación del sistema nervioso (neurología funcional). Estrés, ansiedad, bloqueo emocional y síntomas asociados. Presencial y online.",
+    "Acompañamiento psicológico en Rincón de la Victoria, Málaga, con enfoque integrador, regulación del sistema nervioso y enfoque neurofuncional. Estrés, ansiedad, bloqueo emocional y síntomas asociados. Presencial y online.",
 };
 
 export default function Page() {
@@ -22,18 +22,18 @@ export default function Page() {
 
   return (
     <main style={{ fontFamily: "var(--font-sans), Montserrat, sans-serif", background: "#F5F1EB", color: "#3A3A3A", minHeight: "100vh" }}>
-      <SiteHeader badgeText="Presencial + Online" />
+      <SiteHeader />
 
       <section style={{ ...section, paddingTop: "90px" }}>
-       <h1 style={{ fontSize: "42px", marginTop: 0, marginBottom: 10 }}>
-  Acompañamiento psicológico en <span style={{ color: "#C6A96B" }}>Málaga</span>
+       <h1 className="service-h1" style={{ fontSize: "42px", marginTop: 0, marginBottom: 10 }}>
+  Acompañamiento psicológico en <span style={{ color: "#C6A96B" }}>Rincón de la Victoria</span>
 </h1>
 
       <p style={{ color: "#6B7D6D", fontWeight: 600, marginTop: 0, lineHeight: 1.7, maxWidth: 820 }}>
   Un espacio cercano y profesional para reducir estrés y ansiedad, salir del bloqueo y recuperar calma.
   Enfoque de terapia breve: sesiones orientadas a objetivos, prácticas y centradas en cambios reales.
-  Trabajamos desde una mirada integradora (cuerpo, emoción y sistema nervioso) y utilizamos herramientas inspiradas en
-  neurología funcional, explicadas de forma sencilla y aplicadas a tu caso. Presencial en Málaga y también online.
+  Trabajamos desde una mirada integradora (cuerpo, emoción y sistema nervioso) y utilizamos herramientas de
+  enfoque neurofuncional, explicadas de forma sencilla y aplicadas a tu caso. Presencial en Rincón de la Victoria, Málaga · Online.
 </p>
         <CtaButtons reservaMsg={RESERVA_MSG} dudasMsg={DUDAS_MSG} hideDudasOnMobile style={{ marginTop: 22 }} />
       </section>
@@ -55,8 +55,8 @@ export default function Page() {
         <h2>Cómo trabajamos</h2>
         <p style={{ lineHeight: 1.8, maxWidth: 820 }}>
           Trabajamos desde una mirada integradora: emoción, cuerpo y sistema nervioso. Utilizamos herramientas de
-          regulación y, cuando encaja, enfoques inspirados en <strong>neurología funcional</strong>, explicados de forma
-          sencilla y aplicados a tu caso.
+          regulación y, cuando encaja, un <strong>enfoque neurofuncional</strong>, explicado de forma
+          sencilla y aplicado a tu caso.
         </p>
         <p style={{ lineHeight: 1.8, maxWidth: 820 }}>
           El objetivo es recuperar calma, seguridad interna y capacidad de respuesta, con un acompañamiento empático,

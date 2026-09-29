@@ -5,9 +5,9 @@ const RESERVA_MSG = "Hola, me gustaría pedir cita para una primera sesión de n
 const DUDAS_MSG = "Hola, me gustaría información sobre nutrición integrativa (enfoque digestivo, SIBO, histamina) en Centro NERÚA.";
 
 export const metadata = {
-  title: "Nutrición integrativa en Málaga (presencial y online) | Centro NERÚA",
+  title: "Nutrición digestiva integrativa en Rincón de la Victoria (presencial y online) | Centro NERÚA",
   description:
-    "Nutrición integrativa en Málaga con enfoque digestivo, microbiota, SIBO e histaminosis. Acompañamiento personalizado. Presencial y online.",
+    "Nutrición digestiva integrativa en Rincón de la Victoria, Málaga, con enfoque digestivo, microbiota, SIBO e histaminosis. Acompañamiento personalizado. Presencial y online.",
 };
 
 export default function Page() {
@@ -29,11 +29,11 @@ export default function Page() {
         minHeight: "100vh",
       }}
     >
-      <SiteHeader badgeText="Presencial + Online" />
+      <SiteHeader />
 
       <section style={{ ...section, paddingTop: "90px" }}>
-        <h1 style={{ fontSize: "42px", marginTop: 0, marginBottom: 10 }}>
-          Nutrición integrativa en <span style={{ color: "#C6A96B" }}>Málaga</span>
+        <h1 className="service-h1" style={{ fontSize: "42px", marginTop: 0, marginBottom: 10 }}>
+          Nutrición digestiva integrativa en <span style={{ color: "#C6A96B" }}>Rincón de la Victoria</span>
         </h1>
 
         <p
@@ -46,7 +46,7 @@ export default function Page() {
           }}
         >
           Acompañamiento nutricional integrativo con especialidad digestiva: hinchazón, microbiota, SIBO e histamina/histaminosis.
-          Presencial en Málaga y también online.
+          Presencial en Rincón de la Victoria, Málaga · Online.
         </p>
 
         <CtaButtons reservaMsg={RESERVA_MSG} dudasMsg={DUDAS_MSG} hideDudasOnMobile style={{ marginTop: 22 }} />

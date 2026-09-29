@@ -12,9 +12,9 @@ const cormorant = Cormorant_Garamond({
 });
 
 export const metadata = {
-  title: "Centro Nerúa | Bienestar integral en Málaga",
+  title: "Centro NERÚA | Rincón de la Victoria, Málaga",
   description:
-    "Centro de bienestar integral en Málaga: psicología, trauma, terapia breve, hipnosis terapéutica, nutrición integrativa y síntomas persistentes (bruxismo, migrañas, malestar digestivo).",
+    "Centro NERÚA en Rincón de la Victoria, Málaga. Psicología, regulación del sistema nervioso con enfoque neurofuncional y nutrición digestiva integrativa. Atención presencial y online.",
 };
 
 export default function RootLayout({ children }) {

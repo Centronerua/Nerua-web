@@ -3,9 +3,9 @@ import SiteHeader from "./components/SiteHeader";
 import { CtaButtons, DudasButton, StickyWhatsApp, whatsappHref, DUDAS_MSG } from "./components/Cta";
 
 export const metadata = {
-  title: "Centro NERÚA | Bienestar integral y acompañamiento psicológico en Málaga",
+  title: "Centro NERÚA | Psicología, sistema nervioso y nutrición digestiva en Rincón de la Victoria",
   description:
-    "Centro NERÚA en Málaga. Bienestar integral, acompañamiento psicológico, nutrición digestiva, bruxismo, tinnitus, vértigos y tensión persistente desde una mirada humana e integradora.",
+    "Centro NERÚA en Rincón de la Victoria, Málaga. Psicología, regulación del sistema nervioso con enfoque neurofuncional y nutrición digestiva integrativa. Atención presencial y online.",
 };
 
 // app/page.js
@@ -17,11 +17,11 @@ export default function Home() {
 
     <main style={{ fontFamily: "var(--font-sans), Montserrat, sans-serif", background: "#F5F1EB", color: "#3A3A3A" }}>
     
-      <SiteHeader badgeText="Presencial + Online" />
+      <SiteHeader />
 
       {/* HERO */}
       <section className="hero">
-        <p className="hero-eyebrow">CENTRO NERÚA · MÁLAGA</p>
+        <p className="hero-eyebrow"><span className="eyebrow-text"><span className="nowrap">CENTRO NERÚA ·</span> <span className="nowrap">RINCÓN DE LA VICTORIA</span></span></p>
 
         <h1 className="hero-h1">Entender antes de intervenir</h1>
 
@@ -54,7 +54,7 @@ export default function Home() {
       <section style={{ padding: "0 20px 40px", maxWidth: "950px", margin: "auto" }}>
         <img
           src="/images/Hero-sillon.webp"
-          alt="Centro NERÚA - espacio terapéutico en Málaga"
+          alt="Centro NERÚA · espacio de consulta"
           style={{
             width: "100%",
             borderRadius: "18px",
@@ -250,10 +250,14 @@ export default function Home() {
         <div style={{ ...card, marginTop: 18 }}>
           <p style={{ margin: 0, lineHeight: 1.8 }}>
             <strong>Centro NERÚA</strong><br />
-            Camino de los Almendales 35<br />
-            <span style={{ color: "#6B7D6D" }}>(dentro de AFA Málaga)</span><br />
-            29013 Málaga
+            Rincón de la Victoria, Málaga<br />
+            <span style={{ color: "#6B7D6D" }}>Presencial en Rincón de la Victoria · Online</span>
           </p>
+
+          <p style={{ margin: "10px 0 0", lineHeight: 1.8 }}>
+            Atendemos presencialmente en Rincón de la Victoria y también acompañamos online a personas de Málaga y otras localidades.
+          </p>
+          {/* La dirección postal exacta se añadirá cuando esté confirmada. */}
 
           <div style={{ height: 14 }} />
 
@@ -266,15 +270,7 @@ export default function Home() {
 
           <div style={{ display: "flex", gap: 12, flexWrap: "wrap" }}>
             <DudasButton className="btn" />
-
-            <a
-              href="https://www.google.com/maps/search/?api=1&query=Camino%20de%20los%20Almendales%2035%2029013%20M%C3%A1laga%20AFA%20M%C3%A1laga"
-              target="_blank"
-              rel="noreferrer"
-              className="btn-ghost"
-            >
-              Cómo llegar
-            </a>
+            {/* "Cómo llegar" se añadirá con la nueva dirección confirmada. */}
           </div>
         </div>
       </section>

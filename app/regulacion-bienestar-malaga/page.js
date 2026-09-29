@@ -5,9 +5,9 @@ const RESERVA_MSG = "Hola, me gustaría pedir cita para una primera sesión de r
 const DUDAS_MSG = "Hola, me gustaría información sobre regulación y bienestar (bruxismo, tinnitus, vértigos) en Centro NERÚA.";
 
 export const metadata = {
-  title: "Regulación y bienestar en Málaga (presencial y online) | Centro NERÚA",
+  title: "Regulación y bienestar en Rincón de la Victoria · Sistema nervioso y enfoque neurofuncional | Centro NERÚA",
   description:
-    "Regulación y bienestar en Málaga: bruxismo, tinnitus, vértigos, migrañas y tensión persistente con enfoque integrador y sistema nervioso. Presencial y online.",
+    "Regulación del sistema nervioso con enfoque neurofuncional en Rincón de la Victoria, Málaga: bruxismo, tinnitus, vértigos, migrañas y tensión persistente. Presencial y online.",
 };
 
 export default function Page() {
@@ -22,16 +22,17 @@ export default function Page() {
 
   return (
     <main style={{ fontFamily: "var(--font-sans), Montserrat, sans-serif", background: "#F5F1EB", color: "#3A3A3A", minHeight: "100vh" }}>
-      <SiteHeader badgeText="Presencial + Online" />
+      <SiteHeader />
 
       <section style={{ ...section, paddingTop: "90px" }}>
-        <h1 style={{ fontSize: "42px", marginTop: 0, marginBottom: 10 }}>
-          Regulación y bienestar en <span style={{ color: "#C6A96B" }}>Málaga</span>
+        <p className="section-eyebrow service-eyebrow"><span className="eyebrow-text"><span className="nowrap">SISTEMA NERVIOSO ·</span> <span className="nowrap">ENFOQUE NEUROFUNCIONAL</span></span></p>
+        <h1 className="service-h1" style={{ fontSize: "42px", marginTop: 0, marginBottom: 10 }}>
+          Regulación y bienestar en <span style={{ color: "#C6A96B" }}>Rincón de la Victoria</span>
         </h1>
 
         <p style={{ color: "#6B7D6D", fontWeight: 600, marginTop: 0, lineHeight: 1.7, maxWidth: 820 }}>
           Sesiones orientadas a tensión persistente y síntomas como bruxismo, tinnitus, vértigos o migrañas, desde una mirada integradora
-          centrada en el sistema nervioso. Presencial en Málaga y también online.
+          centrada en el sistema nervioso y un enfoque neurofuncional. Presencial en Rincón de la Victoria, Málaga · Online.
         </p>
 
         <CtaButtons reservaMsg={RESERVA_MSG} dudasMsg={DUDAS_MSG} hideDudasOnMobile style={{ marginTop: 22 }} />

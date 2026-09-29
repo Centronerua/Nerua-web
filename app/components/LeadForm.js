@@ -107,7 +107,7 @@ export default function LeadForm() {
           autoComplete="postal-code"
           pattern="[0-9]{5}"
           maxLength={5}
-          placeholder="Ej: 29013"
+          placeholder="5 cifras"
           className="lead-input"
         />
       </label>
