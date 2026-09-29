@@ -33,7 +33,13 @@ export default function Home() {
           En NERÚA, los abordamos desde una mirada integradora, humana y profesional, teniendo en cuenta la historia de cada persona y la forma en que el cuerpo y el sistema nervioso expresan lo que está ocurriendo.
         </p>
 
-        <CtaButtons center style={{ marginTop: 24 }} />
+        <CtaButtons center hideDudasOnMobile style={{ marginTop: 24 }} />
+
+        <p style={{ marginTop: 16, marginBottom: 0 }}>
+          <a href="#consultas" className="text-link">
+            Ver consultas y precios ↓
+          </a>
+        </p>
       </section>
 
       {/* HERO IMAGE */}

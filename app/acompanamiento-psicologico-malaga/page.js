@@ -1,7 +1,7 @@
 import SiteHeader from "../components/SiteHeader";
 import { CtaButtons, StickyWhatsApp } from "../components/Cta";
 
-const RESERVA_MSG = "Hola, me gustaría reservar una primera sesión de acompañamiento psicológico en Centro NERÚA.";
+const RESERVA_MSG = "Hola, me gustaría pedir cita para una primera sesión de acompañamiento psicológico en Centro NERÚA.";
 const DUDAS_MSG = "Hola, me gustaría información sobre acompañamiento psicológico y sistema nervioso en Centro NERÚA.";
 
 export const metadata = {
@@ -35,7 +35,7 @@ export default function Page() {
   Trabajamos desde una mirada integradora (cuerpo, emoción y sistema nervioso) y utilizamos herramientas inspiradas en
   neurología funcional, explicadas de forma sencilla y aplicadas a tu caso. Presencial en Málaga y también online.
 </p>
-        <CtaButtons reservaMsg={RESERVA_MSG} dudasMsg={DUDAS_MSG} style={{ marginTop: 22 }} />
+        <CtaButtons reservaMsg={RESERVA_MSG} dudasMsg={DUDAS_MSG} hideDudasOnMobile style={{ marginTop: 22 }} />
       </section>
 
       <section style={section}>

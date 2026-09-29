@@ -1,7 +1,7 @@
 import SiteHeader from "../components/SiteHeader";
 import { CtaButtons, StickyWhatsApp } from "../components/Cta";
 
-const RESERVA_MSG = "Hola, me gustaría reservar una primera sesión de regulación y bienestar en Centro NERÚA.";
+const RESERVA_MSG = "Hola, me gustaría pedir cita para una primera sesión de regulación y bienestar en Centro NERÚA.";
 const DUDAS_MSG = "Hola, me gustaría información sobre regulación y bienestar (bruxismo, tinnitus, vértigos) en Centro NERÚA.";
 
 export const metadata = {
@@ -34,7 +34,7 @@ export default function Page() {
           centrada en el sistema nervioso. Presencial en Málaga y también online.
         </p>
 
-        <CtaButtons reservaMsg={RESERVA_MSG} dudasMsg={DUDAS_MSG} style={{ marginTop: 22 }} />
+        <CtaButtons reservaMsg={RESERVA_MSG} dudasMsg={DUDAS_MSG} hideDudasOnMobile style={{ marginTop: 22 }} />
       </section>
 
       <section style={section}>
