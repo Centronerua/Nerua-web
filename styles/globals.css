@@ -302,7 +302,8 @@ section[id] { scroll-margin-top: 80px; }
   .hero-sub { font-size: 16.5px; }
   .hero-text { font-size: 15.5px; }
   .hero-eyebrow { font-size: 11.5px; letter-spacing: 0.18em; margin-bottom: 18px; }
-  .hero-boutique { font-size: 12px; letter-spacing: 0.01em; gap: 4px 6px; margin-top: 26px; }
+  /* En móvil la línea boutique se oculta para dar más aire a la primera pantalla */
+  .hero-boutique { display: none; }
   .lead-submit { justify-self: stretch; }
   /* Con el teclado abierto en el formulario, la barra de WhatsApp se oculta para no tapar campos */
   body:has(.lead-form :focus) .mobile-cta-bar { display: none; }
@@ -341,12 +342,6 @@ section[id] { scroll-margin-top: 80px; }
   }
   .wa-bar-btn .wa-icon { color: #25D366; flex-shrink: 0; }
   .mobile-cta-spacer { display: block; height: 64px; }
-}
-
-/* Móvil: la línea boutique pasa a una columna centrada, sin separadores sueltos */
-@media (max-width: 480px) {
-  .hero-boutique { flex-direction: column; align-items: center; gap: 4px; }
-  .hero-boutique-sep { display: none; }
 }
 
 @media (max-width: 359px) {

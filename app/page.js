@@ -30,7 +30,7 @@ export default function Home() {
         </p>
 
         <p className="hero-text">
-          Bruxismo, migrañas, tinnitus, vértigos, tensión persistente o molestias digestivas pueden requerir una mirada más amplia. En NERÚA dedicamos tiempo a comprender cada caso y plantear un acompañamiento individualizado.
+          Bruxismo, migrañas, tinnitus, vértigos o molestias digestivas pueden requerir una mirada más amplia. En NERÚA dedicamos tiempo a comprender cada caso y plantear un acompañamiento individualizado.
         </p>
 
         <CtaButtons center hideDudasOnMobile style={{ marginTop: 28 }} />
