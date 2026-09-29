@@ -40,14 +40,15 @@ section[id] { scroll-margin-top: 80px; }
 .cta-row-center { justify-content: center; }
 
 .text-link {
-  color: #6B7D6D;
-  font-size: 14px;
+  color: #56685A; /* verde salvia algo más profundo: contraste 5,3:1 sobre crema */
+  font-size: 15px;
   font-weight: 600;
   text-decoration: underline;
-  text-decoration-color: rgba(107,125,109,0.4);
-  text-underline-offset: 4px;
+  text-decoration-color: rgba(86,104,90,0.55);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 5px;
 }
-.text-link:hover { text-decoration-color: #6B7D6D; }
+.text-link:hover { text-decoration-color: #56685A; }
 
 /* ---------- Header ---------- */
 .site-header {
