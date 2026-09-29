@@ -1,7 +1,7 @@
 import SiteHeader from "../components/SiteHeader";
 import { CtaButtons, StickyWhatsApp } from "../components/Cta";
 
-const RESERVA_MSG = "Hola, me gustaría pedir cita para una primera sesión de regulación y bienestar en Centro NERÚA.";
+const RESERVA_MSG = "Hola, me gustaría pedir cita para una primera sesión de regulación del sistema nervioso en Centro NERÚA.";
 const DUDAS_MSG = "Hola, me gustaría información sobre regulación y bienestar (bruxismo, tinnitus, vértigos) en Centro NERÚA.";
 
 export const metadata = {

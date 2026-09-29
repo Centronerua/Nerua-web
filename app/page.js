@@ -1,6 +1,7 @@
 import LeadForm from "./components/LeadForm";
 import SiteHeader from "./components/SiteHeader";
-import { CtaButtons, DudasButton, StickyWhatsApp, whatsappHref, DUDAS_MSG } from "./components/Cta";
+import { CtaButtons, DudasButton, ReservaButton, StickyWhatsApp, whatsappHref, DUDAS_MSG } from "./components/Cta";
+import { SERVICES, NUTRITION_NOTE, formatPrice } from "./data/pricing";
 
 export const metadata = {
   title: "Centro NERÚA | Psicología, sistema nervioso y nutrición digestiva en Rincón de la Victoria",
@@ -198,45 +199,53 @@ export default function Home() {
         </div>
       </section>
 
-      {/* TIPOS DE CONSULTA + PRECIOS */}
-      <section id="consultas" style={section}>
-        <h2>¿Por dónde empezamos?</h2>
-
-      <p style={text}>
-  Elige tu punto de partida. Si dudas, te orientamos.
-</p>
-
-        <div style={{ display: "grid", gap: 18, marginTop: 18, gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))" }}>
-    
-
-          <PriceCard
-            title="Acompañamiento psicológico"
-            href="/acompanamiento-psicologico-malaga"
-            desc="Terapia breve y regulación del sistema nervioso para estrés, ansiedad, bloqueo emocional y síntomas físicos asociados."
-            first="49 €"
-            follow="60 €"
-            followLabel="Sesiones posteriores"
-          />
-                    <PriceCard
-            title="Nutrición digestiva integrativa"
-            href="/nutricion-integrativa-malaga"
-            desc="Orientado a personas con malestar digestivo, inflamación abdominal, digestiones difíciles, SIBO u otras alteraciones intestinales persistentes."
-            first="49 €"
-            follow="55 €"
-            followLabel="Sesiones de seguimiento"
-          />
-
-          <PriceCard
-            title="Regulación y bienestar"
-            href="/regulacion-bienestar-malaga"
-            desc="Sesiones orientadas a síntomas como tinnitus, vértigos, bruxismo, tensión persistente, migrañas o estrés acumulado."
-            first="49 €"
-            follow="60 €"
-            followLabel="Sesiones posteriores"
-          />
+      {/* CONSULTAS Y PRECIOS */}
+      <section id="consultas" className="rates">
+        <div className="rates-head">
+          <p className="section-eyebrow">CONSULTAS Y PRECIOS</p>
+          <h2 className="rates-title">¿Por dónde empezamos?</h2>
+          <p className="rates-intro">Elige tu punto de partida. Si dudas, te orientamos.</p>
         </div>
 
-        <CtaButtons style={{ marginTop: 18 }} />
+        <div className="rates-grid">
+          {SERVICES.map((svc) => (
+            <article key={svc.id} className="rate">
+              <h3 className="rate-name">{svc.name}</h3>
+              <p className="rate-summary">{svc.summary}</p>
+
+              <dl className="rate-list">
+                {svc.rates.map((r) => (
+                  <div key={r.label} className="rate-row">
+                    <dt>
+                      {r.label} <span className="rate-duration">· {r.duration}</span>
+                    </dt>
+                    <dd>{formatPrice(r.price)}</dd>
+                  </div>
+                ))}
+              </dl>
+
+              {/* Cada parte de la modalidad sin cortes internos; si no cabe, el corte cae tras el "·" */}
+              <p className="rate-modality">
+                {svc.modality.split(" · ").map((part, i, arr) => (
+                  <span key={part}>
+                    <span className="nowrap">{part}{i < arr.length - 1 ? " ·" : ""}</span>
+                    {i < arr.length - 1 ? " " : ""}
+                  </span>
+                ))}
+              </p>
+
+              <div className="rate-actions">
+                <ReservaButton message={svc.reservaMsg} />
+                <a href={svc.href} className="text-link">Ver consulta →</a>
+              </div>
+            </article>
+          ))}
+        </div>
+
+        <div className="rates-note">
+          <p className="rates-note-title">{NUTRITION_NOTE.title}</p>
+          <p className="rates-note-text">{NUTRITION_NOTE.text}</p>
+        </div>
       </section>
 
       {/* CONTACTO */}
@@ -362,46 +371,8 @@ function AreaCard({ href, title, tagline, items }) {
   );
 }
 
-function PriceCard({ title, desc, first, follow, followLabel, href }) {
-  return (
-    <div style={card}>
-      <h3 style={{ marginTop: 0 }}>
-  {href ? (
-    <a href={href} style={{ color: "#3A3A3A", textDecoration: "none" }}>
-      {title}
-    </a>
-  ) : (
-    title
-  )}
-</h3>
-      <p style={{ margin: "8px 0 14px", lineHeight: 1.7 }}>{desc}</p>
-
-      {href ? (
-        <p style={{ margin: "0 0 14px" }}>
-          <a href={href} style={{ color: "#6B7D6D", fontWeight: 700, textDecoration: "none" }}>
-            Ver consulta →
-          </a>
-        </p>
-      ) : null}
-
-      <div style={{ borderTop: "1px solid rgba(58,58,58,0.08)", paddingTop: 14, display: "grid", gap: 10 }}>
-        <div>
-          <div style={{ color: "#6B7D6D", fontWeight: 600 }}>Primera sesión</div>
-          <div style={{ fontSize: 22, fontWeight: 800 }}>{first}</div>
-        </div>
-
-        <div>
-          <div style={{ color: "#6B7D6D", fontWeight: 600 }}>{followLabel}</div>
-          <div style={{ fontSize: 22, fontWeight: 800 }}>{follow}</div>
-        </div>
-      </div>
-    </div>
-  );
-}
-
 /* ESTILOS */
 const section = { maxWidth: "900px", margin: "auto", padding: "80px 20px" };
-const text = { marginBottom: "20px", lineHeight: "1.7", maxWidth: 820 };
 
 const card = {
   background: "white",
