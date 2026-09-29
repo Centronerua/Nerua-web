@@ -255,7 +255,7 @@ export default function Home() {
           </p>
 
           <p style={{ margin: "10px 0 0", lineHeight: 1.8 }}>
-            Atendemos presencialmente en Rincón de la Victoria y también acompañamos online a personas de Málaga y otras localidades.
+            Atención presencial en Rincón de la Victoria y online para personas de Málaga y otras localidades.
           </p>
           {/* La dirección postal exacta se añadirá cuando esté confirmada. */}
 
