@@ -26,7 +26,8 @@ export async function POST(req) {
 
     if (name.length < 2) return Response.json({ error: "Nombre inválido" }, { status: 400 });
     if (!isEmail(email)) return Response.json({ error: "Email inválido" }, { status: 400 });
-    if (!isPostalCodeES(postal_code))
+    // Código postal opcional: si se indica, debe tener 5 cifras; si no, se guarda NULL.
+    if (postal_code && !isPostalCodeES(postal_code))
       return Response.json({ error: "Código postal inválido (5 números)" }, { status: 400 });
     if (message.length < 10)
       return Response.json({ error: "Mensaje demasiado corto (mínimo 10)" }, { status: 400 });
@@ -37,7 +38,7 @@ export async function POST(req) {
       name,
       email,
       phone: phone || null,
-      postal_code,
+      postal_code: postal_code || null,
       message,
       consent,
       source: "web",
@@ -55,7 +56,7 @@ if (process.env.MAKE_WEBHOOK_URL) {
         name,
         email,
         phone: phone || null,
-        postal_code,
+        postal_code: postal_code || null,
         message,
         consent,
         source: "web",

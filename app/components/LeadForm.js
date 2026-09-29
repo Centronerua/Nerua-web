@@ -100,10 +100,9 @@ export default function LeadForm() {
       </label>
 
       <label className="lead-field">
-        Código Postal *
+        Código postal (opcional)
         <input
           name="postal_code"
-          required
           inputMode="numeric"
           autoComplete="postal-code"
           pattern="[0-9]{5}"
