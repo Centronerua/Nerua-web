@@ -1,4 +1,8 @@
 import SiteHeader from "../components/SiteHeader";
+import { CtaButtons, StickyWhatsApp } from "../components/Cta";
+
+const RESERVA_MSG = "Hola, me gustaría reservar una primera sesión de acompañamiento psicológico en Centro NERÚA.";
+const DUDAS_MSG = "Hola, me gustaría información sobre acompañamiento psicológico y sistema nervioso en Centro NERÚA.";
 
 export const metadata = {
  title: "Acompañamiento psicológico en Málaga (presencial y online) | Centro NERÚA",
@@ -7,9 +11,6 @@ export const metadata = {
 };
 
 export default function Page() {
-  const whatsappLink =
-    "https://wa.me/34637541937?text=Hola%2C%20me%20gustar%C3%ADa%20informaci%C3%B3n%20sobre%20acompa%C3%B1amiento%20psicol%C3%B3gico%20y%20sistema%20nervioso%20en%20Centro%20NER%C3%9AA.";
-
   const section = { maxWidth: "900px", margin: "auto", padding: "70px 20px" };
   const card = {
     background: "white",
@@ -17,24 +18,6 @@ export default function Page() {
     borderRadius: "14px",
     boxShadow: "0 8px 20px rgba(0,0,0,0.05)",
     border: "1px solid rgba(58,58,58,0.06)",
-  };
-  const btn = {
-    background: "#6B7D6D",
-    color: "white",
-    padding: "10px 20px",
-    borderRadius: "22px",
-    border: "none",
-    cursor: "pointer",
-    fontWeight: 600,
-  };
-  const btnGhost = {
-    background: "transparent",
-    color: "#6B7D6D",
-    padding: "10px 20px",
-    borderRadius: "22px",
-    border: "1px solid rgba(107,125,109,0.6)",
-    cursor: "pointer",
-    fontWeight: 600,
   };
 
   return (
@@ -52,14 +35,7 @@ export default function Page() {
   Trabajamos desde una mirada integradora (cuerpo, emoción y sistema nervioso) y utilizamos herramientas inspiradas en
   neurología funcional, explicadas de forma sencilla y aplicadas a tu caso. Presencial en Málaga y también online.
 </p>
-        <div style={{ marginTop: 22, display: "flex", gap: 12, flexWrap: "wrap" }}>
-          <a href={whatsappLink} target="_blank" rel="noreferrer" style={{ textDecoration: "none" }}>
-            <button style={btn}>Quiero orientación</button>
-          </a>
-          <a href="/#reserva" style={{ textDecoration: "none" }}>
-            <button style={btnGhost}>Ver reserva</button>
-          </a>
-        </div>
+        <CtaButtons reservaMsg={RESERVA_MSG} dudasMsg={DUDAS_MSG} style={{ marginTop: 22 }} />
       </section>
 
       <section style={section}>
@@ -112,16 +88,11 @@ export default function Page() {
             </div>
           </div>
 
-          <div style={{ marginTop: 18, display: "flex", gap: 12, flexWrap: "wrap" }}>
-            <a href={whatsappLink} target="_blank" rel="noreferrer" style={{ textDecoration: "none" }}>
-              <button style={btn}>Escríbenos</button>
-            </a>
-            <a href="/" style={{ textDecoration: "none" }}>
-              <button style={btnGhost}>Volver a la web</button>
-            </a>
-          </div>
+          <CtaButtons reservaMsg={RESERVA_MSG} dudasMsg={DUDAS_MSG} style={{ marginTop: 18 }} />
         </div>
       </section>
+
+      <StickyWhatsApp message={DUDAS_MSG} />
     </main>
   );
 }

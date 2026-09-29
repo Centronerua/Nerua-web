@@ -1,5 +1,6 @@
 import LeadForm from "./components/LeadForm";
 import SiteHeader from "./components/SiteHeader";
+import { CtaButtons, DudasButton, StickyWhatsApp, whatsappHref } from "./components/Cta";
 
 export const metadata = {
   title: "Centro NERÚA | Bienestar integral y acompañamiento psicológico en Málaga",
@@ -10,7 +11,6 @@ export const metadata = {
 // app/page.js
 
 export default function Home() {
-const whatsappLink = "https://wa.me/34637541937?text=Hola%2C%20he%20visto%20la%20web%20de%20Centro%20NERÚA%20y%20me%20gustaría%20recibir%20información%20sobre%20mi%20caso";
 
  return (
   <>
@@ -33,14 +33,7 @@ const whatsappLink = "https://wa.me/34637541937?text=Hola%2C%20he%20visto%20la%2
           En NERÚA, los abordamos desde una mirada integradora, humana y profesional, teniendo en cuenta la historia de cada persona y la forma en que el cuerpo y el sistema nervioso expresan lo que está ocurriendo.
         </p>
 
-        <div style={{ marginTop: 24, display: "flex", gap: 12, justifyContent: "center", flexWrap: "wrap" }}>
-          <a href="#reserva" style={{ textDecoration: "none" }}>
-            <button style={btn}>Reservar sesión</button>
-          </a>
-          <a href="#consultas" style={{ textDecoration: "none" }}>
-            <button style={btnGhost}>Ver tipos de consulta</button>
-          </a>
-        </div>
+        <CtaButtons center style={{ marginTop: 24 }} />
       </section>
 
       {/* HERO IMAGE */}
@@ -114,14 +107,7 @@ const whatsappLink = "https://wa.me/34637541937?text=Hola%2C%20he%20visto%20la%2
           />
         </div>
 
-        <div style={{ marginTop: 18, display: "flex", gap: 12, flexWrap: "wrap" }}>
-          <a href="#bonos" style={{ textDecoration: "none" }}>
-            <button style={btn}>Consultar bonos</button>
-          </a>
-          <a href={whatsappLink} target="_blank" rel="noreferrer" style={{ textDecoration: "none" }}>
-            <button style={btnGhost}>Resolver dudas por WhatsApp</button>
-          </a>
-        </div>
+        <CtaButtons style={{ marginTop: 18 }} />
       </section>
 
       {/* IMAGEN CALMA */}
@@ -153,8 +139,14 @@ const whatsappLink = "https://wa.me/34637541937?text=Hola%2C%20he%20visto%20la%2
               Escríbenos y te explicamos las opciones disponibles según el tipo de consulta y el proceso que quieras iniciar.
             </p>
           </div>
-          <a href={whatsappLink} target="_blank" rel="noreferrer" style={{ textDecoration: "none" }}>
-            <button style={btn}>Consultar bonos por WhatsApp</button>
+          <a
+            href={whatsappHref("Hola, me gustaría información sobre los bonos de Centro NERÚA.")}
+            target="_blank"
+            rel="noreferrer"
+            className="btn"
+            data-cta="bonos"
+          >
+            Consultar bonos por WhatsApp
           </a>
         </div>
       </section>
@@ -247,14 +239,7 @@ const whatsappLink = "https://wa.me/34637541937?text=Hola%2C%20he%20visto%20la%2
               <li>Regulación y bienestar</li>
             </ul>
 
-            <div style={{ marginTop: 14, display: "flex", gap: 12, flexWrap: "wrap" }}>
-              <a href={whatsappLink} target="_blank" rel="noreferrer" style={{ textDecoration: "none" }}>
-                <button style={btn}>Quiero resolver mi caso</button>
-              </a>
-              <a href="#consultas" style={{ textDecoration: "none" }}>
-                <button style={btnGhost}>Ver precios</button>
-              </a>
-            </div>
+            <CtaButtons style={{ marginTop: 14 }} />
           </div>
 
           <div style={card}>
@@ -264,9 +249,7 @@ const whatsappLink = "https://wa.me/34637541937?text=Hola%2C%20he%20visto%20la%2
             </p>
 
             <div style={{ marginTop: 14 }}>
-              <a href={whatsappLink} target="_blank" rel="noreferrer" style={{ textDecoration: "none" }}>
-                <button style={btn}>Quiero orientación</button>
-              </a>
+              <DudasButton />
             </div>
           </div>
         </div>
@@ -298,47 +281,21 @@ const whatsappLink = "https://wa.me/34637541937?text=Hola%2C%20he%20visto%20la%2
           <div style={{ height: 14 }} />
 
           <div style={{ display: "flex", gap: 12, flexWrap: "wrap" }}>
-            <a href={whatsappLink} target="_blank" rel="noreferrer" style={{ textDecoration: "none" }}>
-              <button style={btn}>Hablar por WhatsApp</button>
-            </a>
+            <DudasButton className="btn" />
 
             <a
               href="https://www.google.com/maps/search/?api=1&query=Camino%20de%20los%20Almendales%2035%2029013%20M%C3%A1laga%20AFA%20M%C3%A1laga"
               target="_blank"
               rel="noreferrer"
-              style={{ textDecoration: "none" }}
+              className="btn-ghost"
             >
-              <button style={btnGhost}>Cómo llegar</button>
+              Cómo llegar
             </a>
           </div>
         </div>
       </section>
 
-      {/* WhatsApp floating */}
-      <a
-        href={whatsappLink}
-        target="_blank"
-        rel="noreferrer"
-        style={{
-          position: "fixed",
-          bottom: "20px",
-          right: "20px",
-          background: "#25D366",
-          color: "white",
-          borderRadius: "30px",
-          padding: "12px 18px",
-          fontSize: "14px",
-          fontWeight: "600",
-          textDecoration: "none",
-          boxShadow: "0 6px 16px rgba(0,0,0,0.15)",
-          zIndex: 1000,
-          display: "flex",
-          alignItems: "center",
-          gap: "8px",
-        }}
-      >
-        WhatsApp
-      </a>
+      <StickyWhatsApp />
    </main>
 </>
 );
@@ -358,6 +315,14 @@ function PriceCard({ title, desc, first, follow, followLabel, href }) {
   )}
 </h3>
       <p style={{ margin: "8px 0 14px", lineHeight: 1.7 }}>{desc}</p>
+
+      {href ? (
+        <p style={{ margin: "0 0 14px" }}>
+          <a href={href} style={{ color: "#6B7D6D", fontWeight: 700, textDecoration: "none" }}>
+            Ver consulta →
+          </a>
+        </p>
+      ) : null}
 
       <div style={{ borderTop: "1px solid rgba(58,58,58,0.08)", paddingTop: 14, display: "grid", gap: 10 }}>
         <div>
@@ -397,33 +362,6 @@ const card = {
   borderRadius: "14px",
   boxShadow: "0 8px 20px rgba(0,0,0,0.05)",
   border: "1px solid rgba(58,58,58,0.06)",
-};
-
-const btn = {
-  background: "#6B7D6D",
-  color: "white",
-  padding: "10px 20px",
-  borderRadius: "22px",
-  border: "none",
-  cursor: "pointer",
-  fontWeight: 600,
-};
-
-const btnGhost = {
-  background: "transparent",
-  color: "#6B7D6D",
-  padding: "10px 20px",
-  borderRadius: "22px",
-  border: "1px solid rgba(107,125,109,0.6)",
-  cursor: "pointer",
-  fontWeight: 600,
-};
-
-const link = {
-  textDecoration: "none",
-  color: "#6B7D6D",
-  fontSize: 14,
-  fontWeight: 600,
 };
 
 const list = {
