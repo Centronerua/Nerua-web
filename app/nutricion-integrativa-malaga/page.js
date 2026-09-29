@@ -23,7 +23,7 @@ export default function Page() {
   return (
     <main
       style={{
-        fontFamily: "Montserrat, sans-serif",
+        fontFamily: "var(--font-sans), Montserrat, sans-serif",
         background: "#F5F1EB",
         color: "#3A3A3A",
         minHeight: "100vh",

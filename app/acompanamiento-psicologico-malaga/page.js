@@ -21,7 +21,7 @@ export default function Page() {
   };
 
   return (
-    <main style={{ fontFamily: "Montserrat, sans-serif", background: "#F5F1EB", color: "#3A3A3A", minHeight: "100vh" }}>
+    <main style={{ fontFamily: "var(--font-sans), Montserrat, sans-serif", background: "#F5F1EB", color: "#3A3A3A", minHeight: "100vh" }}>
       <SiteHeader badgeText="Presencial + Online" />
 
       <section style={{ ...section, paddingTop: "90px" }}>

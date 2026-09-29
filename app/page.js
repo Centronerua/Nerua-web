@@ -15,30 +15,38 @@ export default function Home() {
  return (
   <>
 
-    <main style={{ fontFamily: "Montserrat, sans-serif", background: "#F5F1EB", color: "#3A3A3A" }}>
+    <main style={{ fontFamily: "var(--font-sans), Montserrat, sans-serif", background: "#F5F1EB", color: "#3A3A3A" }}>
     
       <SiteHeader badgeText="Presencial + Online" />
 
       {/* HERO */}
-      <section style={{ textAlign: "center", padding: "95px 20px 50px", maxWidth: "900px", margin: "auto" }}>
-        <h1 style={{ fontSize: "44px", marginBottom: 10 }}>
-          Centro <span style={{ color: "#C6A96B" }}>NERÚA</span>
-        </h1>
+      <section className="hero">
+        <p className="hero-eyebrow">CENTRO NERÚA · MÁLAGA</p>
 
-        <p style={{ color: "#6B7D6D", marginTop: 0 }}>Espacio de bienestar integral en Málaga</p>
+        <h1 className="hero-h1">Entender antes de intervenir</h1>
 
-        <p style={{ marginTop: "24px", lineHeight: "1.7", maxWidth: 820, marginInline: "auto" }}>
-          Hay síntomas y molestias que pueden parecer distintos, pero muchas veces comparten un mismo fondo: bruxismo, migrañas, tinnitus, vértigos, tensión persistente, malestar digestivo o situaciones emocionales que dejan huella en el cuerpo.
-          <br /><br />
-          En NERÚA, los abordamos desde una mirada integradora, humana y profesional, teniendo en cuenta la historia de cada persona y la forma en que el cuerpo y el sistema nervioso expresan lo que está ocurriendo.
+        <p className="hero-sub">
+          Regulación del sistema nervioso, enfoque neurofuncional, psicología y nutrición digestiva integrativa.
         </p>
 
-        <CtaButtons center hideDudasOnMobile style={{ marginTop: 24 }} />
+        <p className="hero-text">
+          Bruxismo, migrañas, tinnitus, vértigos, tensión persistente o molestias digestivas pueden requerir una mirada más amplia. En NERÚA dedicamos tiempo a comprender cada caso y plantear un acompañamiento individualizado.
+        </p>
 
-        <p style={{ marginTop: 16, marginBottom: 0 }}>
+        <CtaButtons center hideDudasOnMobile style={{ marginTop: 28 }} />
+
+        <p style={{ marginTop: 18, marginBottom: 0 }}>
           <a href="#consultas" className="text-link">
             Ver consultas y precios ↓
           </a>
+        </p>
+
+        <p className="hero-boutique">
+          <span>Valoración individual</span>
+          <span className="hero-boutique-sep" aria-hidden="true">·</span>
+          <span>Plan a medida</span>
+          <span className="hero-boutique-sep" aria-hidden="true">·</span>
+          <span>Seguimiento cercano</span>
         </p>
       </section>
 
