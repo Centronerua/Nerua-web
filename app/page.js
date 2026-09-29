@@ -101,6 +101,39 @@ export default function Home() {
         </p>
       </section>
 
+      {/* CÓMO TRABAJAMOS */}
+      <section id="enfoque" className="method">
+        <p className="section-eyebrow">NUESTRO ENFOQUE</p>
+        <h2 className="method-title">Cómo trabajamos</h2>
+        <p className="method-intro">
+          Cada caso requiere tiempo, escucha y una mirada amplia. Partimos de comprender qué está ocurriendo antes de decidir cómo acompañarte.
+        </p>
+
+        <ol className="method-steps">
+          <li className="method-step">
+            <span className="method-num" aria-hidden="true">01</span>
+            <h3 className="method-step-title">Primera valoración</h3>
+            <p className="method-step-text">
+              Escuchamos tu historia, revisamos tus síntomas y buscamos entender qué factores pueden estar influyendo.
+            </p>
+          </li>
+          <li className="method-step">
+            <span className="method-num" aria-hidden="true">02</span>
+            <h3 className="method-step-title">Plan individualizado</h3>
+            <p className="method-step-text">
+              Definimos un enfoque adaptado a tu situación, integrando las áreas que tengan sentido en tu caso.
+            </p>
+          </li>
+          <li className="method-step">
+            <span className="method-num" aria-hidden="true">03</span>
+            <h3 className="method-step-title">Seguimiento cercano</h3>
+            <p className="method-step-text">
+              Revisamos la evolución y ajustamos el proceso cuando es necesario, sin protocolos rígidos.
+            </p>
+          </li>
+        </ol>
+      </section>
+
       {/* TIPOS DE CONSULTA + PRECIOS */}
       <section id="consultas" style={section}>
         <h2>¿Por dónde empezamos?</h2>
