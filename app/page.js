@@ -154,7 +154,7 @@ export default function Home() {
             photoLabel="Fotografía de José Manuel"
           />
           <TeamMember
-            name="María José Martínez"
+            name="María José Martínez Granados"
             area="Nutrición digestiva integrativa"
             approach="Acompaña el malestar digestivo con un enfoque individualizado que integra alimentación, hábitos y contexto de cada persona."
             credentials={["Técnico Superior en Dietética", "Finalizando el Grado en Nutrición Humana y Dietética", "Formación especializada en microbiota y patologías digestivas"]}
