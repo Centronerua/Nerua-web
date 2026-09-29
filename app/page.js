@@ -157,7 +157,7 @@ export default function Home() {
             name="María José Martínez"
             area="Nutrición digestiva integrativa"
             approach="Acompaña el malestar digestivo con un enfoque individualizado que integra alimentación, hábitos y contexto de cada persona."
-            credentials={["Técnico Superior en Dietética", "Formación especializada en microbiota y patologías digestivas"]}
+            credentials={["Técnico Superior en Dietética", "Finalizando el Grado en Nutrición Humana y Dietética", "Formación especializada en microbiota y patologías digestivas"]}
             href="/nutricion-integrativa-malaga"
             photoLabel="Fotografía de María José"
             offset

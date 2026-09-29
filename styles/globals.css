@@ -485,18 +485,18 @@ section[id] { scroll-margin-top: 80px; }
 .voice-lead { position: relative; padding-top: 44px; }
 .voice-lead::before {
   content: "\201C"; position: absolute; top: -16px; left: -4px;
-  font-family: var(--font-serif), Georgia, serif; font-size: 92px; line-height: 1; color: #C6A96B;
+  font-family: var(--font-serif), Georgia, serif; font-size: 80px; line-height: 1; color: #C6A96B;
 }
-.voice-lead blockquote { font-family: var(--font-serif), Georgia, serif; font-weight: 500; font-size: 30px; line-height: 1.4; letter-spacing: -0.005em; }
+.voice-lead blockquote { font-family: var(--font-serif), Georgia, serif; font-weight: 500; font-size: 26px; line-height: 1.45; letter-spacing: -0.005em; }
 
 /* Acento: cita breve con más presencia (cercanía) */
 .voice-accent { padding-left: 28px; border-left: 1px solid #C6A96B; }
-.voice-accent blockquote { font-size: 22px; font-weight: 500; line-height: 1.6; color: #3A3A3A; }
+.voice-accent blockquote { font-size: 18px; font-weight: 500; line-height: 1.75; color: #3A3A3A; }
 
 /* Media y menor: texto más sereno, separado por filete fino */
 .voice-medium, .voice-minor { padding-top: 28px; border-top: 1px solid rgba(107,125,109,0.25); }
-.voice-medium blockquote { font-size: 17.5px; line-height: 1.85; }
-.voice-minor blockquote { font-size: 15.5px; line-height: 1.85; }
+.voice-medium blockquote { font-size: 17px; line-height: 1.85; }
+.voice-minor blockquote { font-size: 17px; line-height: 1.85; }
 
 @media (max-width: 959px) {
   .voices { padding: 64px 20px 64px; }
@@ -505,9 +505,9 @@ section[id] { scroll-margin-top: 80px; }
   .voices-band, .voices-band-mirror { grid-template-columns: 1fr; gap: 52px; }
   .voices-band-mirror { margin-top: 52px; }
   .voices-col { gap: 52px; }
-  .voice-lead blockquote { font-size: 25px; }
-  .voice-lead::before { font-size: 78px; top: -12px; }
+  .voice-lead blockquote { font-size: 23px; }
+  .voice-lead::before { font-size: 70px; top: -10px; }
   .voice-accent { padding-left: 20px; }
-  .voice-accent blockquote { font-size: 20px; }
-  .voice-medium blockquote { font-size: 16.5px; }
+  .voice-accent blockquote { font-size: 17px; }
+  .voice-medium blockquote, .voice-minor blockquote { font-size: 16.5px; }
 }
