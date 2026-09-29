@@ -134,6 +134,64 @@ export default function Home() {
         </ol>
       </section>
 
+      {/* QUIÉN TE ACOMPAÑA */}
+      <section id="equipo" className="team">
+        <div className="team-head">
+          <p className="section-eyebrow">EL EQUIPO</p>
+          <h2 className="team-title">Quién te acompaña</h2>
+          <p className="team-intro">
+            NERÚA nace de una forma de trabajar cercana, rigurosa y muy individualizada. Dos áreas profesionales que se complementan para mirar cada caso con más amplitud.
+          </p>
+        </div>
+
+        <div className="team-grid">
+          <TeamMember
+            name="José Manuel Gil Rueda"
+            area="Regulación del sistema nervioso · Enfoque neurofuncional"
+            approach="Trabaja la relación entre síntomas físicos, tensión, estrés y estado emocional desde la regulación del sistema nervioso y un enfoque neurofuncional."
+            credentials={["CAFD", "Osteópata", "Formación en enfoques relacionados con el trauma"]}
+            href="/regulacion-bienestar-malaga"
+            photoLabel="Fotografía de José Manuel"
+          />
+          <TeamMember
+            name="María José Martínez"
+            area="Nutrición digestiva integrativa"
+            approach="Acompaña el malestar digestivo con un enfoque individualizado que integra alimentación, hábitos y contexto de cada persona."
+            credentials={["Técnico Superior en Dietética", "Formación especializada en microbiota y patologías digestivas"]}
+            href="/nutricion-integrativa-malaga"
+            photoLabel="Fotografía de María José"
+            offset
+          />
+        </div>
+      </section>
+
+      {/* TESTIMONIOS */}
+      <section id="testimonios" style={section}>
+        <h2>Testimonios</h2>
+
+        <div style={{ display: "grid", gap: 18, marginTop: 18, gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))" }}>
+          <Testimonial
+            name="Begoña"
+            text="Era la primera vez que acudía a un centro con un enfoque integrador del sistema nervioso, y lo hice después de haber probado con otros profesionales sin encontrar una mejora estable. Tenía tensión muscular, insomnio y una sensación constante de desequilibrio. Tras la primera sesión noté un cambio enorme y esa misma noche dormí mucho mejor. Desde entonces sigo acudiendo cuando lo necesito. Estoy profundamente agradecida a Centro NERÚA."
+          />
+
+          <Testimonial
+            name="Marta"
+            text="Gran profesional y mejor persona. Cuando tu vida se vuelve muy difícil, encontrar a alguien que te ayude a comprender lo que ocurre y a caminar con más calma no tiene precio. En mi caso, que es complejo, el acompañamiento ha sido muy importante. Además, tras varias sesiones trabajando el bruxismo y la tensión acumulada, he ido mejorando cada vez más y ahora estoy muchísimo mejor."
+          />
+
+          <Testimonial
+            name="Bárbara"
+            text="Tras años de malestar digestivo y varios tratamientos sin resultado, pude comprender mejor lo que estaba ocurriendo en mi caso. Con el acompañamiento en nutrición digestiva integrativa conseguí mejorar mi digestión y resolver un SIBO de metano junto con un problema de candidiasis. El proceso fue claro y me sentí muy acompañada en todo momento."
+          />
+
+          <Testimonial
+            name="Wilma"
+            text="Después de mucho tiempo con inflamación abdominal y digestiones difíciles, el trabajo en nutrición digestiva integrativa me ayudó a identificar qué estaba influyendo en mi caso y a mejorar de forma progresiva. El proceso fue muy claro y el acompañamiento muy cercano."
+          />
+        </div>
+      </section>
+
       {/* TIPOS DE CONSULTA + PRECIOS */}
       <section id="consultas" style={section}>
         <h2>¿Por dónde empezamos?</h2>
@@ -173,151 +231,6 @@ export default function Home() {
         </div>
 
         <CtaButtons style={{ marginTop: 18 }} />
-      </section>
-
-      {/* IMAGEN CALMA */}
-      <section style={{ padding: "0 20px 70px", maxWidth: "950px", margin: "auto" }}>
-        <img
-          src="/images/espacio-consulta.webp"
-          alt="Centro NERÚA - espacio de calma en Málaga"
-          style={{
-            width: "100%",
-            borderRadius: "18px",
-            maxHeight: "260px",
-            objectFit: "cover",
-            display: "block",
-            boxShadow: "0 12px 30px rgba(0,0,0,0.06)",
-          }}
-        />
-      </section>
-
-      {/* BONOS */}
-      <section id="bonos" style={section}>
-        <h2>Bonos</h2>
-        <p style={text}>
-          Si quieres un acompañamiento continuado, consulta nuestros bonos y opciones de seguimiento. Te orientamos para elegir el plan más adecuado según tu caso.
-        </p>
-
-        <div style={{ ...card, display: "flex", justifyContent: "space-between", gap: 18, flexWrap: "wrap", alignItems: "center" }}>
-          <div style={{ maxWidth: 620 }}>
-            <p style={{ margin: 0, lineHeight: 1.7 }}>
-              Escríbenos y te explicamos las opciones disponibles según el tipo de consulta y el proceso que quieras iniciar.
-            </p>
-          </div>
-          <a
-            href={whatsappHref("Hola, me gustaría información sobre los bonos de Centro NERÚA.")}
-            target="_blank"
-            rel="noreferrer"
-            className="btn"
-            data-cta="bonos"
-          >
-            Consultar bonos por WhatsApp
-          </a>
-        </div>
-      </section>
-
-      {/* IMAGEN DETALLE */}
-      <section style={{ padding: "0 20px 60px", maxWidth: "950px", margin: "auto" }}>
-        <img
-          src="/images/detalle-mesa-planta.webp"
-          alt="Centro NERÚA - espacio cuidado"
-          style={{
-            width: "100%",
-            borderRadius: "18px",
-            maxHeight: "260px",
-            objectFit: "cover",
-            display: "block",
-            boxShadow: "0 12px 30px rgba(0,0,0,0.06)",
-          }}
-        />
-      </section>
-
-      {/* EQUIPO */}
-      <section id="equipo" style={section}>
-        <h2>Quiénes somos</h2>
-
-        <div style={{ display: "grid", gap: 18, marginTop: 18, gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))" }}>
-          <div style={card}>
-            <h3 style={{ marginTop: 0 }}>José Manuel Gil Rueda</h3>
-            <p style={{ margin: "8px 0 0", lineHeight: 1.7 }}>
-              Psicólogo, CAFD y osteópata.
-              <br /><br />
-              Especializado en enfoques integrativos que trabajan la regulación del sistema nervioso y el bienestar global de la persona.
-              Cuenta con formación en diferentes enfoques relacionados con el trauma y con métodos que integran cuerpo y mente desde la neurología funcional.
-            </p>
-          </div>
-
-          <div style={card}>
-            <h3 style={{ marginTop: 0 }}>María José Martínez</h3>
-            <p style={{ margin: "8px 0 0", lineHeight: 1.7 }}>
-              Técnico Superior en Dietética y actualmente en formación en el Grado de Nutrición Humana.
-              <br /><br />
-              Especializada en nutrición digestiva integrativa y en el abordaje de alteraciones digestivas desde una perspectiva global.
-              Cuenta con formación especializada en microbiota y patologías digestivas y continúa ampliando su formación en este ámbito.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* TESTIMONIOS */}
-      <section id="testimonios" style={section}>
-        <h2>Testimonios</h2>
-
-        <div style={{ display: "grid", gap: 18, marginTop: 18, gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))" }}>
-          <Testimonial
-            name="Begoña"
-            text="Era la primera vez que acudía a un centro con un enfoque integrador del sistema nervioso, y lo hice después de haber probado con otros profesionales sin encontrar una mejora estable. Tenía tensión muscular, insomnio y una sensación constante de desequilibrio. Tras la primera sesión noté un cambio enorme y esa misma noche dormí mucho mejor. Desde entonces sigo acudiendo cuando lo necesito. Estoy profundamente agradecida a Centro NERÚA."
-          />
-
-          <Testimonial
-            name="Marta"
-            text="Gran profesional y mejor persona. Cuando tu vida se vuelve muy difícil, encontrar a alguien que te ayude a comprender lo que ocurre y a caminar con más calma no tiene precio. En mi caso, que es complejo, el acompañamiento ha sido muy importante. Además, tras varias sesiones trabajando el bruxismo y la tensión acumulada, he ido mejorando cada vez más y ahora estoy muchísimo mejor."
-          />
-
-          <Testimonial
-            name="Bárbara"
-            text="Tras años de malestar digestivo y varios tratamientos sin resultado, pude comprender mejor lo que estaba ocurriendo en mi caso. Con el acompañamiento en nutrición digestiva integrativa conseguí mejorar mi digestión y resolver un SIBO de metano junto con un problema de candidiasis. El proceso fue claro y me sentí muy acompañada en todo momento."
-          />
-
-          <Testimonial
-            name="Wilma"
-            text="Después de mucho tiempo con inflamación abdominal y digestiones difíciles, el trabajo en nutrición digestiva integrativa me ayudó a identificar qué estaba influyendo en mi caso y a mejorar de forma progresiva. El proceso fue muy claro y el acompañamiento muy cercano."
-          />
-        </div>
-      </section>
-
-      {/* RESERVA */}
-      <section id="reserva" style={section}>
-        <h2>Reserva de sesión</h2>
-
-        <p style={text}>
-          Si sientes que algo de lo que has leído conecta contigo, puedes reservar una sesión.
-          En la reserva podrás elegir el tipo de consulta que mejor se adapte a tu situación.
-        </p>
-       
-        <div style={{ display: "grid", gap: 18, marginTop: 18, gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))" }}>
-          <div style={card}>
-            <h3 style={{ marginTop: 0 }}>Opciones de reserva</h3>
-            <ul style={list}>
-              <li>Nutrición digestiva</li>
-              <li>Acompañamiento psicológico</li>
-              <li>Regulación y bienestar</li>
-            </ul>
-
-            <CtaButtons style={{ marginTop: 14 }} />
-          </div>
-
-          <div style={card}>
-            <h3 style={{ marginTop: 0 }}>¿No sabes cuál elegir?</h3>
-            <p style={{ margin: 0, lineHeight: 1.7 }}>
-              Escríbenos y te orientamos para escoger el tipo de consulta que mejor encaje contigo.
-            </p>
-
-            <div style={{ marginTop: 14 }}>
-              <DudasButton />
-            </div>
-          </div>
-        </div>
       </section>
 
       {/* CONTACTO */}
@@ -367,6 +280,26 @@ export default function Home() {
 }
 
 /* COMPONENTES */
+function TeamMember({ name, area, approach, credentials, href, photoLabel, offset }) {
+  return (
+    <article className={offset ? "member member-offset" : "member"}>
+      {/* Espacio reservado para la fotografía real (retrato 4:5) */}
+      <div className="member-photo" role="img" aria-label={photoLabel}>
+        <span>{photoLabel}</span>
+      </div>
+      <p className="member-area">{area}</p>
+      <h3 className="member-name">{name}</h3>
+      <p className="member-approach">{approach}</p>
+      <ul className="member-credentials">
+        {credentials.map((c) => (
+          <li key={c}>{c}</li>
+        ))}
+      </ul>
+      <a href={href} className="text-link member-link">Conocer su enfoque →</a>
+    </article>
+  );
+}
+
 function AreaCard({ href, title, tagline, items }) {
   return (
     <a href={href} className="area-card">
@@ -444,8 +377,3 @@ const card = {
   border: "1px solid rgba(58,58,58,0.06)",
 };
 
-const list = {
-  margin: 0,
-  paddingLeft: 18,
-  lineHeight: 1.8,
-};
