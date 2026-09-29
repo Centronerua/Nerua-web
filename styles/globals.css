@@ -449,3 +449,51 @@ section[id] { scroll-margin-top: 80px; }
   .member-offset { margin-top: 0; }
   .member-name { font-size: 23px; }
 }
+
+/* ---------- Experiencias ---------- */
+.voices { max-width: 1080px; margin: auto; padding: 96px 20px 104px; }
+.voices-head { text-align: center; }
+.voices-title { margin: 0 auto 14px; max-width: 620px; font-size: 32px; font-weight: 600; line-height: 1.25; color: #3A3A3A; letter-spacing: -0.01em; }
+.voices-intro { margin: 0 auto 80px; max-width: 620px; line-height: 1.8; }
+.voices-band { display: grid; grid-template-columns: 7fr 5fr; gap: 88px; align-items: start; }
+.voices-band-mirror { grid-template-columns: 5fr 7fr; margin-top: 96px; }
+.voices-col { display: grid; gap: 48px; }
+.voices-col-center { align-self: center; }
+.voice { margin: 0; }
+.voice blockquote { margin: 0; color: #3A3A3A; }
+.voice figcaption {
+  display: flex; align-items: center; gap: 12px; margin-top: 20px;
+  color: #6B7D6D; font-size: 12.5px; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase;
+}
+.voice figcaption::before { content: ""; width: 24px; height: 1px; background: #C6A96B; }
+
+/* Protagonista: única cita en serif editorial */
+.voice-lead { position: relative; padding-top: 44px; }
+.voice-lead::before {
+  content: "\201C"; position: absolute; top: -16px; left: -4px;
+  font-family: var(--font-serif), Georgia, serif; font-size: 92px; line-height: 1; color: #C6A96B;
+}
+.voice-lead blockquote { font-family: var(--font-serif), Georgia, serif; font-weight: 500; font-size: 30px; line-height: 1.4; letter-spacing: -0.005em; }
+
+/* Acento: cita breve con más presencia (cercanía) */
+.voice-accent { padding-left: 28px; border-left: 1px solid #C6A96B; }
+.voice-accent blockquote { font-size: 22px; font-weight: 500; line-height: 1.6; color: #3A3A3A; }
+
+/* Media y menor: texto más sereno, separado por filete fino */
+.voice-medium, .voice-minor { padding-top: 28px; border-top: 1px solid rgba(107,125,109,0.25); }
+.voice-medium blockquote { font-size: 17.5px; line-height: 1.85; }
+.voice-minor blockquote { font-size: 15.5px; line-height: 1.85; }
+
+@media (max-width: 959px) {
+  .voices { padding: 64px 20px 64px; }
+  .voices-title { font-size: 26px; }
+  .voices-intro { margin-bottom: 52px; }
+  .voices-band, .voices-band-mirror { grid-template-columns: 1fr; gap: 52px; }
+  .voices-band-mirror { margin-top: 52px; }
+  .voices-col { gap: 52px; }
+  .voice-lead blockquote { font-size: 25px; }
+  .voice-lead::before { font-size: 78px; top: -12px; }
+  .voice-accent { padding-left: 20px; }
+  .voice-accent blockquote { font-size: 20px; }
+  .voice-medium blockquote { font-size: 16.5px; }
+}

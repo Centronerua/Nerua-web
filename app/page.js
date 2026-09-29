@@ -165,30 +165,36 @@ export default function Home() {
         </div>
       </section>
 
-      {/* TESTIMONIOS */}
-      <section id="testimonios" style={section}>
-        <h2>Testimonios</h2>
+      {/* EXPERIENCIAS */}
+      <section id="testimonios" className="voices">
+        <div className="voices-head">
+          <p className="section-eyebrow">EXPERIENCIAS</p>
+          <h2 className="voices-title">Lo que cuentan quienes han pasado por NERÚA</h2>
+          <p className="voices-intro">
+            Cada proceso es único. Compartimos algunas experiencias reales de personas a las que hemos acompañado.
+          </p>
+        </div>
 
-        <div style={{ display: "grid", gap: 18, marginTop: 18, gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))" }}>
-          <Testimonial
-            name="Begoña"
-            text="Era la primera vez que acudía a un centro con un enfoque integrador del sistema nervioso, y lo hice después de haber probado con otros profesionales sin encontrar una mejora estable. Tenía tensión muscular, insomnio y una sensación constante de desequilibrio. Tras la primera sesión noté un cambio enorme y esa misma noche dormí mucho mejor. Desde entonces sigo acudiendo cuando lo necesito. Estoy profundamente agradecida a Centro NERÚA."
-          />
+        <div className="voices-band">
+          <Voice {...EXPERIENCES.lead} variant="lead" />
+          <div className="voices-col voices-col-center">
+            {EXPERIENCES.side.map((v) => (
+              <Voice key={v.name} {...v} variant="accent" />
+            ))}
+          </div>
+        </div>
 
-          <Testimonial
-            name="Marta"
-            text="Gran profesional y mejor persona. Cuando tu vida se vuelve muy difícil, encontrar a alguien que te ayude a comprender lo que ocurre y a caminar con más calma no tiene precio. En mi caso, que es complejo, el acompañamiento ha sido muy importante. Además, tras varias sesiones trabajando el bruxismo y la tensión acumulada, he ido mejorando cada vez más y ahora estoy muchísimo mejor."
-          />
-
-          <Testimonial
-            name="Bárbara"
-            text="Tras años de malestar digestivo y varios tratamientos sin resultado, pude comprender mejor lo que estaba ocurriendo en mi caso. Con el acompañamiento en nutrición digestiva integrativa conseguí mejorar mi digestión y resolver un SIBO de metano junto con un problema de candidiasis. El proceso fue claro y me sentí muy acompañada en todo momento."
-          />
-
-          <Testimonial
-            name="Wilma"
-            text="Después de mucho tiempo con inflamación abdominal y digestiones difíciles, el trabajo en nutrición digestiva integrativa me ayudó a identificar qué estaba influyendo en mi caso y a mejorar de forma progresiva. El proceso fue muy claro y el acompañamiento muy cercano."
-          />
+        <div className="voices-band voices-band-mirror">
+          <div className="voices-col">
+            {EXPERIENCES.minor.map((v) => (
+              <Voice key={v.name} {...v} variant="minor" />
+            ))}
+          </div>
+          <div className="voices-col">
+            {EXPERIENCES.medium.map((v) => (
+              <Voice key={v.name} {...v} variant="medium" />
+            ))}
+          </div>
         </div>
       </section>
 
@@ -280,6 +286,40 @@ export default function Home() {
 }
 
 /* COMPONENTES */
+// Experiencias reales (texto literal; "[…]" marca una omisión del original).
+// Para añadir una nueva experiencia basta con incluirla en una de las listas:
+// side (junto a la protagonista), minor o medium (segunda banda).
+const EXPERIENCES = {
+  lead: {
+    name: "Marta",
+    text: "Gran profesional y mejor persona. Cuando tu vida se vuelve muy difícil, encontrar a alguien que te ayude a comprender lo que ocurre y a caminar con más calma no tiene precio. En mi caso, que es complejo, el acompañamiento ha sido muy importante.",
+  },
+  side: [
+    { name: "Bárbara", text: "El proceso fue claro y me sentí muy acompañada en todo momento." },
+  ],
+  minor: [
+    {
+      name: "Begoña",
+      text: "Era la primera vez que acudía a un centro con un enfoque integrador del sistema nervioso […] Desde entonces sigo acudiendo cuando lo necesito. Estoy profundamente agradecida a Centro NERÚA.",
+    },
+  ],
+  medium: [
+    {
+      name: "Wilma",
+      text: "Después de mucho tiempo con inflamación abdominal y digestiones difíciles, el trabajo en nutrición digestiva integrativa me ayudó a identificar qué estaba influyendo en mi caso y a mejorar de forma progresiva. El proceso fue muy claro y el acompañamiento muy cercano.",
+    },
+  ],
+};
+
+function Voice({ name, text, variant }) {
+  return (
+    <figure className={`voice voice-${variant}`}>
+      <blockquote>{text}</blockquote>
+      <figcaption>{name}</figcaption>
+    </figure>
+  );
+}
+
 function TeamMember({ name, area, approach, credentials, href, photoLabel, offset }) {
   return (
     <article className={offset ? "member member-offset" : "member"}>
@@ -348,19 +388,6 @@ function PriceCard({ title, desc, first, follow, followLabel, href }) {
           <div style={{ fontSize: 22, fontWeight: 800 }}>{follow}</div>
         </div>
       </div>
-    </div>
-  );
-}
-
-function Testimonial({ name, text }) {
-  return (
-    <div style={card}>
-      <p style={{ marginTop: 0, lineHeight: 1.7 }}>
-        “{text}”
-      </p>
-      <p style={{ marginBottom: 0, color: "#6B7D6D", fontWeight: 700 }}>
-        — {name}
-      </p>
     </div>
   );
 }
