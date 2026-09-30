@@ -1,5 +1,6 @@
 import LeadForm from "./components/LeadForm";
 import SiteHeader from "./components/SiteHeader";
+import SiteFooter from "./components/SiteFooter";
 import { CtaButtons, DudasButton, ReservaButton, StickyWhatsApp, whatsappHref, DUDAS_MSG, WHATSAPP_DISPLAY } from "./components/Cta";
 import { SERVICES, FOLLOWUP_NOTE, formatPrice } from "./data/pricing";
 import { FAQ } from "./data/faq";
@@ -292,6 +293,9 @@ export default function Home() {
         <div className="contact-grid">
           <div className="contact-info">
             <p className="contact-brand">CENTRO NERÚA</p>
+            <p className="contact-note">
+              Hasta el 30 de noviembre, te indicamos la ubicación de la consulta presencial al confirmar la cita.
+            </p>
             <p className="contact-status">
               <span>
                 <span className="nowrap">Nueva ubicación ·</span>{" "}
@@ -325,6 +329,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <SiteFooter />
 
       <StickyWhatsApp />
    </main>

@@ -1,16 +1,18 @@
 "use client";
 import { useRef, useState } from "react";
 
-// Opciones de "¿Qué te preocupa?". No hay columna propia en Supabase: la opción elegida
-// se añade al principio del mensaje, así llega igual a Supabase y a Make sin cambiar nada.
-const CONCERNS = [
-  "Bruxismo / tensión mandibular",
-  "Digestivo",
-  "Ansiedad / estrés",
-  "Migrañas / tensión",
-  "Tinnitus / vértigos",
+// Opciones de "¿Sobre qué área quieres información?" (sin preguntar por síntomas: minimización de datos de salud).
+// No hay columna propia en Supabase: el área elegida se añade al principio del mensaje ("Área: …"),
+// así llega igual a Supabase y a Make sin cambiar nada. El campo interno sigue llamándose "concern".
+const AREAS = [
+  "Regulación del sistema nervioso",
+  "Psicología",
+  "Nutrición",
+  "No lo tengo claro",
   "Otro",
 ];
+
+const PRIVACY_HREF = "/politica-de-privacidad";
 
 export default function LeadForm() {
   const formRef = useRef(null);
@@ -36,8 +38,7 @@ export default function LeadForm() {
       name: form.get("name"),
       email: form.get("email"),
       phone: form.get("phone"),
-      postal_code: form.get("postal_code"),
-      message: concern ? `Motivo: ${concern}\n\n${text}` : text,
+      message: concern ? `Área: ${concern}\n\n${text}` : text,
       consent: form.get("consent") === "on",
     };
 
@@ -100,23 +101,10 @@ export default function LeadForm() {
       </label>
 
       <label className="lead-field">
-        Código postal (opcional)
-        <input
-          name="postal_code"
-          inputMode="numeric"
-          autoComplete="postal-code"
-          pattern="[0-9]{5}"
-          maxLength={5}
-          placeholder="5 cifras"
-          className="lead-input"
-        />
-      </label>
-
-      <label className="lead-field">
-        ¿Qué te preocupa?
+        ¿Sobre qué área quieres información?
         <select name="concern" defaultValue="" className="lead-input lead-select">
           <option value="">Selecciona una opción</option>
-          {CONCERNS.map((c) => (
+          {AREAS.map((c) => (
             <option key={c} value={c}>{c}</option>
           ))}
         </select>
@@ -124,17 +112,42 @@ export default function LeadForm() {
 
       <label className="lead-field">
         Mensaje *
-        <textarea name="message" required rows={4} className="lead-input lead-textarea" />
+        <textarea
+          name="message"
+          required
+          rows={4}
+          placeholder="Cuéntanos brevemente en qué podemos ayudarte. No es necesario incluir información médica detallada."
+          className="lead-input lead-textarea"
+        />
       </label>
 
       <label className="lead-consent">
         <input name="consent" type="checkbox" required />
-        Acepto la política de privacidad *
+        <span>
+          He leído la{" "}
+          <a href={PRIVACY_HREF} target="_blank" rel="noopener" className="lead-link">
+            Política de privacidad
+          </a>{" "}
+          y consiento el tratamiento de mis datos para responder a mi consulta, incluidos, en su caso, los datos de salud que
+          decida comunicar voluntariamente en el mensaje. *
+        </span>
       </label>
 
       <button type="submit" disabled={loading} className="btn lead-submit">
         {loading ? "Enviando..." : "Enviar"}
       </button>
+
+      {/* Primera capa de información sobre protección de datos */}
+      <p className="lead-info">
+        Responsable: José Manuel Gil Rueda (Centro NERÚA). Finalidad: responder a tu consulta. Legitimación: tu
+        consentimiento. Destinatarios: no cedemos tus datos; solo los tratan los proveedores técnicos necesarios para
+        gestionar tu consulta. Derechos: acceso, rectificación, supresión y otros, en info@centronerua.com. Más información
+        en la{" "}
+        <a href={PRIVACY_HREF} target="_blank" rel="noopener" className="lead-link">
+          Política de privacidad
+        </a>
+        .
+      </p>
     </form>
   );
 }

@@ -1,4 +1,5 @@
 import SiteHeader from "../components/SiteHeader";
+import SiteFooter from "../components/SiteFooter";
 import { StickyWhatsApp } from "../components/Cta";
 import { ServiceHero, ServiceSection, ServiceList, ServiceFaq, ServicePro } from "../components/ServiceLayout";
 import { SERVICES } from "../data/pricing";
@@ -103,6 +104,8 @@ export default function Page() {
           "Formación en enfoques relacionados con el trauma y regulación del sistema nervioso",
         ]}
       />
+
+      <SiteFooter />
 
       <StickyWhatsApp message={DUDAS_MSG} />
     </main>

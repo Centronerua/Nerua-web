@@ -19,7 +19,7 @@ export const FAQ = [
   },
   {
     q: "¿Dónde estará Centro NERÚA?",
-    a: "A partir del 1\u00A0de\u00A0diciembre estaremos en Calle\u00A0Acebuche,\u00A08 · Puerta\u00A08, 29730\u00A0Rincón de la Victoria (Málaga). También ofrecemos consulta online.",
+    a: "Hasta el 30\u00A0de\u00A0noviembre, te indicamos la ubicación de la consulta presencial al confirmar la cita. A partir del 1\u00A0de\u00A0diciembre estaremos en Calle\u00A0Acebuche,\u00A08 · Puerta\u00A08, 29730\u00A0Rincón de la Victoria (Málaga). También ofrecemos consulta online.",
   },
   {
     q: "¿Cómo puedo pedir cita?",
