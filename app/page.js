@@ -150,7 +150,7 @@ export default function Home() {
             name="José Manuel Gil Rueda"
             area="Psicólogo · Regulación del sistema nervioso · Enfoque neurofuncional"
             approach="Trabaja la relación entre síntomas físicos, tensión, estrés y estado emocional desde la regulación del sistema nervioso y un enfoque neurofuncional."
-            credentials={["Licenciado en Ciencias de la Actividad Física y del Deporte (CAFD)", "Formación en enfoques relacionados con el trauma y regulación del sistema nervioso"]}
+            credentials={["Licenciado en Ciencias de la Actividad Física y del Deporte (CAFD)", "Osteópata", "Formación en enfoques relacionados con el trauma y regulación del sistema nervioso"]}
             href="/regulacion-bienestar-malaga"
             photoLabel="Fotografía de José Manuel"
           />

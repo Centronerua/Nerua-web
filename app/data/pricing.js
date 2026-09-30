@@ -18,7 +18,7 @@ export const SERVICES = [
     name: "Psicología",
     href: "/acompanamiento-psicologico-malaga",
     summary: "Estrés · ansiedad · bloqueo emocional",
-    rates: [{ label: "Sesión individual", duration: "60 min", price: 50 }],
+    rates: [{ label: "Sesión individual", duration: "60 min", price: 55 }],
     modality: "Presencial en Rincón de la Victoria · Online",
     reservaMsg: "Hola, me gustaría pedir cita para una primera sesión de acompañamiento psicológico en Centro NERÚA.",
   },
