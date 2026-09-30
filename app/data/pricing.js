@@ -36,10 +36,10 @@ export const SERVICES = [
   },
 ];
 
-// Nota discreta bajo las tarifas, vinculada a Nutrición digestiva integrativa.
-export const NUTRITION_NOTE = {
-  title: "¿Necesitas un acompañamiento más continuado en nutrición?",
-  text: "Después de la primera valoración podemos orientarte sobre las opciones de seguimiento que mejor encajen con tu caso.",
+// Nota general y discreta bajo las tres tarifas (sin precios ni condiciones de bonos).
+export const FOLLOWUP_NOTE = {
+  title: "¿Buscas un seguimiento continuado?",
+  text: "Consulta nuestros bonos y opciones de acompañamiento.",
 };
 
 export function formatPrice(value) {

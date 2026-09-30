@@ -1,7 +1,7 @@
 import LeadForm from "./components/LeadForm";
 import SiteHeader from "./components/SiteHeader";
 import { CtaButtons, DudasButton, ReservaButton, StickyWhatsApp, whatsappHref, DUDAS_MSG } from "./components/Cta";
-import { SERVICES, NUTRITION_NOTE, formatPrice } from "./data/pricing";
+import { SERVICES, FOLLOWUP_NOTE, formatPrice } from "./data/pricing";
 
 export const metadata = {
   title: "Centro NERÚA | Psicología, sistema nervioso y nutrición digestiva en Rincón de la Victoria",
@@ -243,8 +243,8 @@ export default function Home() {
         </div>
 
         <div className="rates-note">
-          <p className="rates-note-title">{NUTRITION_NOTE.title}</p>
-          <p className="rates-note-text">{NUTRITION_NOTE.text}</p>
+          <p className="rates-note-title">{FOLLOWUP_NOTE.title}</p>
+          <p className="rates-note-text">{FOLLOWUP_NOTE.text}</p>
         </div>
       </section>
 
