@@ -10,7 +10,7 @@ export const SERVICES = [
     href: "/regulacion-bienestar-malaga",
     summary: "Bruxismo · tinnitus · migrañas · vértigos",
     rates: [{ label: "Sesión individual", duration: "60 min", price: 50 }],
-    modality: "Presencial en Rincón de la Victoria · Online según el caso",
+    modality: "Presencial en Rincón de la Victoria",
     reservaMsg: "Hola, me gustaría pedir cita para una primera sesión de regulación del sistema nervioso en Centro NERÚA.",
   },
   {
@@ -19,7 +19,7 @@ export const SERVICES = [
     href: "/acompanamiento-psicologico-malaga",
     summary: "Estrés · ansiedad · bloqueo emocional",
     rates: [{ label: "Sesión individual", duration: "60 min", price: 55 }],
-    modality: "Presencial en Rincón de la Victoria · Online",
+    modality: "Presencial en Rincón de la Victoria · Online según el caso",
     reservaMsg: "Hola, me gustaría pedir cita para una primera sesión de acompañamiento psicológico en Centro NERÚA.",
   },
   {

@@ -7,7 +7,7 @@ const DUDAS_MSG = "Hola, me gustaría información sobre regulación y bienestar
 export const metadata = {
   title: "Regulación y bienestar en Rincón de la Victoria · Sistema nervioso y enfoque neurofuncional | Centro NERÚA",
   description:
-    "Regulación del sistema nervioso con enfoque neurofuncional en Rincón de la Victoria, Málaga: bruxismo, tinnitus, vértigos, migrañas y tensión persistente. Presencial y online.",
+    "Regulación del sistema nervioso en Rincón de la Victoria, Málaga: bruxismo, tinnitus, vértigos y migrañas. Enfoque neurofuncional. Consulta presencial.",
 };
 
 export default function Page() {
@@ -32,7 +32,7 @@ export default function Page() {
 
         <p style={{ color: "#6B7D6D", fontWeight: 600, marginTop: 0, lineHeight: 1.7, maxWidth: 820 }}>
           Sesiones orientadas a tensión persistente y síntomas como bruxismo, tinnitus, vértigos o migrañas, desde una mirada integradora
-          centrada en el sistema nervioso y un enfoque neurofuncional. Presencial en Rincón de la Victoria, Málaga · Online.
+          centrada en el sistema nervioso y un enfoque neurofuncional. Presencial en Rincón de la Victoria, Málaga.
         </p>
 
         <CtaButtons reservaMsg={RESERVA_MSG} dudasMsg={DUDAS_MSG} hideDudasOnMobile style={{ marginTop: 22 }} />
@@ -67,12 +67,6 @@ export default function Page() {
               <strong>¿Es solo “relajación”?</strong>
               <div style={{ lineHeight: 1.8 }}>
                 No. Es un enfoque de regulación y bienestar que tiene en cuenta el sistema nervioso y cómo el cuerpo sostiene el síntoma.
-              </div>
-            </div>
-            <div>
-              <strong>¿Online sirve?</strong>
-              <div style={{ lineHeight: 1.8 }}>
-                En algunos casos sí, especialmente para acompañamiento y pautas. Te orientamos según tu situación.
               </div>
             </div>
             <div>

@@ -5,9 +5,9 @@ const RESERVA_MSG = "Hola, me gustaría pedir cita para una primera sesión de a
 const DUDAS_MSG = "Hola, me gustaría información sobre acompañamiento psicológico y sistema nervioso en Centro NERÚA.";
 
 export const metadata = {
- title: "Acompañamiento psicológico en Rincón de la Victoria (presencial y online) | Centro NERÚA",
+ title: "Acompañamiento psicológico en Rincón de la Victoria | Centro NERÚA",
   description:
-    "Acompañamiento psicológico en Rincón de la Victoria, Málaga, con enfoque integrador, regulación del sistema nervioso y enfoque neurofuncional. Estrés, ansiedad, bloqueo emocional y síntomas asociados. Presencial y online.",
+    "Acompañamiento psicológico en Rincón de la Victoria, Málaga, con enfoque integrador, regulación del sistema nervioso y enfoque neurofuncional. Estrés, ansiedad, bloqueo emocional y síntomas asociados. Presencial y online según el caso.",
 };
 
 export default function Page() {
@@ -33,7 +33,7 @@ export default function Page() {
   Un espacio cercano y profesional para reducir estrés y ansiedad, salir del bloqueo y recuperar calma.
   Enfoque de terapia breve: sesiones orientadas a objetivos, prácticas y centradas en cambios reales.
   Trabajamos desde una mirada integradora (cuerpo, emoción y sistema nervioso) y utilizamos herramientas de
-  enfoque neurofuncional, explicadas de forma sencilla y aplicadas a tu caso. Presencial en Rincón de la Victoria, Málaga · Online.
+  enfoque neurofuncional, explicadas de forma sencilla y aplicadas a tu caso. Presencial en Rincón de la Victoria, Málaga · Online según el caso.
 </p>
         <CtaButtons reservaMsg={RESERVA_MSG} dudasMsg={DUDAS_MSG} hideDudasOnMobile style={{ marginTop: 22 }} />
       </section>
@@ -69,9 +69,9 @@ export default function Page() {
           <h2 style={{ marginTop: 0 }}>Preguntas frecuentes</h2>
           <div style={{ display: "grid", gap: 14 }}>
             <div>
-              <strong>¿Online funciona?</strong>
+              <strong>¿Puedo hacer la consulta online?</strong>
               <div style={{ lineHeight: 1.8 }}>
-                En muchos casos sí. Lo importante es el proceso, el marco de trabajo y la continuidad.
+                Sí, en función del caso y del tipo de acompañamiento. Cuando el proceso es principalmente psicológico puede realizarse online; si requiere una valoración o trabajo neurofuncional presencial, te orientaremos antes de empezar.
               </div>
             </div>
             <div>

@@ -7,7 +7,7 @@ export const FAQ = [
   },
   {
     q: "¿Atendéis también online?",
-    a: "Sí. Psicología y Nutrición también pueden realizarse online. En Regulación del sistema nervioso, la modalidad online dependerá de cada caso.",
+    a: "Sí. Nutrición puede realizarse presencial u online. En Psicología, la modalidad online dependerá del tipo de acompañamiento y de cada caso. La consulta de Regulación del sistema nervioso se realiza de forma presencial en Rincón de la Victoria.",
   },
   {
     q: "¿Qué tipo de problemas trabajáis desde Regulación del sistema nervioso?",
