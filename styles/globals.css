@@ -607,3 +607,15 @@ section[id] { scroll-margin-top: 80px; }
   .contact-channel .btn { display: block; }
   .contact-form { padding: 24px 18px 22px; }
 }
+
+/* ---------- Fotografías del equipo ---------- */
+.member-photo-img { padding: 0; background: #ECE7DF; max-width: 420px; }
+.member-photo-img::before { display: none; }
+.member-photo-img img { display: block; width: 100%; height: 100%; object-fit: cover; }
+/* Foto conjunta: centrada, sin superar su tamaño real (860 px) para no perder nitidez */
+.team-photo { max-width: 860px; margin: 104px auto 0; }
+.team-photo img { display: block; width: 100%; height: auto; border-radius: 14px; }
+@media (max-width: 959px) {
+  .team-photo { margin-top: 56px; }
+  .team-photo img { aspect-ratio: 4 / 3; object-fit: cover; object-position: 49% 50%; }
+}

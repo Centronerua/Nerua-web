@@ -154,6 +154,7 @@ export default function Home() {
             credentials={["Licenciado en Ciencias de la Actividad Física y del Deporte (CAFD)", "Osteópata", "Formación en enfoques relacionados con el trauma y regulación del sistema nervioso"]}
             href="/regulacion-bienestar-malaga"
             photoLabel="Fotografía de José Manuel"
+            photo="/images/equipo/jose-manuel.webp"
           />
           <TeamMember
             name="María José Martínez Granados"
@@ -162,9 +163,21 @@ export default function Home() {
             credentials={["Técnico Superior en Dietética", "Finalizando el Grado en Nutrición Humana y Dietética", "Formación especializada en microbiota y patologías digestivas"]}
             href="/nutricion-integrativa-malaga"
             photoLabel="Fotografía de María José"
+            photo="/images/equipo/maria-jose.webp"
             offset
           />
         </div>
+
+        {/* Fotografía conjunta: cierra "Quién te acompaña" como proyecto compartido. Espacio anterior, no el nuevo centro. */}
+        <figure className="team-photo">
+          <img
+            src="/images/equipo/equipo.webp"
+            alt="José Manuel Gil Rueda y María José Martínez Granados"
+            width="860"
+            height="460"
+            loading="lazy"
+          />
+        </figure>
       </section>
 
       {/* EXPERIENCIAS */}
@@ -354,13 +367,19 @@ function Voice({ name, text, variant }) {
   );
 }
 
-function TeamMember({ name, area, approach, credentials, href, photoLabel, offset }) {
+function TeamMember({ name, area, approach, credentials, href, photoLabel, photo, offset }) {
   return (
     <article className={offset ? "member member-offset" : "member"}>
-      {/* Espacio reservado para la fotografía real (retrato 4:5) */}
-      <div className="member-photo" role="img" aria-label={photoLabel}>
-        <span>{photoLabel}</span>
-      </div>
+      {/* Retrato 4:5; sin foto, se muestra el espacio reservado */}
+      {photo ? (
+        <div className="member-photo member-photo-img">
+          <img src={photo} alt={name} width="420" height="525" loading="lazy" />
+        </div>
+      ) : (
+        <div className="member-photo" role="img" aria-label={photoLabel}>
+          <span>{photoLabel}</span>
+        </div>
+      )}
       {/* Cada parte va sin cortes internos; si la línea se parte, el "·" queda al final */}
       <p className="member-area">
         {area.split(" · ").map((part, i, arr) => (
