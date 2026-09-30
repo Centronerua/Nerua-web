@@ -2,12 +2,12 @@ import SiteHeader from "../components/SiteHeader";
 import { CtaButtons, StickyWhatsApp } from "../components/Cta";
 
 const RESERVA_MSG = "Hola, me gustaría pedir cita para una primera sesión de nutrición digestiva integrativa en Centro NERÚA.";
-const DUDAS_MSG = "Hola, me gustaría información sobre nutrición integrativa (enfoque digestivo, SIBO, histamina) en Centro NERÚA.";
+const DUDAS_MSG = "Hola, me gustaría información sobre la consulta de nutrición digestiva integrativa en Centro NERÚA.";
 
 export const metadata = {
   title: "Nutrición digestiva integrativa en Rincón de la Victoria (presencial y online) | Centro NERÚA",
   description:
-    "Nutrición digestiva integrativa en Rincón de la Victoria, Málaga, con enfoque digestivo, microbiota, SIBO e histaminosis. Acompañamiento personalizado. Presencial y online.",
+    "Nutrición digestiva integrativa en Rincón de la Victoria, Málaga, y online: microbiota, SIBO, histamina, pérdida de peso y mejora de hábitos.",
 };
 
 export default function Page() {
@@ -45,7 +45,10 @@ export default function Page() {
             maxWidth: 820,
           }}
         >
-          Acompañamiento nutricional integrativo con especialidad digestiva: hinchazón, microbiota, SIBO e histamina/histaminosis.
+          Acompañamiento nutricional integrativo con especial atención a la salud digestiva: hinchazón, microbiota, SIBO e histamina/histaminosis.
+          <br />
+          También acompañamos procesos de pérdida de peso, mejora de hábitos y alimentación adaptada a cada persona.
+          <br />
           Presencial en Rincón de la Victoria, Málaga · Online.
         </p>
 
@@ -55,11 +58,20 @@ export default function Page() {
       <section style={section}>
         <div style={card}>
           <h2 style={{ marginTop: 0 }}>¿Para quién es?</h2>
+          {/* Lo digestivo es el área principal y diferencial; peso y hábitos, como acompañamiento adicional */}
+          <p className="svc-group-label">Salud digestiva</p>
           <ul style={{ margin: 0, paddingLeft: 18, lineHeight: 1.9 }}>
             <li>Hinchazón, digestiones pesadas o malestar digestivo persistente.</li>
-            <li>SIBO (incluido metano) y disbiosis / microbiota.</li>
+            <li>Microbiota y disbiosis.</li>
+            <li>SIBO, incluido metano, y otros problemas digestivos.</li>
             <li>Sospecha de intolerancia a histamina / histaminosis.</li>
-            <li>Necesidad de un plan por fases y seguimiento claro.</li>
+          </ul>
+
+          <p className="svc-group-label">También te acompañamos en</p>
+          <ul style={{ margin: 0, paddingLeft: 18, lineHeight: 1.9 }}>
+            <li>Pérdida de peso, con un plan realista y adaptado a ti.</li>
+            <li>Mejora de hábitos alimentarios.</li>
+            <li>Alimentación individualizada según tus necesidades y tu contexto.</li>
           </ul>
         </div>
       </section>
@@ -78,6 +90,13 @@ export default function Page() {
 
           <div style={{ display: "grid", gap: 14 }}>
             <div>
+              <strong>¿Es solo para problemas digestivos?</strong>
+              <div style={{ lineHeight: 1.8 }}>
+                No. Aunque existe una especial atención a salud digestiva, microbiota, SIBO y otros trastornos digestivos, también acompañamos procesos de pérdida de peso, mejora de hábitos y alimentación adaptada a las necesidades de cada persona.
+              </div>
+            </div>
+
+            <div>
               <strong>¿Trabajáis SIBO e histamina?</strong>
               <div style={{ lineHeight: 1.8 }}>
                 Sí, dentro de un enfoque integrativo y personalizado. Te orientamos según tu caso y pruebas disponibles.
@@ -87,7 +106,7 @@ export default function Page() {
             <div>
               <strong>¿Es solo dieta?</strong>
               <div style={{ lineHeight: 1.8 }}>
-                No. También trabajamos hábitos, ritmo de vida y factores que influyen en el sistema digestivo.
+                No. También trabajamos hábitos, ritmo de vida y otros factores que influyen tanto en tu digestión como en tu alimentación diaria.
               </div>
             </div>
 
@@ -100,6 +119,30 @@ export default function Page() {
           </div>
 
           <CtaButtons reservaMsg={RESERVA_MSG} dudasMsg={DUDAS_MSG} style={{ marginTop: 18 }} />
+        </div>
+      </section>
+
+      {/* QUIÉN TE ACOMPAÑA: bloque compacto; misma fotografía y credenciales que la ficha de la home */}
+      <section style={section}>
+        <div className="svc-team">
+          <img
+            className="svc-team-photo"
+            src="/images/equipo/maria-jose.webp"
+            alt="María José Martínez Granados"
+            width="420"
+            height="525"
+            loading="lazy"
+          />
+          <div>
+            <p className="svc-team-eyebrow">Quién te acompaña</p>
+            <h2 className="svc-team-name">María José Martínez Granados</h2>
+            <p className="member-area">Nutrición digestiva integrativa</p>
+            <ul className="member-credentials svc-team-credentials">
+              <li>Técnico Superior en Dietética</li>
+              <li>Finalizando el Grado en Nutrición Humana y Dietética</li>
+              <li>Formación especializada en microbiota y patologías digestivas</li>
+            </ul>
+          </div>
         </div>
       </section>
 

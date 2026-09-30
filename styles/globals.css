@@ -619,3 +619,18 @@ section[id] { scroll-margin-top: 80px; }
   .team-photo { margin-top: 56px; }
   .team-photo img { aspect-ratio: 4 / 3; object-fit: cover; object-position: 49% 50%; }
 }
+
+/* ---------- Páginas de servicio: grupos de "¿Para quién es?" y bloque "Quién te acompaña" ---------- */
+.svc-group-label { margin: 18px 0 6px; font-size: 12px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: #6B7D6D; }
+.svc-group-label:first-of-type { margin-top: 4px; }
+.svc-team { display: grid; grid-template-columns: 168px minmax(0, 1fr); gap: 36px; align-items: center; padding-top: 32px; border-top: 1px solid rgba(107,125,109,0.22); }
+.svc-team-photo { display: block; width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; border-radius: 12px; }
+.svc-team-eyebrow { display: flex; align-items: center; gap: 12px; margin: 0 0 10px; font-size: 12px; font-weight: 600; letter-spacing: 0.22em; text-transform: uppercase; color: #6B7D6D; }
+.svc-team-eyebrow::before { content: ""; width: 24px; height: 1px; background: #C6A96B; }
+.svc-team-name { margin: 0 0 8px; font-size: 22px; font-weight: 600; color: #3A3A3A; letter-spacing: -0.01em; }
+.svc-team-credentials { margin-bottom: 0; }
+@media (max-width: 959px) {
+  .svc-team { grid-template-columns: 1fr; gap: 22px; }
+  .svc-team-photo { width: 160px; }
+  .svc-team-name { font-size: 20px; }
+}
