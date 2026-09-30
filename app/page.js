@@ -77,21 +77,21 @@ export default function Home() {
         <div className="areas-grid">
           <AreaCard
             href="/regulacion-bienestar-malaga"
-            title="Regulación y bienestar"
-            tagline="Sistema nervioso · Enfoque neurofuncional"
+            title="Regulación del sistema nervioso"
+            tagline="Enfoque neurofuncional · Consulta presencial"
             items={["Bruxismo y tensión mandibular", "Migrañas y cefaleas tensionales", "Tinnitus y vértigos", "Tensión muscular persistente"]}
           />
           <AreaCard
             href="/acompanamiento-psicologico-malaga"
             title="Acompañamiento psicológico"
-            tagline="Terapia breve · Estrés y estado emocional"
+            tagline="Estrés · Ansiedad · Bloqueo emocional"
             items={["Estrés y ansiedad", "Bloqueo emocional", "Dificultad para descansar", "Experiencias que dejan huella"]}
           />
           <AreaCard
             href="/nutricion-integrativa-malaga"
             title="Nutrición digestiva integrativa"
-            tagline="Digestión · Microbiota"
-            items={["Hinchazón y digestiones difíciles", "SIBO y microbiota", "Sospecha de histaminosis", "Plan por fases y seguimiento"]}
+            tagline="Salud digestiva · Microbiota · Hábitos"
+            items={["Hinchazón y digestiones difíciles", "SIBO y microbiota", "Sospecha de histaminosis", "Pérdida de peso y mejora de hábitos"]}
           />
         </div>
 

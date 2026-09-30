@@ -3,7 +3,7 @@ import { useEffect, useRef, useState } from "react";
 import { ReservaButton } from "./Cta";
 
 const SERVICES = [
-  { href: "/regulacion-bienestar-malaga", label: "Regulación y bienestar" },
+  { href: "/regulacion-bienestar-malaga", label: "Regulación del sistema nervioso" },
   { href: "/acompanamiento-psicologico-malaga", label: "Acompañamiento psicológico" },
   { href: "/nutricion-integrativa-malaga", label: "Nutrición digestiva integrativa" },
 ];
