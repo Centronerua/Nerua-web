@@ -17,12 +17,20 @@ export const metadata = {
 
 const FAQ = [
   {
+    q: "¿Cómo es la primera valoración?",
+    a: "La primera sesión es un espacio para conocernos y comprender tu situación con calma: qué te preocupa, cómo es tu alimentación, tus hábitos, tu ritmo de vida, tus síntomas y tus objetivos. Si dispones de analíticas o pruebas, podemos revisarlas contigo. Después te enviamos una entrevista personalizada para que puedas completarla tranquilamente en casa y, con toda la información, valoramos el enfoque nutricional más adecuado para ti.",
+  },
+  {
     q: "¿Es solo para problemas digestivos?",
     a: "No. Aunque existe una especial atención a salud digestiva, microbiota, SIBO y otros trastornos digestivos, también acompañamos procesos de pérdida de peso, mejora de hábitos y alimentación adaptada a las necesidades de cada persona.",
   },
   {
     q: "¿Trabajáis SIBO e histamina?",
     a: "Sí, dentro de un enfoque integrativo y personalizado. Te orientamos según tu caso y pruebas disponibles.",
+  },
+  {
+    q: "¿Necesito tener un diagnóstico médico antes de venir?",
+    a: "No necesariamente. Puedes acudir aunque todavía estés intentando comprender el origen de tus síntomas. Cuando sea necesario, el acompañamiento nutricional debe complementarse con la valoración y el seguimiento médico correspondiente.",
   },
   {
     q: "¿Es solo dieta?",

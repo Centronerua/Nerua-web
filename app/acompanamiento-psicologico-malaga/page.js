@@ -20,6 +20,10 @@ const FAQ = [
     q: "¿Cómo es la primera sesión?",
     a: "Es una primera toma de contacto para conocerte, escuchar qué te trae y comprender tu situación. A partir de ahí valoramos contigo cómo plantear el acompañamiento y los siguientes pasos.",
   },
+  {
+    q: "¿Trabajáis experiencias traumáticas?",
+    a: "Sí. José cuenta con formación en enfoques relacionados con trauma y regulación del sistema nervioso. El acompañamiento se adapta a cada persona y a su momento, sin forzar el proceso ni establecer un ritmo igual para todos.",
+  },
   { q: "¿Cuánto dura una sesión?", a: "Las sesiones individuales duran 60 minutos." },
   {
     q: "¿Cuántas sesiones necesito?",
