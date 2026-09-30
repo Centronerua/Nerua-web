@@ -2,6 +2,8 @@
 // Mientras no haya agenda online, la reserva se hace por WhatsApp con un mensaje específico.
 
 export const WHATSAPP_NUMBER = "34637541937";
+// Mismo número, formateado para mostrarlo (p. ej. «+34 637 541 937»); se deriva del anterior para que nunca diverjan.
+export const WHATSAPP_DISPLAY = `+${WHATSAPP_NUMBER.slice(0, 2)} ${WHATSAPP_NUMBER.slice(2).replace(/(\d{3})(?=\d)/g, "$1 ")}`;
 
 export const RESERVA_MSG = "Hola, me gustaría pedir cita para una primera sesión en Centro NERÚA.";
 export const DUDAS_MSG =

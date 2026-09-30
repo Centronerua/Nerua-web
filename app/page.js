@@ -1,6 +1,6 @@
 import LeadForm from "./components/LeadForm";
 import SiteHeader from "./components/SiteHeader";
-import { CtaButtons, DudasButton, ReservaButton, StickyWhatsApp, whatsappHref, DUDAS_MSG } from "./components/Cta";
+import { CtaButtons, DudasButton, ReservaButton, StickyWhatsApp, whatsappHref, DUDAS_MSG, WHATSAPP_DISPLAY } from "./components/Cta";
 import { SERVICES, FOLLOWUP_NOTE, formatPrice } from "./data/pricing";
 import { FAQ } from "./data/faq";
 
@@ -267,37 +267,48 @@ export default function Home() {
       </section>
 
       {/* CONTACTO */}
-      <section id="contacto" style={section}>
-        <h2>Contacto</h2>
-
-        <div style={{ ...card, marginTop: 18 }}>
-          <LeadForm />
-        </div>
-
-        <div style={{ ...card, marginTop: 18 }}>
-          <p style={{ margin: 0, lineHeight: 1.8 }}>
-            <strong>Centro NERÚA</strong><br />
-            Rincón de la Victoria, Málaga<br />
-            <span style={{ color: "#6B7D6D" }}>Presencial en Rincón de la Victoria · Online</span>
-          </p>
-
-          <p style={{ margin: "10px 0 0", lineHeight: 1.8 }}>
+      <section id="contacto" className="contact">
+        <div className="contact-head">
+          <p className="section-eyebrow">CONTACTO</p>
+          <h2 className="contact-title">Hablemos de tu caso</h2>
+          <p className="contact-intro">
             Atención presencial en Rincón de la Victoria y online para personas de Málaga y otras localidades.
           </p>
-          {/* La dirección postal exacta se añadirá cuando esté confirmada. */}
+        </div>
 
-          <div style={{ height: 14 }} />
+        <div className="contact-grid">
+          <div className="contact-info">
+            <p className="contact-brand">CENTRO NERÚA</p>
+            <p className="contact-status">
+              <span>
+                <span className="nowrap">Nueva ubicación ·</span>{" "}
+                <span className="nowrap">a partir del 1 de diciembre</span>
+              </span>
+            </p>
+            {/* Sin mapa, «Cómo llegar» ni datos estructurados hasta que se autorice (ver CLAUDE.md, regla 8). */}
+            <address className="contact-address">
+              Calle Acebuche, 8 · Puerta 8<br />
+              29730 Rincón de la Victoria (Málaga)
+            </address>
+            <p className="contact-mode">Atención presencial y online</p>
 
-          <p style={{ margin: 0, lineHeight: 1.8 }}>
-            <strong>Email</strong><br />
-            info@centronerua.com
-          </p>
+            <div className="contact-channel">
+              <p className="contact-label">WhatsApp</p>
+              <DudasButton className="btn" />
+              <p className="contact-phone">
+                <a href={whatsappHref(DUDAS_MSG)} target="_blank" rel="noreferrer">WhatsApp · {WHATSAPP_DISPLAY}</a>
+              </p>
+            </div>
 
-          <div style={{ height: 14 }} />
+            <div className="contact-channel">
+              <p className="contact-label">Email</p>
+              <a href="mailto:info@centronerua.com" className="contact-mail">info@centronerua.com</a>
+            </div>
+          </div>
 
-          <div style={{ display: "flex", gap: 12, flexWrap: "wrap" }}>
-            <DudasButton className="btn" />
-            {/* "Cómo llegar" se añadirá con la nueva dirección confirmada. */}
+          <div className="contact-form">
+            <p className="contact-label">Formulario de contacto</p>
+            <LeadForm />
           </div>
         </div>
       </section>
@@ -388,15 +399,3 @@ function AreaCard({ href, title, tagline, items }) {
     </a>
   );
 }
-
-/* ESTILOS */
-const section = { maxWidth: "900px", margin: "auto", padding: "80px 20px" };
-
-const card = {
-  background: "white",
-  padding: "25px",
-  borderRadius: "14px",
-  boxShadow: "0 8px 20px rgba(0,0,0,0.05)",
-  border: "1px solid rgba(58,58,58,0.06)",
-};
-
