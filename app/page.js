@@ -2,6 +2,7 @@ import LeadForm from "./components/LeadForm";
 import SiteHeader from "./components/SiteHeader";
 import { CtaButtons, DudasButton, ReservaButton, StickyWhatsApp, whatsappHref, DUDAS_MSG } from "./components/Cta";
 import { SERVICES, FOLLOWUP_NOTE, formatPrice } from "./data/pricing";
+import { FAQ } from "./data/faq";
 
 export const metadata = {
   title: "Centro NERÚA | Psicología, sistema nervioso y nutrición digestiva en Rincón de la Victoria",
@@ -245,6 +246,23 @@ export default function Home() {
         <div className="rates-note">
           <p className="rates-note-title">{FOLLOWUP_NOTE.title}</p>
           <p className="rates-note-text">{FOLLOWUP_NOTE.text}</p>
+        </div>
+      </section>
+
+      {/* PREGUNTAS FRECUENTES */}
+      <section id="preguntas" className="faq">
+        <div className="faq-head">
+          <p className="section-eyebrow">ANTES DE EMPEZAR</p>
+          <h2 className="faq-title">Preguntas frecuentes</h2>
+        </div>
+
+        <div className="faq-list">
+          {FAQ.map((item) => (
+            <details key={item.q} className="faq-item">
+              <summary className="faq-q">{item.q}</summary>
+              <p className="faq-a">{item.a}</p>
+            </details>
+          ))}
         </div>
       </section>
 

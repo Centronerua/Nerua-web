@@ -14,6 +14,7 @@
 10. La presentación pública de José Manuel Gil Rueda prioriza psicología, trauma, regulación del sistema nervioso y enfoque neurofuncional. En su ficha profesional («Quién te acompaña») está autorizado mostrar «Osteópata» como credencial o formación complementaria, sin desplazar el posicionamiento principal ni convertir su perfil en uno de masaje o terapia manual. No mostrar «Reflexólogo». No mencionar colegiación ni nº de colegiado hasta que se autorice.
 11. No inventar ni completar titulaciones o formaciones del equipo: usar solo las confirmadas expresamente.
 12. Áreas de NERÚA: al describirlas, usar «Psicología · Regulación del sistema nervioso · Nutrición digestiva integrativa». No usar «regulación» sola para describir el servicio; en la página de Regulación y bienestar debe quedar claro «Sistema nervioso · Enfoque neurofuncional».
+13. Nutrición: «Nutrición digestiva integrativa» es el posicionamiento principal de María José Martínez Granados y de esta área de NERÚA, pero la consulta no es exclusivamente digestiva: también se acompañan procesos de pérdida de peso, mejora de hábitos y alimentación adaptada a las necesidades de cada persona. No dar a entender que solo se atienden problemas digestivos. El enfoque digestivo, la microbiota y la salud intestinal se mantienen como elemento diferencial; la comunicación general no debe convertirse en una web centrada en adelgazamiento.
 
 ## Forma de trabajar
 
