@@ -751,3 +751,11 @@ section[id] { scroll-margin-top: 80px; }
   .legal-section p,
   .legal-section li { font-size: 15.5px; }
 }
+
+/* Logo del header: copia transparente del logo original (sin redibujar ni recolorear).
+   El CSS solo fija tamaño y encuadre: se ven el símbolo y «Centro NERÚA»; el lema queda fuera del área visible. */
+.site-logo-img { display: block; line-height: 0; }
+.site-logo-frame { --h: 46px; position: relative; display: block; overflow: hidden; height: var(--h); width: calc(var(--h) * 1474 / 460); }
+.site-logo-frame img { position: absolute; max-width: none; height: calc(var(--h) * 1092 / 460); width: auto;
+  left: calc(var(--h) * -300 / 460); top: calc(var(--h) * -222 / 460); }
+@media (max-width: 959px) { .site-logo-frame { --h: 38px; } }

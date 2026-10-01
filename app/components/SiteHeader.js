@@ -51,8 +51,11 @@ export default function SiteHeader({ badgeText = "Rincón de la Victoria · Onli
     <header className="site-header" ref={headerRef}>
       <nav className="site-nav" aria-label="Principal">
         <div className="site-brand">
-          <a href="/" className="site-logo">
-            <strong>NERÚA</strong>
+          <a href="/" className="site-logo site-logo-img" aria-label="Centro NERÚA · Inicio">
+            {/* Copia transparente del logo original; el CSS solo fija tamaño y encuadre (sin lema) */}
+            <span className="site-logo-frame">
+              <img src="/images/marca/centro-nerua-logo-transparente.png" alt="Centro NERÚA" width="2048" height="1092" />
+            </span>
           </a>
           <span className="site-badge">{badgeText}</span>
         </div>
