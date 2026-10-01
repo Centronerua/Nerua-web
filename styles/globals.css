@@ -541,6 +541,9 @@ section[id] { scroll-margin-top: 80px; }
 .rates-note { max-width: 640px; margin: 56px auto 0; padding-top: 24px; border-top: 1px solid rgba(107,125,109,0.22); text-align: center; }
 .rates-note-title { margin: 0 0 6px; font-size: 14.5px; font-weight: 600; color: #3A3A3A; }
 .rates-note-text { margin: 0; font-size: 14.5px; line-height: 1.75; color: #3A3A3A; }
+/* Enlace discreto a la política de cambios y cancelaciones */
+.rates-note-policy { margin: 14px 0 0; font-size: 13.5px; }
+.rates-note-policy .text-link { font-weight: 500; }
 .rate-actions { margin-top: auto; display: flex; align-items: center; flex-wrap: wrap; gap: 18px; padding-top: 6px; }
 @media (max-width: 959px) {
   .rates { padding: 64px 20px 64px; }

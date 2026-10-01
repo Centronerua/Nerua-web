@@ -21,6 +21,7 @@ export default function SiteFooter() {
           <nav className="site-footer-links" aria-label="Información legal">
             <a href="/aviso-legal">Aviso legal</a>
             <a href="/politica-de-privacidad">Política de privacidad</a>
+            <a href="/politica-de-cancelaciones">Política de cambios y cancelaciones</a>
           </nav>
           <p className="site-footer-copy">© 2026 Centro NERÚA</p>
         </div>

@@ -262,6 +262,9 @@ export default function Home() {
         <div className="rates-note">
           <p className="rates-note-title">{FOLLOWUP_NOTE.title}</p>
           <p className="rates-note-text">{FOLLOWUP_NOTE.text}</p>
+          <p className="rates-note-policy">
+            <a href="/politica-de-cancelaciones" className="text-link">Política de cambios y cancelaciones</a>
+          </p>
         </div>
       </section>
 
