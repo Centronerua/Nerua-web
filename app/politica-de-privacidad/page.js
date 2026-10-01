@@ -6,6 +6,7 @@ export const metadata = {
   title: "Política de privacidad | Centro NERÚA",
   description: "Política de privacidad de Centro NERÚA.",
   robots: { index: false, follow: true },
+  alternates: { canonical: "/politica-de-privacidad" },
 };
 
 const MAIL = <a href={`mailto:${TITULAR.email}`}>{TITULAR.email}</a>;

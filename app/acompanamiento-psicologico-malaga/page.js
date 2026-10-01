@@ -3,6 +3,7 @@ import SiteFooter from "../components/SiteFooter";
 import { StickyWhatsApp } from "../components/Cta";
 import { ServiceHero, ServiceSection, ServiceList, ServiceFaq, ServicePro } from "../components/ServiceLayout";
 import { SERVICES } from "../data/pricing";
+import { pageMetadata } from "../data/seo";
 
 const RESERVA_MSG = "Hola, me gustaría pedir cita para una primera sesión de acompañamiento psicológico en Centro NERÚA.";
 const DUDAS_MSG = "Hola, me gustaría información sobre la consulta de psicología en Centro NERÚA.";
@@ -10,11 +11,12 @@ const DUDAS_MSG = "Hola, me gustaría información sobre la consulta de psicolog
 // Tarifa leída del mismo sitio que "Consultas y precios" de la home
 const PSICOLOGIA = SERVICES.find((s) => s.id === "psicologia");
 
-export const metadata = {
+export const metadata = pageMetadata({
   title: "Acompañamiento psicológico en Rincón de la Victoria | Centro NERÚA",
   description:
     "Acompañamiento psicológico en Rincón de la Victoria, Málaga: estrés, ansiedad, bloqueo emocional y experiencias difíciles. Presencial y online según el caso.",
-};
+  path: "/acompanamiento-psicologico-malaga",
+});
 
 const FAQ = [
   {

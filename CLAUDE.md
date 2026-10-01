@@ -27,5 +27,6 @@
 
 - Next.js 14 (App Router). Tipografías cargadas con `next/font` en `app/layout.js`: `--font-sans` (Montserrat) y `--font-serif` (Cormorant Garamond).
 - El logotipo del header (`.site-logo`) conserva su declaración tipográfica original y no debe tocarse.
+- Accesibilidad de color: `#56685A` (verde oscuro ya existente) es el color de texto accesible sobre crema y blanco, y el fondo de los botones principales (texto blanco). El salvia `#6B7D6D` y el dorado `#C6A96B` corporativos se mantienen para usos decorativos (filetes, bordes, detalles); no usarlos para texto pequeño, porque no alcanzan el contraste AA. No introducir tonos nuevos.
 - Formulario: `app/components/LeadForm.js` → `app/api/leads/route.js` → tabla `leads` de Supabase + webhook de Make (Webhook → Gmail). No cambiar tablas, claves ni el webhook sin autorización.
 - Algunos archivos usan saltos de línea CRLF (`app/page.js`, `app/layout.js`, `styles/globals.css`): conservarlos al editar.

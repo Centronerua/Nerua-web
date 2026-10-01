@@ -1,5 +1,5 @@
 "use client";
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 // Opciones de "¿Sobre qué área quieres información?" (sin preguntar por síntomas: minimización de datos de salud).
 // No hay columna propia en Supabase: el área elegida se añade al principio del mensaje ("Área: …"),
@@ -16,6 +16,11 @@ const PRIVACY_HREF = "/politica-de-privacidad";
 
 export default function LeadForm() {
   const formRef = useRef(null);
+  // Momento en que el formulario queda listo (antispam: un envío en menos de 3 s se considera automático)
+  const readyAt = useRef(0);
+  useEffect(() => {
+    readyAt.current = Date.now();
+  }, []);
   const [loading, setLoading] = useState(false);
   const [ok, setOk] = useState(false);
   const [error, setError] = useState("");
@@ -40,6 +45,9 @@ export default function LeadForm() {
       phone: form.get("phone"),
       message: concern ? `Área: ${concern}\n\n${text}` : text,
       consent: form.get("consent") === "on",
+      // Antispam: campo trampa (vacío para las personas) y tiempo desde que se cargó el formulario
+      website: form.get("nerua_web") || "",
+      elapsed_ms: readyAt.current ? Date.now() - readyAt.current : 0,
     };
 
     setLoading(true);
@@ -84,6 +92,14 @@ export default function LeadForm() {
           {error}
         </div>
       ) : null}
+
+      {/* Campo trampa: invisible y fuera del orden de tabulación; solo lo rellenan los bots */}
+      <div className="lead-hp" aria-hidden="true">
+        <label>
+          No rellenes este campo
+          <input name="nerua_web" type="text" tabIndex={-1} autoComplete="off" />
+        </label>
+      </div>
 
       <label className="lead-field">
         Nombre *

@@ -1,6 +1,7 @@
 // app/layout.js
 import { Montserrat, Cormorant_Garamond } from "next/font/google";
 import "../styles/globals.css";
+import { SITE_URL } from "./data/seo";
 
 // Montserrat: tipografía sans del proyecto. Cormorant Garamond: solo titulares editoriales puntuales.
 const montserrat = Montserrat({ subsets: ["latin"], display: "swap", variable: "--font-sans" });
@@ -12,6 +13,8 @@ const cormorant = Cormorant_Garamond({
 });
 
 export const metadata = {
+  // Dominio definitivo: base para canónicas, og:url y og:image absolutas
+  metadataBase: new URL(SITE_URL),
   title: "Centro NERÚA | Rincón de la Victoria, Málaga",
   description:
     "Centro NERÚA en Rincón de la Victoria, Málaga. Psicología, regulación del sistema nervioso con enfoque neurofuncional y nutrición digestiva integrativa. Atención presencial y online.",

@@ -3,6 +3,7 @@ import SiteFooter from "../components/SiteFooter";
 import { StickyWhatsApp } from "../components/Cta";
 import { ServiceHero, ServiceSection, ServiceList, ServiceFaq, ServicePro } from "../components/ServiceLayout";
 import { SERVICES } from "../data/pricing";
+import { pageMetadata } from "../data/seo";
 
 const RESERVA_MSG = "Hola, me gustaría pedir cita para una primera sesión de regulación del sistema nervioso en Centro NERÚA.";
 const DUDAS_MSG = "Hola, me gustaría información sobre la consulta de regulación del sistema nervioso en Centro NERÚA.";
@@ -10,11 +11,12 @@ const DUDAS_MSG = "Hola, me gustaría información sobre la consulta de regulaci
 // Tarifa leída del mismo sitio que "Consultas y precios" de la home
 const REGULACION = SERVICES.find((s) => s.id === "regulacion");
 
-export const metadata = {
+export const metadata = pageMetadata({
   title: "Regulación del sistema nervioso en Rincón de la Victoria | Centro NERÚA",
   description:
     "Regulación del sistema nervioso en Rincón de la Victoria, Málaga: bruxismo, tinnitus, vértigos y migrañas. Enfoque neurofuncional. Consulta presencial.",
-};
+  path: "/regulacion-bienestar-malaga",
+});
 
 const FAQ = [
   {

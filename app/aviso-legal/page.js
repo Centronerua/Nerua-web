@@ -6,6 +6,7 @@ export const metadata = {
   title: "Aviso legal | Centro NERÚA",
   description: "Aviso legal del sitio web de Centro NERÚA.",
   robots: { index: false, follow: true },
+  alternates: { canonical: "/aviso-legal" },
 };
 
 // PENDIENTE: el apartado 2 (información profesional) se completará cuando se confirme la colegiación (ver app/data/legal.js).

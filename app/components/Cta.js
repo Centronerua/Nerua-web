@@ -57,6 +57,7 @@ export function StickyWhatsApp({ message = DUDAS_MSG }) {
     <>
       <div className="mobile-cta-spacer" aria-hidden="true" />
       <a href={href} target="_blank" rel="noreferrer" className="wa-float" data-cta="dudas-flotante">
+        <WhatsAppIcon />
         Tengo dudas → WhatsApp
       </a>
       <div className="mobile-cta-bar">
