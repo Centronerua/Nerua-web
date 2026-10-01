@@ -35,3 +35,22 @@ export function pageMetadata({ title, description, path }) {
     },
   };
 }
+
+// Datos estructurados solo para la home: Organization y WebSite (sin dirección, teléfono ni datos de ubicación).
+export const HOME_JSON_LD = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: SITE_NAME,
+    alternateName: "NERÚA",
+    url: `${SITE_URL}/`,
+    logo: `${SITE_URL}/images/marca/centro-nerua-logo-transparente.png`,
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: SITE_NAME,
+    alternateName: "NERÚA",
+    url: `${SITE_URL}/`,
+  },
+];

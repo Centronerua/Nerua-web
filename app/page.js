@@ -4,10 +4,10 @@ import SiteFooter from "./components/SiteFooter";
 import { CtaButtons, DudasButton, ReservaButton, StickyWhatsApp, whatsappHref, DUDAS_MSG, WHATSAPP_DISPLAY } from "./components/Cta";
 import { SERVICES, FOLLOWUP_NOTE, formatPrice } from "./data/pricing";
 import { FAQ } from "./data/faq";
-import { pageMetadata } from "./data/seo";
+import { pageMetadata, HOME_JSON_LD } from "./data/seo";
 
 export const metadata = pageMetadata({
-  title: "Centro NERÚA | Psicología, sistema nervioso y nutrición digestiva en Rincón de la Victoria",
+  title: "Psicología, sistema nervioso y nutrición en Rincón de la Victoria | NERÚA",
   description:
     "Centro NERÚA en Rincón de la Victoria, Málaga. Psicología, regulación del sistema nervioso con enfoque neurofuncional y nutrición digestiva integrativa. Atención presencial y online.",
   path: "/",
@@ -19,6 +19,7 @@ export default function Home() {
 
  return (
   <>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(HOME_JSON_LD) }} />
 
     <main style={{ fontFamily: "var(--font-sans), Montserrat, sans-serif", background: "#F5F1EB", color: "#3A3A3A" }}>
     

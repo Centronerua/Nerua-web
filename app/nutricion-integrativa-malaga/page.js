@@ -12,7 +12,7 @@ const DUDAS_MSG = "Hola, me gustaría información sobre la consulta de nutrici�
 const NUTRICION = SERVICES.find((s) => s.id === "nutricion");
 
 export const metadata = pageMetadata({
-  title: "Nutrición digestiva integrativa en Rincón de la Victoria (presencial y online) | Centro NERÚA",
+  title: "Nutrición digestiva integrativa en Rincón de la Victoria | NERÚA",
   description:
     "Nutrición digestiva integrativa en Rincón de la Victoria, Málaga, y online: microbiota, SIBO, histamina, pérdida de peso y mejora de hábitos.",
   path: "/nutricion-integrativa-malaga",
