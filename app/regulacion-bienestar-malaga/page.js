@@ -93,9 +93,9 @@ export default function Page() {
         </p>
         <ServicePhoto
           src="/images/instalaciones/consulta-jose-700.webp"
-          srcLarge="/images/instalaciones/consulta-jose-1200.webp"
-          width="1200"
-          height="1583"
+          srcLarge="/images/instalaciones/consulta-jose-1086.webp"
+          width="1086"
+          height="1448"
           alt="Consulta de Regulación del sistema nervioso en Centro NERÚA"
           portrait
         />

@@ -92,9 +92,9 @@ export default function Page() {
         </p>
         <ServicePhoto
           src="/images/instalaciones/despacho-maria-jose-800.webp"
-          srcLarge="/images/instalaciones/despacho-maria-jose-1600.webp"
-          width="1600"
-          height="1263"
+          srcLarge="/images/instalaciones/despacho-maria-jose-1448.webp"
+          width="1448"
+          height="1086"
           alt="Despacho de Nutrición digestiva integrativa en Centro NERÚA"
         />
       </ServiceSection>

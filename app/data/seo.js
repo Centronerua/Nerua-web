@@ -4,7 +4,7 @@
 export const SITE_URL = "https://centronerua.com";
 export const SITE_NAME = "Centro NERÚA";
 
-// Imagen social: recorte de la fotografía de la recepción (versión retocada que conserva mobiliario y distribución; madera ajustada al tono real), 1200×630 en JPG para WhatsApp.
+// Imagen social: recorte de la fotografía retocada de la recepción (presentación comercial), 1200×630 en JPG para WhatsApp.
 export const OG_IMAGE = {
   url: "/images/og/nerua-og-recepcion.jpg",
   width: 1200,

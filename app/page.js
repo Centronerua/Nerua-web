@@ -59,15 +59,15 @@ export default function Home() {
       {/* HERO IMAGE */}
       <section style={{ padding: "0 20px 40px", maxWidth: "950px", margin: "auto" }}>
         <img
-          src="/images/instalaciones/recepcion-1448.webp"
-          srcSet="/images/instalaciones/recepcion-960.webp 960w, /images/instalaciones/recepcion-1448.webp 1448w"
+          src="/images/instalaciones/recepcion-1202.webp"
+          srcSet="/images/instalaciones/recepcion-960.webp 960w, /images/instalaciones/recepcion-1202.webp 1202w"
           sizes="(max-width: 990px) 100vw, 950px"
-          width="1448"
+          width="1202"
           height="1086"
           alt="Recepción de Centro NERÚA en Rincón de la Victoria"
           style={{
             height: "auto",
-            objectPosition: "50% 25%",
+            objectPosition: "50% 22%",
             width: "100%",
             borderRadius: "18px",
             maxHeight: "320px",
