@@ -100,3 +100,20 @@ export function ServicePro({ photo, name, area, sublabel, credentials }) {
     </section>
   );
 }
+
+// Fotografía del espacio de consulta (WebP en dos tamaños: móvil y ordenador)
+export function ServicePhoto({ src, srcLarge, width, height, alt, portrait = false }) {
+  return (
+    <figure className={`svc-photo${portrait ? " svc-photo-portrait" : ""}`}>
+      <img
+        src={srcLarge}
+        srcSet={`${src} ${portrait ? 700 : 800}w, ${srcLarge} ${width}w`}
+        sizes={portrait ? "(max-width: 960px) 90vw, 440px" : "(max-width: 960px) 90vw, 680px"}
+        width={width}
+        height={height}
+        alt={alt}
+        loading="lazy"
+      />
+    </figure>
+  );
+}

@@ -1,7 +1,7 @@
 import SiteHeader from "../components/SiteHeader";
 import SiteFooter from "../components/SiteFooter";
 import { StickyWhatsApp } from "../components/Cta";
-import { ServiceHero, ServiceSection, ServiceList, ServiceFaq, ServicePro } from "../components/ServiceLayout";
+import { ServiceHero, ServiceSection, ServiceList, ServiceFaq, ServicePro, ServicePhoto } from "../components/ServiceLayout";
 import { SERVICES } from "../data/pricing";
 import { pageMetadata } from "../data/seo";
 
@@ -90,6 +90,13 @@ export default function Page() {
           Te acompañamos con una estrategia personalizada y realista: alimentación, tolerancias, hábitos y contexto (estrés, descanso, ritmos).
           Buscamos claridad y progreso paso a paso, sin soluciones genéricas.
         </p>
+        <ServicePhoto
+          src="/images/instalaciones/despacho-maria-jose-800.webp"
+          srcLarge="/images/instalaciones/despacho-maria-jose-1600.webp"
+          width="1600"
+          height="1263"
+          alt="Despacho de Nutrición digestiva integrativa en Centro NERÚA"
+        />
       </ServiceSection>
 
       <ServiceFaq items={FAQ} reservaMsg={RESERVA_MSG} dudasMsg={DUDAS_MSG} />

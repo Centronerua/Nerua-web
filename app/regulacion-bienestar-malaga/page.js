@@ -1,7 +1,7 @@
 import SiteHeader from "../components/SiteHeader";
 import SiteFooter from "../components/SiteFooter";
 import { StickyWhatsApp } from "../components/Cta";
-import { ServiceHero, ServiceSection, ServiceList, ServiceFaq, ServicePro } from "../components/ServiceLayout";
+import { ServiceHero, ServiceSection, ServiceList, ServiceFaq, ServicePro, ServicePhoto } from "../components/ServiceLayout";
 import { SERVICES } from "../data/pricing";
 import { pageMetadata } from "../data/seo";
 
@@ -91,6 +91,14 @@ export default function Page() {
         <p className="svc-note">
           Esta consulta complementa, y no sustituye, la valoración y el seguimiento médico u odontológico cuando sean necesarios.
         </p>
+        <ServicePhoto
+          src="/images/instalaciones/consulta-jose-700.webp"
+          srcLarge="/images/instalaciones/consulta-jose-1200.webp"
+          width="1200"
+          height="1583"
+          alt="Consulta de Regulación del sistema nervioso en Centro NERÚA"
+          portrait
+        />
       </ServiceSection>
 
       <ServiceFaq items={FAQ} reservaMsg={RESERVA_MSG} dudasMsg={DUDAS_MSG} />

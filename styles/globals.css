@@ -759,3 +759,8 @@ section[id] { scroll-margin-top: 80px; }
 .site-logo-frame img { position: absolute; max-width: none; height: calc(var(--h) * 1092 / 460); width: auto;
   left: calc(var(--h) * -300 / 460); top: calc(var(--h) * -222 / 460); }
 @media (max-width: 959px) { .site-logo-frame { --h: 38px; } }
+
+/* Fotografías del espacio en las páginas de servicio */
+.svc-photo { margin: 36px 0 0; }
+.svc-photo img { display: block; width: 100%; height: auto; border-radius: 14px; box-shadow: 0 12px 30px rgba(0,0,0,0.08); }
+.svc-photo-portrait { max-width: 440px; }

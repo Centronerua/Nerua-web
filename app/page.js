@@ -59,9 +59,15 @@ export default function Home() {
       {/* HERO IMAGE */}
       <section style={{ padding: "0 20px 40px", maxWidth: "950px", margin: "auto" }}>
         <img
-          src="/images/Hero-sillon.webp"
-          alt="Centro NERÚA · espacio de consulta"
+          src="/images/instalaciones/recepcion-1448.webp"
+          srcSet="/images/instalaciones/recepcion-960.webp 960w, /images/instalaciones/recepcion-1448.webp 1448w"
+          sizes="(max-width: 990px) 100vw, 950px"
+          width="1448"
+          height="1086"
+          alt="Recepción de Centro NERÚA en Rincón de la Victoria"
           style={{
+            height: "auto",
+            objectPosition: "50% 25%",
             width: "100%",
             borderRadius: "18px",
             maxHeight: "320px",
@@ -299,14 +305,8 @@ export default function Home() {
         <div className="contact-grid">
           <div className="contact-info">
             <p className="contact-brand">CENTRO NERÚA</p>
-            <p className="contact-note">
-              Hasta el 30 de noviembre, te indicamos la ubicación de la consulta presencial al confirmar la cita.
-            </p>
             <p className="contact-status">
-              <span>
-                <span className="nowrap">Nueva ubicación ·</span>{" "}
-                <span className="nowrap">a partir del 1 de diciembre</span>
-              </span>
+              <span>Dirección</span>
             </p>
             {/* Sin mapa, «Cómo llegar» ni datos estructurados hasta que se autorice (ver CLAUDE.md, regla 8). */}
             <address className="contact-address">

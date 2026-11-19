@@ -4,12 +4,12 @@
 export const SITE_URL = "https://centronerua.com";
 export const SITE_NAME = "Centro NERÚA";
 
-// Imagen social: derivada de /images/Hero-sillon.webp (sin modificar el original), 1200×630 en JPG para WhatsApp.
+// Imagen social: recorte de la fotografía de la recepción (versión retocada que conserva mobiliario y distribución; madera ajustada al tono real), 1200×630 en JPG para WhatsApp.
 export const OG_IMAGE = {
-  url: "/images/og/nerua-og.jpg",
+  url: "/images/og/nerua-og-recepcion.jpg",
   width: 1200,
   height: 630,
-  alt: "Centro NERÚA · sillón y lámpara en un espacio de consulta",
+  alt: "Recepción de Centro NERÚA en Rincón de la Victoria",
 };
 
 // En Next.js el openGraph de una página sustituye al del layout, por eso se genera completo aquí.
